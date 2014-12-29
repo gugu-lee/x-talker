@@ -1,0 +1,5 @@
+E:\home\ims\boghe-read-only\boghe-read-only\branches\2.0\boghe\Debug\BogheXdm.dll
+E:\home\ims\boghe-read-only\boghe-read-only\branches\2.0\boghe\Debug\BogheXdm.pdb
+E:\home\ims\boghe-read-only\boghe-read-only\branches\2.0\boghe\boghe-xdm\obj\Debug\boghe-xdm.csprojResolveAssemblyReference.cache
+E:\home\ims\boghe-read-only\boghe-read-only\branches\2.0\boghe\boghe-xdm\obj\Debug\BogheXdm.dll
+E:\home\ims\boghe-read-only\boghe-read-only\branches\2.0\boghe\boghe-xdm\obj\Debug\BogheXdm.pdb

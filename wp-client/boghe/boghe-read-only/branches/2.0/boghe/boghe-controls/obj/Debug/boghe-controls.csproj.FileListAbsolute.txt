@@ -1,0 +1,12 @@
+E:\home\ims\boghe-read-only\boghe-read-only\branches\2.0\boghe\Debug\BogheControls.dll
+E:\home\ims\boghe-read-only\boghe-read-only\branches\2.0\boghe\Debug\BogheControls.pdb
+E:\home\ims\boghe-read-only\boghe-read-only\branches\2.0\boghe\boghe-controls\obj\Debug\boghe-controls.csprojResolveAssemblyReference.cache
+E:\home\ims\boghe-read-only\boghe-read-only\branches\2.0\boghe\boghe-controls\obj\Debug\GeneratedInternalTypeHelper.g.cs
+E:\home\ims\boghe-read-only\boghe-read-only\branches\2.0\boghe\boghe-controls\obj\Debug\BogheControls_MarkupCompile.cache
+E:\home\ims\boghe-read-only\boghe-read-only\branches\2.0\boghe\boghe-controls\obj\Debug\BogheControls_MarkupCompile.lref
+E:\home\ims\boghe-read-only\boghe-read-only\branches\2.0\boghe\boghe-controls\obj\Debug\themes\generic.baml
+E:\home\ims\boghe-read-only\boghe-read-only\branches\2.0\boghe\boghe-controls\obj\Debug\BogheControls.g.resources
+E:\home\ims\boghe-read-only\boghe-read-only\branches\2.0\boghe\boghe-controls\obj\Debug\BogheControls.Properties.Resources.resources
+E:\home\ims\boghe-read-only\boghe-read-only\branches\2.0\boghe\boghe-controls\obj\Debug\boghe-controls.csproj.GenerateResource.Cache
+E:\home\ims\boghe-read-only\boghe-read-only\branches\2.0\boghe\boghe-controls\obj\Debug\BogheControls.dll
+E:\home\ims\boghe-read-only\boghe-read-only\branches\2.0\boghe\boghe-controls\obj\Debug\BogheControls.pdb

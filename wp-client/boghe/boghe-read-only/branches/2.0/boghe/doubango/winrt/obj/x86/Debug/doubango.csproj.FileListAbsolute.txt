@@ -1,0 +1,9 @@
+E:\home\ims\boghe-read-only\boghe-read-only\branches\2.0\boghe\doubango\winrt\Bin\x86\Debug\doubango.dll
+E:\home\ims\boghe-read-only\boghe-read-only\branches\2.0\boghe\doubango\winrt\Bin\x86\Debug\doubango.pdb
+E:\home\ims\boghe-read-only\boghe-read-only\branches\2.0\boghe\doubango\winrt\Bin\x86\Debug\doubango_rt.Agents.dll
+E:\home\ims\boghe-read-only\boghe-read-only\branches\2.0\boghe\doubango\winrt\Bin\x86\Debug\doubango_rt.BackEnd.winmd
+E:\home\ims\boghe-read-only\boghe-read-only\branches\2.0\boghe\doubango\winrt\Bin\x86\Debug\doubango_rt.Agents.pdb
+E:\home\ims\boghe-read-only\boghe-read-only\branches\2.0\boghe\doubango\winrt\Bin\x86\Debug\doubango_rt.BackEnd.pdb
+E:\home\ims\boghe-read-only\boghe-read-only\branches\2.0\boghe\doubango\winrt\obj\x86\Debug\doubango.csprojResolveAssemblyReference.cache
+E:\home\ims\boghe-read-only\boghe-read-only\branches\2.0\boghe\doubango\winrt\obj\x86\Debug\doubango.dll
+E:\home\ims\boghe-read-only\boghe-read-only\branches\2.0\boghe\doubango\winrt\obj\x86\Debug\doubango.pdb
