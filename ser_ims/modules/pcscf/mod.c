@@ -169,6 +169,7 @@ int rtpproxy_enable = 0; 					/**< if the RTPProxy is enabled 					*/
 int rtpproxy_disable_tout = 60 ;			/**< disabling timeout for the RTPProxy 			*/
 int rtpproxy_retr = 5;						/**< Retry count 									*/
 int rtpproxy_tout = 1;						/**< Timeout 										*/
+char* rtpproxy_newip="192.168.1.104";
 
 /* e2 interface with CLF */
 char* forced_clf_peer="";					/**< FQDN of the forced CLF Diameter Peer (CLF) */
@@ -529,7 +530,7 @@ static param_export_t pcscf_params[]={
 	{"rtpproxy_disable_tout", 			PARAM_INT,		&rtpproxy_disable_tout },
 	{"rtpproxy_retr",        			PARAM_INT,		&rtpproxy_retr         },
 	{"rtpproxy_tout",         			PARAM_INT,		&rtpproxy_tout         },
-	
+	{"rtpproxy_newip",				STR_PARAM,		&rtpproxy_newip		},
 	{"subscribe_retries",				INT_PARAM,		&pcscf_subscribe_retries},
 
 	{"assert_fallback",					INT_PARAM,		&pcscf_assert_fallback},

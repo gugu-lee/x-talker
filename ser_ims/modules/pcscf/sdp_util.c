@@ -91,6 +91,7 @@ extern int rtpproxy_enable;
 extern int rtpproxy_disable_tout ;
 extern int rtpproxy_retr ;
 extern int rtpproxy_tout ; 
+extern char *rtpproxy_newip;
 unsigned int myseqn ;
 
 static str sup_ptypes[] = {
@@ -270,6 +271,8 @@ static int extract_mediaip(str *body, str *mediaip, int *pf)
 static int alter_mediaip(struct sip_msg *msg, str *body, str *oldip, int oldpf,
   			str *newip, int newpf, int preserve)
 {
+	LOG(L_INFO,"INFO:alter_mediaip:body:%s\noldip:%s\noldpf:%d\nnewip:%s\nnewpf:%d\npreserve:%d\n",
+		body->s,oldip->s,oldpf,newip->s,newpf,preserve);
 	char *buf;
 	int offset;
 	struct lump* anchor;
@@ -913,6 +916,8 @@ int create_rtpp_command(struct sip_msg *  msg, char * m1p, char * m2p, char* c2p
 int parse_rtpproxy_reply(char * cp, char * str2, str * newip, str * newport, int * pf1, 
 			str oldip, str oldport, int pf){
 
+	
+	LOG(L_INFO,"force_rtp_proxy2,cp:\n|%s|\n",cp);
 	char *argv[10];
 	char * cpend, * next, **ap;
 	int argc, port;
@@ -965,6 +970,10 @@ int alter_sdp_line_rtpproxy(struct sip_msg * msg, char * m1p, char * bodylimit,
 				str * oldip, str * oldport, int pf, 
 				str * newip, str* newport, int pf1){
 
+	LOG(L_INFO, "INFO: oldip:%s\n",oldip->s);
+	LOG(L_INFO,"INFO:newip:%s\n",newip->s);
+	LOG(L_INFO,"INFO:oldport:%s\n",oldport->s);
+	LOG(L_INFO,"INFO:newport:%s\n",newport->s);
 	str body1;
 
 	/* Alter port. */
@@ -976,13 +985,22 @@ int alter_sdp_line_rtpproxy(struct sip_msg * msg, char * m1p, char * bodylimit,
 	 * Alter IP. Don't alter IP common for the session
 	 * more than once.
 	 */
-	if (c2p != NULL || !c1p_altered) {
+	LOG(L_INFO,"INFO:alter_sdp_line_rtpproxy:c2p:%s\n",c2p);
+	LOG(L_INFO,"INFO:alter_sdp_line_rtpproxy:c1p_altered:%d",*c1p_altered);
+	if ((c2p != NULL) || (*c1p_altered != 1)) {
+		LOG(L_INFO,"INFO:alter_sdp_line_rtpproxy:invoke alter_mediaip\n");
 		body1.s = c2p ? c2p : c1p;
 		body1.len = bodylimit - body1.s;
-		if (alter_mediaip(msg, &body1, oldip, pf, newip, pf1, 0) == -1)
+		if (alter_mediaip(msg, &body1, oldip, pf, newip, pf1, 0) == -1){
+			LOG(L_INFO,"INFO:alter new ip failed\n");
 			return -1;
-		if (!c2p)
+		}else{LOG(L_INFO,"INFO:alter new ip OK\n");
+			//*c1p_altered = 1;
+		}
+		if (c1p)
 			*c1p_altered = 1;
+	}else{
+	LOG(L_INFO,"INFO:Alter New IP ,NO Action\n");
 	}
 	return 0;
 }
@@ -1503,7 +1521,7 @@ int P_SDP_manipulate(struct sip_msg *msg,char *str1,char *str2)
 					{
 					/* get rtp_proxy/nathelper to open ports - get a iovec*/
 						if (pcscf_nat_enable && rtpproxy_enable)
-							response = force_rtp_proxy2_f(dlg, msg,"","",had_sdp_in_invite) ;
+							response = force_rtp_proxy2_f(dlg, msg,"",rtpproxy_newip,had_sdp_in_invite) ;
 						LOG(L_CRIT,"DBG:"M_NAME":P_SDP_manipulate: INVITE ... done\n");			    	
 				    } else {			
 						/* using public ip */
@@ -1521,7 +1539,7 @@ int P_SDP_manipulate(struct sip_msg *msg,char *str1,char *str2)
 						/* sdp_1918(msg) */
 						/* str1 & str2 must be something */
 						if (pcscf_nat_enable && rtpproxy_enable)
-						    response = force_rtp_proxy2_f(dlg, msg, "", "",had_sdp_in_invite) ;
+						    response = force_rtp_proxy2_f(dlg, msg, "", rtpproxy_newip,had_sdp_in_invite) ;
 						LOG(L_CRIT,"DBG:"M_NAME":P_SDP_manipulate: 183,2xx... done\n");			    	
 					} else {
 							/* public ip found */
@@ -1542,7 +1560,7 @@ int P_SDP_manipulate(struct sip_msg *msg,char *str1,char *str2)
 				/* sdp_1918(msg) */
 				/* str1 & str2 must be something */
 				if (pcscf_nat_enable && rtpproxy_enable)
-					response = force_rtp_proxy2_f(dlg, msg, "", "",0) ;						
+					response = force_rtp_proxy2_f(dlg, msg, "", rtpproxy_newip,0) ;						
 				LOG(L_CRIT,"DBG:"M_NAME":P_SDP_manipulate: ACK ... done\n");			    	
 			} else {
 					/* public ip found */
