@@ -1,0 +1,4 @@
+E:\github\x-talker\wp-client\boghe\boghe-read-only\branches\2.0\boghe\boghe-xdm\Bin\ARM\Release\boghe_xdm_rt.dll
+E:\github\x-talker\wp-client\boghe\boghe-read-only\branches\2.0\boghe\boghe-xdm\Bin\ARM\Release\boghe_xdm_rt.pdb
+E:\github\x-talker\wp-client\boghe\boghe-read-only\branches\2.0\boghe\boghe-xdm\obj\ARM\Release\boghe_xdm_rt.dll
+E:\github\x-talker\wp-client\boghe\boghe-read-only\branches\2.0\boghe\boghe-xdm\obj\ARM\Release\boghe_xdm_rt.pdb

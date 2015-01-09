@@ -1,0 +1,7 @@
+E:\github\x-talker\wp-client\boghe\boghe-read-only\branches\2.0\boghe\winrt\Agents\Bin\ARM\Debug\doubango_rt.Agents.dll
+E:\github\x-talker\wp-client\boghe\boghe-read-only\branches\2.0\boghe\winrt\Agents\Bin\ARM\Debug\doubango_rt.Agents.pdb
+E:\github\x-talker\wp-client\boghe\boghe-read-only\branches\2.0\boghe\winrt\Agents\Bin\ARM\Debug\doubango_rt.BackEnd.winmd
+E:\github\x-talker\wp-client\boghe\boghe-read-only\branches\2.0\boghe\winrt\Agents\Bin\ARM\Debug\doubango_rt.BackEnd.pdb
+E:\github\x-talker\wp-client\boghe\boghe-read-only\branches\2.0\boghe\winrt\Agents\obj\ARM\Debug\Agents.csprojResolveAssemblyReference.cache
+E:\github\x-talker\wp-client\boghe\boghe-read-only\branches\2.0\boghe\winrt\Agents\obj\ARM\Debug\doubango_rt.Agents.dll
+E:\github\x-talker\wp-client\boghe\boghe-read-only\branches\2.0\boghe\winrt\Agents\obj\ARM\Debug\doubango_rt.Agents.pdb
