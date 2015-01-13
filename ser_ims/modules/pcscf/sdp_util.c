@@ -110,6 +110,7 @@ int set_rtpproxy_media_descr(p_dialog * dlg, int medianum, str newip, str newpor
 
 static int isnulladdr(str *sx, int pf)
 {
+return 0;
 	char *cp;
 
 	if (pf == AF_INET6) {
@@ -914,7 +915,7 @@ int create_rtpp_command(struct sip_msg *  msg, char * m1p, char * m2p, char* c2p
 }
 
 int parse_rtpproxy_reply(char * cp, char * str2, str * newip, str * newport, int * pf1, 
-			str oldip, str oldport, int pf){
+			str  oldip, str oldport, int pf){
 
 	
 	LOG(L_INFO,"force_rtp_proxy2,cp:\n|%s|\n",cp);
@@ -1556,6 +1557,7 @@ int P_SDP_manipulate(struct sip_msg *msg,char *str1,char *str2)
 			break ;
 			
 		case METHOD_ACK:
+			LOG(L_CRIT,"DBG:"M_NAME":P_SDP_manipulate: ACK ... START\n");
 			if(1){
 				/* sdp_1918(msg) */
 				/* str1 & str2 must be something */
@@ -1564,8 +1566,8 @@ int P_SDP_manipulate(struct sip_msg *msg,char *str1,char *str2)
 				LOG(L_CRIT,"DBG:"M_NAME":P_SDP_manipulate: ACK ... done\n");			    	
 			} else {
 					/* public ip found */
-					response = CSCF_RETURN_FALSE ;	
-					LOG(L_CRIT,"DBG:"M_NAME":P_SDP_manipulate: ACK ... done\n");
+					response = CSCF_RETURN_FALSE ;
+				LOG(L_CRIT,"DBG:"M_NAME":P_SDP_manipulate: ACK ... NO ACTION\n");						
 			}
 			break;
 		
