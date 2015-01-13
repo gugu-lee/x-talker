@@ -1564,7 +1564,8 @@ int P_SDP_manipulate(struct sip_msg *msg,char *str1,char *str2)
 				LOG(L_CRIT,"DBG:"M_NAME":P_SDP_manipulate: ACK ... done\n");			    	
 			} else {
 					/* public ip found */
-					response = CSCF_RETURN_FALSE ;						
+					response = CSCF_RETURN_FALSE ;	
+					LOG(L_CRIT,"DBG:"M_NAME":P_SDP_manipulate: ACK ... done\n");
 			}
 			break;
 		
