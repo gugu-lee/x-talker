@@ -1,0 +1,162 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{99B7D02F-8C70-4B45-AF3C-92313C3CEE15}</ProjectGuid>
+    <RootNamespace>tinyRTP</RootNamespace>
+    <Keyword>Win32Proj</Keyword>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <PlatformToolset>v120</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <PlatformToolset>v120</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>12.0.30501.0</_ProjectFileVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>$(SolutionDir)$(Configuration)\</OutDir>
+    <IntDir>$(Configuration)\</IntDir>
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>$(SolutionDir)$(Configuration)\</OutDir>
+    <IntDir>$(Configuration)\</IntDir>
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>include;..\tinySAK\src;..\tinyNET\src;..\tinyMEDIA\include;..\thirdparties\win32\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>DEBUG_LEVEL=DEBUG_LEVEL_INFO;HAVE_SRTP=1;WIN32;_DEBUG;_WINDOWS;_USRDLL;TINYRTP_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>true</MinimalRebuild>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <PrecompiledHeader />
+      <WarningLevel>Level3</WarningLevel>
+      <TreatWarningAsError>true</TreatWarningAsError>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+      <CompileAs>CompileAsC</CompileAs>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>ws2_32.lib;$(OutDir)tinySAK.lib;$(OutDir)tinyNET.lib;$(OutDir)tinyMEDIA.lib;..\thirdparties\win32\lib\srtp\libsrtp.a;..\thirdparties\win32\lib\libgcc.a;%(AdditionalDependencies)</AdditionalDependencies>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <Optimization>Full</Optimization>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <AdditionalIncludeDirectories>..\thirdparties\win32\include;include;..\tinySAK\src;..\tinyNET\src;..\tinyMEDIA\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>HAVE_SRTP=1;WIN32;NDEBUG;_WINDOWS;_USRDLL;TINYRTP_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <FunctionLevelLinking>false</FunctionLevelLinking>
+      <PrecompiledHeader />
+      <WarningLevel>Level3</WarningLevel>
+      <TreatWarningAsError>true</TreatWarningAsError>
+      <DebugInformationFormat />
+      <CompileAs>CompileAsC</CompileAs>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>ws2_32.lib;$(OutDir)tinySAK.lib;$(OutDir)tinyNET.lib;$(OutDir)tinyMEDIA.lib;..\thirdparties\win32\lib\srtp\libsrtp.a;..\thirdparties\win32\lib\libgcc.a;%(AdditionalDependencies)</AdditionalDependencies>
+      <IgnoreSpecificDefaultLibraries>MSVCRTD;%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <OptimizeReferences>true</OptimizeReferences>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <TargetMachine>NotSet</TargetMachine>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="src\rtcp\trtp_rtcp_header.c" />
+    <ClCompile Include="src\rtcp\trtp_rtcp_packet.c" />
+    <ClCompile Include="src\rtcp\trtp_rtcp_rblock.c" />
+    <ClCompile Include="src\rtcp\trtp_rtcp_report.c" />
+    <ClCompile Include="src\rtcp\trtp_rtcp_report_bye.c" />
+    <ClCompile Include="src\rtcp\trtp_rtcp_report_fb.c" />
+    <ClCompile Include="src\rtcp\trtp_rtcp_report_rr.c" />
+    <ClCompile Include="src\rtcp\trtp_rtcp_report_sdes.c" />
+    <ClCompile Include="src\rtcp\trtp_rtcp_report_sr.c" />
+    <ClCompile Include="src\rtcp\trtp_rtcp_report_xr.c" />
+    <ClCompile Include="src\rtcp\trtp_rtcp_sdes_chunck.c" />
+    <ClCompile Include="src\rtcp\trtp_rtcp_sdes_item.c" />
+    <ClCompile Include="src\rtcp\trtp_rtcp_session.c" />
+    <ClCompile Include="src\rtp\trtp_rtp_header.c" />
+    <ClCompile Include="src\rtp\trtp_rtp_packet.c" />
+    <ClCompile Include="src\rtp\trtp_rtp_session.c" />
+    <ClCompile Include="src\trtp.c" />
+    <ClCompile Include="src\trtp_manager.c" />
+    <ClCompile Include="src\trtp_srtp.c" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="include\tinyrtp.h" />
+    <ClInclude Include="include\tinyrtp\rtcp\trtp_rtcp_header.h" />
+    <ClInclude Include="include\tinyrtp\rtcp\trtp_rtcp_packet.h" />
+    <ClInclude Include="include\tinyrtp\rtcp\trtp_rtcp_rblock.h" />
+    <ClInclude Include="include\tinyrtp\rtcp\trtp_rtcp_report.h" />
+    <ClInclude Include="include\tinyrtp\rtcp\trtp_rtcp_report_bye.h" />
+    <ClInclude Include="include\tinyrtp\rtcp\trtp_rtcp_report_fb.h" />
+    <ClInclude Include="include\tinyrtp\rtcp\trtp_rtcp_report_rr.h" />
+    <ClInclude Include="include\tinyrtp\rtcp\trtp_rtcp_report_sdes.h" />
+    <ClInclude Include="include\tinyrtp\rtcp\trtp_rtcp_report_sr.h" />
+    <ClInclude Include="include\tinyrtp\rtcp\trtp_rtcp_report_xr.h" />
+    <ClInclude Include="include\tinyrtp\rtcp\trtp_rtcp_sdes_chunck.h" />
+    <ClInclude Include="include\tinyrtp\rtcp\trtp_rtcp_sdes_item.h" />
+    <ClInclude Include="include\tinyrtp\rtcp\trtp_rtcp_session.h" />
+    <ClInclude Include="include\tinyrtp\rtp\trtp_rtp_header.h" />
+    <ClInclude Include="include\tinyrtp\rtp\trtp_rtp_packet.h" />
+    <ClInclude Include="include\tinyrtp\rtp\trtp_rtp_session.h" />
+    <ClInclude Include="include\tinyrtp\trtp.h" />
+    <ClInclude Include="include\tinyrtp\trtp_manager.h" />
+    <ClInclude Include="include\tinyrtp\trtp_srtp.h" />
+    <ClInclude Include="include\tinyrtp_config.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="version.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\tinyMEDIA\tinyMEDIA.vcxproj">
+      <Project>{52814b0d-7dca-45b8-9a16-8b147040d619}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="..\tinyNET\tinyNET.vcxproj">
+      <Project>{7522a458-92f4-4259-b906-e84c2a65d9f1}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="..\tinySAK\tinySAK.vcxproj">
+      <Project>{6bc9b796-10c6-4cf7-a6e4-e2daccda84da}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

@@ -1,0 +1,31 @@
+﻿生成启动时间为 2015/1/13 10:23:55。
+     1>项目“E:\github\x-talker\wp-client\boghe\doubango\branches\2.0\doubango\tinySDP\tinySDP.vcxproj”在节点 3 上(Build 个目标)。
+     1>Link:
+         D:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"E:\github\x-talker\wp-client\boghe\boghe-read-only\branches\2.0\boghe\Debug\tinySDP.dll" /INCREMENTAL /NOLOGO "E:\github\x-talker\wp-client\boghe\boghe-read-only\branches\2.0\boghe\Debug\tinySAK.lib" kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"E:\github\x-talker\wp-client\boghe\boghe-read-only\branches\2.0\boghe\Debug\tinySDP.pdb" /SUBSYSTEM:WINDOWS /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"E:\github\x-talker\wp-client\boghe\boghe-read-only\branches\2.0\boghe\Debug\tinySDP.lib" /MACHINE:X86 /SAFESEH /DLL Debug\version.res
+         Debug\tsdp_header.obj
+         Debug\tsdp_header_A.obj
+         Debug\tsdp_header_B.obj
+         Debug\tsdp_header_C.obj
+         Debug\tsdp_header_Dummy.obj
+         Debug\tsdp_header_E.obj
+         Debug\tsdp_header_I.obj
+         Debug\tsdp_header_K.obj
+         Debug\tsdp_header_M.obj
+         Debug\tsdp_header_O.obj
+         Debug\tsdp_header_P.obj
+         Debug\tsdp_header_R.obj
+         Debug\tsdp_header_S.obj
+         Debug\tsdp_header_T.obj
+         Debug\tsdp_header_U.obj
+         Debug\tsdp_header_V.obj
+         Debug\tsdp_header_Z.obj
+         Debug\tsdp_parser_message.obj
+         Debug\tsdp.obj
+         Debug\tsdp_message.obj
+         "E:\github\x-talker\wp-client\boghe\boghe-read-only\branches\2.0\boghe\Debug\tinySAK.lib"
+     1>LINK : fatal error LNK1104: 无法打开文件“E:\github\x-talker\wp-client\boghe\boghe-read-only\branches\2.0\boghe\Debug\tinySAK.lib”
+     1>已完成生成项目“E:\github\x-talker\wp-client\boghe\doubango\branches\2.0\doubango\tinySDP\tinySDP.vcxproj”(Build 个目标)的操作 - 失败。
+
+生成失败。
+
+已用时间 00:00:00.29

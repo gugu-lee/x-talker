@@ -1,0 +1,12 @@
+﻿生成启动时间为 2015/1/13 10:23:58。
+     1>项目“E:\github\x-talker\wp-client\boghe\doubango\branches\2.0\doubango\tinySIP\tinySIP.vcxproj”在节点 6 上(Build 个目标)。
+     1>ClCompile:
+         D:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /I..\thirdparties\common\include\libxml2 /I..\thirdparties\common\include /I..\thirdparties\win32\include /I..\tinySIP\include /I..\tinySAK\src /I..\tinyNET\src /I..\tinyHTTP\include /I..\tinySIGCOMP\src /I..\tinyIPSec\src /I..\tinySDP\include /I..\tinyMEDIA\include /ZI /nologo /W3 /WX /Od /Oy- /D DEBUG_LEVEL=DEBUG_LEVEL_INFO /D BODILESS_INVITE=0 /D HAVE_LIBXML2=1 /D WIN32 /D _DEBUG /D _WINDOWS /D _USRDLL /D TINYSIP_EXPORTS /D "_WIN32_WINNT 0x0501" /D _WINDLL /D _UNICODE /D UNICODE /Gm /EHsc /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TC /analyze- /errorReport:prompt src\authentication\tsip_challenge.c
+         tsip_challenge.c
+     1>e:\github\x-talker\wp-client\boghe\doubango\branches\2.0\doubango\tinysip\src\authentication\tsip_challenge.c : error C2220: 警告被视为错误 - 没有生成“object”文件
+     1>e:\github\x-talker\wp-client\boghe\doubango\branches\2.0\doubango\tinysip\src\authentication\tsip_challenge.c : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+     1>已完成生成项目“E:\github\x-talker\wp-client\boghe\doubango\branches\2.0\doubango\tinySIP\tinySIP.vcxproj”(Build 个目标)的操作 - 失败。
+
+生成失败。
+
+已用时间 00:00:01.06

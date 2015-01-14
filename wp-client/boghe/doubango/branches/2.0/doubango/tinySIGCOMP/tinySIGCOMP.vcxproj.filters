@@ -1,0 +1,258 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="source">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="source\zlib">
+      <UniqueIdentifier>{e7c9ec62-0f96-4bd4-a1da-2371e2ccb958}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="source\SigCompLayer">
+      <UniqueIdentifier>{808fec99-3365-4146-88c4-e721b7f6fa57}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="source\Dictionaries">
+      <UniqueIdentifier>{447f9e38-1f1e-4fb5-abee-11e422b29034}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="source\Compressors">
+      <UniqueIdentifier>{e04a7efe-4c53-4ccd-8e03-71918c420df6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="include\zlib">
+      <UniqueIdentifier>{f9807979-fbbe-4e55-89e9-960d3ac725e4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\SigCompLayer">
+      <UniqueIdentifier>{af7eacf8-906a-4c1d-81f9-099480b593d9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\Dictionaries">
+      <UniqueIdentifier>{cd3ae262-4639-45ea-9975-25db6cd1e0f5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\Compressors">
+      <UniqueIdentifier>{ea2b7f03-fe5a-4261-9ea3-9fa6a5b8078a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="asm">
+      <UniqueIdentifier>{5b39ebad-aa5c-4c51-bc99-7381d4b9c640}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="resources%28%2a.rc%29">
+      <UniqueIdentifier>{cb0416af-9beb-495e-a61f-6952f18c9a91}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\tcomp.c">
+      <Filter>source</Filter>
+    </ClCompile>
+    <ClCompile Include="src\tcomp_buffer.c">
+      <Filter>source</Filter>
+    </ClCompile>
+    <ClCompile Include="src\tcomp_manager.c">
+      <Filter>source</Filter>
+    </ClCompile>
+    <ClCompile Include="src\adler32.c">
+      <Filter>source\zlib</Filter>
+    </ClCompile>
+    <ClCompile Include="src\compress.c">
+      <Filter>source\zlib</Filter>
+    </ClCompile>
+    <ClCompile Include="src\deflate.c">
+      <Filter>source\zlib</Filter>
+    </ClCompile>
+    <ClCompile Include="src\trees.c">
+      <Filter>source\zlib</Filter>
+    </ClCompile>
+    <ClCompile Include="src\zutil.c">
+      <Filter>source\zlib</Filter>
+    </ClCompile>
+    <ClCompile Include="src\tcomp_compartment.c">
+      <Filter>source\SigCompLayer</Filter>
+    </ClCompile>
+    <ClCompile Include="src\tcomp_compressordata.c">
+      <Filter>source\SigCompLayer</Filter>
+    </ClCompile>
+    <ClCompile Include="src\tcomp_compressordisp.c">
+      <Filter>source\SigCompLayer</Filter>
+    </ClCompile>
+    <ClCompile Include="src\tcomp_decompressordisp.c">
+      <Filter>source\SigCompLayer</Filter>
+    </ClCompile>
+    <ClCompile Include="src\tcomp_message.c">
+      <Filter>source\SigCompLayer</Filter>
+    </ClCompile>
+    <ClCompile Include="src\tcomp_nackinfo.c">
+      <Filter>source\SigCompLayer</Filter>
+    </ClCompile>
+    <ClCompile Include="src\tcomp_params.c">
+      <Filter>source\SigCompLayer</Filter>
+    </ClCompile>
+    <ClCompile Include="src\tcomp_reqfeed.c">
+      <Filter>source\SigCompLayer</Filter>
+    </ClCompile>
+    <ClCompile Include="src\tcomp_result.c">
+      <Filter>source\SigCompLayer</Filter>
+    </ClCompile>
+    <ClCompile Include="src\tcomp_state.c">
+      <Filter>source\SigCompLayer</Filter>
+    </ClCompile>
+    <ClCompile Include="src\tcomp_statehandler.c">
+      <Filter>source\SigCompLayer</Filter>
+    </ClCompile>
+    <ClCompile Include="src\tcomp_udvm.bytecopy.c">
+      <Filter>source\SigCompLayer</Filter>
+    </ClCompile>
+    <ClCompile Include="src\tcomp_udvm.c">
+      <Filter>source\SigCompLayer</Filter>
+    </ClCompile>
+    <ClCompile Include="src\tcomp_udvm.instructions.c">
+      <Filter>source\SigCompLayer</Filter>
+    </ClCompile>
+    <ClCompile Include="src\tcomp_udvm.nack.c">
+      <Filter>source\SigCompLayer</Filter>
+    </ClCompile>
+    <ClCompile Include="src\tcomp_udvm.operands.c">
+      <Filter>source\SigCompLayer</Filter>
+    </ClCompile>
+    <ClCompile Include="src\tcomp_udvm.statemanagment.c">
+      <Filter>source\SigCompLayer</Filter>
+    </ClCompile>
+    <ClCompile Include="src\tcomp_dicts.c">
+      <Filter>source\Dictionaries</Filter>
+    </ClCompile>
+    <ClCompile Include="src\tcomp_compressor_deflate.c">
+      <Filter>source\Compressors</Filter>
+    </ClCompile>
+    <ClCompile Include="src\tcomp_compressor_dummy.c">
+      <Filter>source\Compressors</Filter>
+    </ClCompile>
+    <ClCompile Include="src\tcomp_deflatedata.c">
+      <Filter>source\Compressors</Filter>
+    </ClCompile>
+    <ClCompile Include="src\tcomp_deflatedata.ghost.c">
+      <Filter>source\Compressors</Filter>
+    </ClCompile>
+    <ClCompile Include="src\tcomp_deflatedata.zlib.c">
+      <Filter>source\Compressors</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="src\tcomp.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="src\tcomp_buffer.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="src\tcomp_headers_index.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="src\tcomp_instructions.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="src\tcomp_manager.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="src\tcomp_nack_codes.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="src\tcomp_operands.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="src\tcomp_rfc5049_sip.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="src\tcomp_types.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="src\tinysigcomp_config.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="src\deflate.h">
+      <Filter>include\zlib</Filter>
+    </ClInclude>
+    <ClInclude Include="src\trees.h">
+      <Filter>include\zlib</Filter>
+    </ClInclude>
+    <ClInclude Include="src\zconf.h">
+      <Filter>include\zlib</Filter>
+    </ClInclude>
+    <ClInclude Include="src\zlib.h">
+      <Filter>include\zlib</Filter>
+    </ClInclude>
+    <ClInclude Include="src\zutil.h">
+      <Filter>include\zlib</Filter>
+    </ClInclude>
+    <ClInclude Include="src\tcomp_compartment.h">
+      <Filter>include\SigCompLayer</Filter>
+    </ClInclude>
+    <ClInclude Include="src\tcomp_compressordata.h">
+      <Filter>include\SigCompLayer</Filter>
+    </ClInclude>
+    <ClInclude Include="src\tcomp_compressordisp.h">
+      <Filter>include\SigCompLayer</Filter>
+    </ClInclude>
+    <ClInclude Include="src\tcomp_decompressordisp.h">
+      <Filter>include\SigCompLayer</Filter>
+    </ClInclude>
+    <ClInclude Include="src\tcomp_message.h">
+      <Filter>include\SigCompLayer</Filter>
+    </ClInclude>
+    <ClInclude Include="src\tcomp_nackinfo.h">
+      <Filter>include\SigCompLayer</Filter>
+    </ClInclude>
+    <ClInclude Include="src\tcomp_params.h">
+      <Filter>include\SigCompLayer</Filter>
+    </ClInclude>
+    <ClInclude Include="src\tcomp_reqfeed.h">
+      <Filter>include\SigCompLayer</Filter>
+    </ClInclude>
+    <ClInclude Include="src\tcomp_result.h">
+      <Filter>include\SigCompLayer</Filter>
+    </ClInclude>
+    <ClInclude Include="src\tcomp_state.h">
+      <Filter>include\SigCompLayer</Filter>
+    </ClInclude>
+    <ClInclude Include="src\tcomp_statehandler.h">
+      <Filter>include\SigCompLayer</Filter>
+    </ClInclude>
+    <ClInclude Include="src\tcomp_udvm.h">
+      <Filter>include\SigCompLayer</Filter>
+    </ClInclude>
+    <ClInclude Include="src\tcomp_dicts.h">
+      <Filter>include\Dictionaries</Filter>
+    </ClInclude>
+    <ClInclude Include="src\tcomp_rfc3485_dictionary_sip.h">
+      <Filter>include\Dictionaries</Filter>
+    </ClInclude>
+    <ClInclude Include="src\tcomp_rfc5112_dictionary_presence.h">
+      <Filter>include\Dictionaries</Filter>
+    </ClInclude>
+    <ClInclude Include="src\tcomp_compressor.h">
+      <Filter>include\Compressors</Filter>
+    </ClInclude>
+    <ClInclude Include="src\tcomp_compressor_deflate.h">
+      <Filter>include\Compressors</Filter>
+    </ClInclude>
+    <ClInclude Include="src\tcomp_compressor_dummy.h">
+      <Filter>include\Compressors</Filter>
+    </ClInclude>
+    <ClInclude Include="src\tcomp_deflatedata.h">
+      <Filter>include\Compressors</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="asm\deflate.asm">
+      <Filter>asm</Filter>
+    </None>
+    <None Include="asm\deflate.asm.back">
+      <Filter>asm</Filter>
+    </None>
+    <None Include="asm\dummy.asm">
+      <Filter>asm</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="version.rc">
+      <Filter>resources%28%2a.rc%29</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+</Project>

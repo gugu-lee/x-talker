@@ -1,0 +1,163 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="source%28%2a.c%29">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="source%28%2a.c%29\rtp">
+      <UniqueIdentifier>{02797d37-5738-4a4e-b45e-e0f83b6b0cd0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="source%28%2a.c%29\rtcp">
+      <UniqueIdentifier>{9c7227ad-b0be-455d-8709-57e7dda6470c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="source%28%2a.c%29\rtsp">
+      <UniqueIdentifier>{169b2928-2067-43b9-831e-b2f80c0dccc1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include%28%2a.h%29">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="include%28%2a.h%29\rtp">
+      <UniqueIdentifier>{3534c7ec-828b-4c4a-a8e1-346679d199d0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include%28%2a.h%29\rtcp">
+      <UniqueIdentifier>{14c64db8-b242-4043-8b20-aafb551b2afc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include%28%2a.h%29\rtsp">
+      <UniqueIdentifier>{3a12466b-8cbc-410b-9b56-23acc2406635}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="resources%28%2a.rc%29">
+      <UniqueIdentifier>{d0ac2171-834c-4610-98de-afeb7e8e652a}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\trtp.c">
+      <Filter>source%28%2a.c%29</Filter>
+    </ClCompile>
+    <ClCompile Include="src\trtp_manager.c">
+      <Filter>source%28%2a.c%29</Filter>
+    </ClCompile>
+    <ClCompile Include="src\trtp_srtp.c">
+      <Filter>source%28%2a.c%29</Filter>
+    </ClCompile>
+    <ClCompile Include="src\rtp\trtp_rtp_header.c">
+      <Filter>source%28%2a.c%29\rtp</Filter>
+    </ClCompile>
+    <ClCompile Include="src\rtp\trtp_rtp_packet.c">
+      <Filter>source%28%2a.c%29\rtp</Filter>
+    </ClCompile>
+    <ClCompile Include="src\rtp\trtp_rtp_session.c">
+      <Filter>source%28%2a.c%29\rtp</Filter>
+    </ClCompile>
+    <ClCompile Include="src\rtcp\trtp_rtcp_header.c">
+      <Filter>source%28%2a.c%29\rtcp</Filter>
+    </ClCompile>
+    <ClCompile Include="src\rtcp\trtp_rtcp_packet.c">
+      <Filter>source%28%2a.c%29\rtcp</Filter>
+    </ClCompile>
+    <ClCompile Include="src\rtcp\trtp_rtcp_rblock.c">
+      <Filter>source%28%2a.c%29\rtcp</Filter>
+    </ClCompile>
+    <ClCompile Include="src\rtcp\trtp_rtcp_report.c">
+      <Filter>source%28%2a.c%29\rtcp</Filter>
+    </ClCompile>
+    <ClCompile Include="src\rtcp\trtp_rtcp_report_bye.c">
+      <Filter>source%28%2a.c%29\rtcp</Filter>
+    </ClCompile>
+    <ClCompile Include="src\rtcp\trtp_rtcp_report_fb.c">
+      <Filter>source%28%2a.c%29\rtcp</Filter>
+    </ClCompile>
+    <ClCompile Include="src\rtcp\trtp_rtcp_report_rr.c">
+      <Filter>source%28%2a.c%29\rtcp</Filter>
+    </ClCompile>
+    <ClCompile Include="src\rtcp\trtp_rtcp_report_sdes.c">
+      <Filter>source%28%2a.c%29\rtcp</Filter>
+    </ClCompile>
+    <ClCompile Include="src\rtcp\trtp_rtcp_report_sr.c">
+      <Filter>source%28%2a.c%29\rtcp</Filter>
+    </ClCompile>
+    <ClCompile Include="src\rtcp\trtp_rtcp_report_xr.c">
+      <Filter>source%28%2a.c%29\rtcp</Filter>
+    </ClCompile>
+    <ClCompile Include="src\rtcp\trtp_rtcp_sdes_chunck.c">
+      <Filter>source%28%2a.c%29\rtcp</Filter>
+    </ClCompile>
+    <ClCompile Include="src\rtcp\trtp_rtcp_sdes_item.c">
+      <Filter>source%28%2a.c%29\rtcp</Filter>
+    </ClCompile>
+    <ClCompile Include="src\rtcp\trtp_rtcp_session.c">
+      <Filter>source%28%2a.c%29\rtcp</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="include\tinyrtp.h">
+      <Filter>include%28%2a.h%29</Filter>
+    </ClInclude>
+    <ClInclude Include="include\tinyrtp_config.h">
+      <Filter>include%28%2a.h%29</Filter>
+    </ClInclude>
+    <ClInclude Include="include\tinyrtp\trtp.h">
+      <Filter>include%28%2a.h%29</Filter>
+    </ClInclude>
+    <ClInclude Include="include\tinyrtp\trtp_manager.h">
+      <Filter>include%28%2a.h%29</Filter>
+    </ClInclude>
+    <ClInclude Include="include\tinyrtp\trtp_srtp.h">
+      <Filter>include%28%2a.h%29</Filter>
+    </ClInclude>
+    <ClInclude Include="include\tinyrtp\rtp\trtp_rtp_header.h">
+      <Filter>include%28%2a.h%29\rtp</Filter>
+    </ClInclude>
+    <ClInclude Include="include\tinyrtp\rtp\trtp_rtp_packet.h">
+      <Filter>include%28%2a.h%29\rtp</Filter>
+    </ClInclude>
+    <ClInclude Include="include\tinyrtp\rtp\trtp_rtp_session.h">
+      <Filter>include%28%2a.h%29\rtp</Filter>
+    </ClInclude>
+    <ClInclude Include="include\tinyrtp\rtcp\trtp_rtcp_header.h">
+      <Filter>include%28%2a.h%29\rtcp</Filter>
+    </ClInclude>
+    <ClInclude Include="include\tinyrtp\rtcp\trtp_rtcp_packet.h">
+      <Filter>include%28%2a.h%29\rtcp</Filter>
+    </ClInclude>
+    <ClInclude Include="include\tinyrtp\rtcp\trtp_rtcp_rblock.h">
+      <Filter>include%28%2a.h%29\rtcp</Filter>
+    </ClInclude>
+    <ClInclude Include="include\tinyrtp\rtcp\trtp_rtcp_report.h">
+      <Filter>include%28%2a.h%29\rtcp</Filter>
+    </ClInclude>
+    <ClInclude Include="include\tinyrtp\rtcp\trtp_rtcp_report_bye.h">
+      <Filter>include%28%2a.h%29\rtcp</Filter>
+    </ClInclude>
+    <ClInclude Include="include\tinyrtp\rtcp\trtp_rtcp_report_fb.h">
+      <Filter>include%28%2a.h%29\rtcp</Filter>
+    </ClInclude>
+    <ClInclude Include="include\tinyrtp\rtcp\trtp_rtcp_report_rr.h">
+      <Filter>include%28%2a.h%29\rtcp</Filter>
+    </ClInclude>
+    <ClInclude Include="include\tinyrtp\rtcp\trtp_rtcp_report_sdes.h">
+      <Filter>include%28%2a.h%29\rtcp</Filter>
+    </ClInclude>
+    <ClInclude Include="include\tinyrtp\rtcp\trtp_rtcp_report_sr.h">
+      <Filter>include%28%2a.h%29\rtcp</Filter>
+    </ClInclude>
+    <ClInclude Include="include\tinyrtp\rtcp\trtp_rtcp_report_xr.h">
+      <Filter>include%28%2a.h%29\rtcp</Filter>
+    </ClInclude>
+    <ClInclude Include="include\tinyrtp\rtcp\trtp_rtcp_sdes_chunck.h">
+      <Filter>include%28%2a.h%29\rtcp</Filter>
+    </ClInclude>
+    <ClInclude Include="include\tinyrtp\rtcp\trtp_rtcp_sdes_item.h">
+      <Filter>include%28%2a.h%29\rtcp</Filter>
+    </ClInclude>
+    <ClInclude Include="include\tinyrtp\rtcp\trtp_rtcp_session.h">
+      <Filter>include%28%2a.h%29\rtcp</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="version.rc">
+      <Filter>resources%28%2a.rc%29</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+</Project>

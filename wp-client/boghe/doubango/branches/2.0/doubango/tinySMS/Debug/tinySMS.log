@@ -1,0 +1,12 @@
+﻿生成启动时间为 2015/1/13 10:23:55。
+     1>项目“E:\github\x-talker\wp-client\boghe\doubango\branches\2.0\doubango\tinySMS\tinySMS.vcxproj”在节点 6 上(Build 个目标)。
+     1>ClCompile:
+         D:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /I..\thirdparties\win32\include /Iinclude /I..\tinySAK/src /ZI /nologo /W3 /WX /Od /Oy- /D WIN32 /D _DEBUG /D _WINDOWS /D _USRDLL /D TINYSMS_EXPORTS /D _WINDLL /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TC /analyze- /errorReport:prompt src\tsms.c
+         tsms.c
+     1>e:\github\x-talker\wp-client\boghe\doubango\branches\2.0\doubango\tinysms\src\tsms.c : error C2220: 警告被视为错误 - 没有生成“object”文件
+     1>e:\github\x-talker\wp-client\boghe\doubango\branches\2.0\doubango\tinysms\src\tsms.c : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+     1>已完成生成项目“E:\github\x-talker\wp-client\boghe\doubango\branches\2.0\doubango\tinySMS\tinySMS.vcxproj”(Build 个目标)的操作 - 失败。
+
+生成失败。
+
+已用时间 00:00:00.26
