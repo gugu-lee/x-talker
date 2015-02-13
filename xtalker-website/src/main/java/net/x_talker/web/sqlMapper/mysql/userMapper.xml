@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"   
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="net.x_talker.web.dao.IUserDao">
+
+	<!-- private int id; private String identity; private byte[] k; `auth_scheme` 
+		int(11) NOT NULL default '0', `default_auth_scheme` int(11) NOT NULL default 
+		'1', `amf` tinyblob NOT NULL, `op` tinyblob NOT NULL, `sqn` varchar(64) NOT 
+		NULL default '000000000000', `ip` varchar(64) NOT NULL default '', `line_identifier` 
+		varchar(64) NOT NULL default '', `zh_uicc_type` int(11) default '0', `zh_key_life_time` 
+		int(11) default '3600', `zh_default_auth_scheme` -->
+		
+	<resultMap type="net.x_talker.web.entity.IMPI" id="impi">
+		<id property="id" column="id" />
+		<result property="id_imsu" column="id_imsu" />
+		<result property="identity" column="identity" />
+		<result property="k" column="k" />
+	</resultMap>
+	<resultMap type="net.x_talker.web.entity.IMPU" id="impu">
+		<id property="id" column="id" />
+		<result property="identity" column="identity" />
+
+	</resultMap>
+	<resultMap type="net.x_talker.web.entity.IMPI_IMPU" id="impi_impu">
+		<id property="id" column="id" />
+		<result property="id_impi" column="id_impi" />
+		<result property="id_impu" column="id_impu" />
+		<result property="user_state" column="user_state" />
+	</resultMap>
+	
+	<resultMap type="net.x_talker.web.entity.IMSU" id="imsu">
+		<id property="id" column="id" />
+		<result property="name" column="name" />
+		<result property="scscf_name" column="scscf_name" />
+		<result property="diameter_name" column="diameter_name" />
+		<result property="id_capabilities_set" column="id_capabilities_set" />
+		<result property="id_preferred_scscf_set" column="id_preferred_scscf_set" />
+	</resultMap>
+<!-- 
+	<select id="getImpi" parameterType="String" resultMap="impi">
+		select *
+		from impi where identity=#{impi}
+	</select>
+ -->
+	<insert id="insertIMPI" parameterType="net.x_talker.web.entity.IMPI" useGeneratedKeys="true" keyProperty="id">
+		insert into
+		impi(id_imsu,
+		identity,
+		k,
+		auth_scheme,
+		default_auth_scheme,
+		amf,
+		op,
+		sqn,
+		ip,
+		line_identifier,
+		zh_uicc_type,
+		zh_key_life_time,
+		zh_default_auth_scheme)
+		
+		values(4,
+		#{identity},
+		#{k},
+		255,
+		1,
+		'\0\0',
+		'\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0',
+		'000000000000',
+		'',
+		'',
+		0,
+		3600,
+		1)
+	</insert>
+	<!-- INSERT INTO `impu` VALUES (1,'sip:alice@open-ims.test',0,0,0,1,1,1,'','',0,1), 
+		(2,'sip:bob@open-ims.test',0,0,0,1,2,1,'','',0,1); `id` int(11) NOT NULL 
+		auto_increment, `identity` varchar(255) NOT NULL default '', `type` tinyint(4) 
+		NOT NULL default '0', `barring` tinyint(4) NOT NULL default '0', `user_state` 
+		tinyint(4) NOT NULL default '0', `id_sp` int(11) default NULL, `id_implicit_set` 
+		int(11) NOT NULL default '0', `id_charging_info` int(11) default NULL, `wildcard_psi` 
+		varchar(255) NOT NULL default '', `display_name` varchar(255) NOT NULL default 
+		'', `psi_activation` tinyint(4) NOT NULL default '0', `can_register` tinyint(4) 
+		NOT NULL default '1', -->
+	<insert id="insertIMPU" parameterType="net.x_talker.web.entity.IMPU"  useGeneratedKeys="true" keyProperty="id">
+		INSERT INTO
+		`impu`(identity,type,barring,user_state,id_sp,id_implicit_set,id_charging_info,wildcard_psi,display_name,psi_activation,can_register)
+		VALUES (#{identity},0,0,0,1,1,1,'','',0,1)
+	</insert>
+
+	<!-- CREATE TABLE `impi_impu` ( `id` int(11) NOT NULL auto_increment, `id_impi` 
+		int(11) NOT NULL default '0', `id_impu` int(11) NOT NULL default '0', `user_state` 
+		tinyint(4) NOT NULL default '0', INSERT INTO `impi_impu` VALUES (4,4,1,0),(2,2,2,0); -->
+	<insert id="insertIMPI_IMPU" parameterType="net.x_talker.web.entity.IMPI_IMPU"  useGeneratedKeys="true" keyProperty="id">
+		INSERT INTO impi_impu(id_impi,id_impu,user_state) VALUES (#{id_impi},#{id_impu},#{user_state})
+	</insert>
+	
+	
+
+	<!-- CREATE TABLE `impu_visited_network` ( `id` int(11) NOT NULL auto_increment, 
+		`id_impu` int(11) NOT NULL default '0', `id_visited_network` int(11) NOT 
+		NULL default '0', INSERT INTO `impu_visited_network` VALUES (1,1,1),(2,2,1); -->
+		<insert id="insertIMPU_VisitedNetwork" parameterType="net.x_talker.web.entity.IMPU_VisitedNetwork" useGeneratedKeys="true" keyProperty="id">
+		 INSERT INTO `impu_visited_network`(id_impu,id_visited_network) VALUES (#{id_impu},#{id_visited_network})
+	</insert>
+	<!-- CREATE TABLE `imsu` ( `id` int(11) NOT NULL auto_increment, `name` 
+		varchar(255) NOT NULL default '', `scscf_name` varchar(255) default NULL, 
+		`diameter_name` varchar(255) default NULL, `id_capabilities_set` int(11) 
+		default NULL, `id_preferred_scscf_set` int(11) default NULL, INSERT INTO 
+		`imsu` VALUES (1,'alice','','',1,1),(2,'bob','','',1,1); -->
+	<insert id="insertIMSU" parameterType="net.x_talker.web.entity.IMSU" useGeneratedKeys="true" keyProperty="id">
+		INSERT INTO imsu(name,scscf_name,diameter_name,id_capabilities_set,id_preferred_scscf_set) 
+		VALUES (#{name},#{scscf_name},#{diameter_name},#{id_capabilities_set},#{id_preferred_scscf_set})
+	</insert>
+	
+	<select id="isExistIMPI" parameterType="java.lang.String"  resultType="boolean">
+		select exists(select 1 from impi where identity=#{impiIdentify})
+	</select>
+
+</mapper>

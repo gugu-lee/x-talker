@@ -1,0 +1,187 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="source%28%2a.cxx%29">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="headers%28%2a.h%29">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="interfaces%28%2a.i%29">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav</Extensions>
+    </Filter>
+    <Filter Include="interfaces%28%2a.i%29\common">
+      <UniqueIdentifier>{860438ca-7104-4463-ad02-5cfb0771fee6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="interfaces%28%2a.i%29\languages">
+      <UniqueIdentifier>{2a69a3f4-63be-4115-b2f3-0ee89ea0025b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="resources%28%2a.rc%29">
+      <UniqueIdentifier>{fb2959f8-17ec-4012-92ed-d5aaaedc80fc}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\_common\ActionConfig.cxx">
+      <Filter>source%28%2a.cxx%29</Filter>
+    </ClCompile>
+    <ClCompile Include="..\_common\AudioResampler.cxx">
+      <Filter>source%28%2a.cxx%29</Filter>
+    </ClCompile>
+    <ClCompile Include="..\_common\DDebug.cxx">
+      <Filter>source%28%2a.cxx%29</Filter>
+    </ClCompile>
+    <ClCompile Include="..\_common\MediaContent.cxx">
+      <Filter>source%28%2a.cxx%29</Filter>
+    </ClCompile>
+    <ClCompile Include="..\_common\MediaSessionMgr.cxx">
+      <Filter>source%28%2a.cxx%29</Filter>
+    </ClCompile>
+    <ClCompile Include="..\_common\Msrp.cxx">
+      <Filter>source%28%2a.cxx%29</Filter>
+    </ClCompile>
+    <ClCompile Include="..\_common\ProxyConsumer.cxx">
+      <Filter>source%28%2a.cxx%29</Filter>
+    </ClCompile>
+    <ClCompile Include="..\_common\ProxyPluginMgr.cxx">
+      <Filter>source%28%2a.cxx%29</Filter>
+    </ClCompile>
+    <ClCompile Include="..\_common\ProxyProducer.cxx">
+      <Filter>source%28%2a.cxx%29</Filter>
+    </ClCompile>
+    <ClCompile Include="..\_common\SafeObject.cxx">
+      <Filter>source%28%2a.cxx%29</Filter>
+    </ClCompile>
+    <ClCompile Include="..\_common\SipCallback.cxx">
+      <Filter>source%28%2a.cxx%29</Filter>
+    </ClCompile>
+    <ClCompile Include="..\_common\SipEvent.cxx">
+      <Filter>source%28%2a.cxx%29</Filter>
+    </ClCompile>
+    <ClCompile Include="..\_common\SipMessage.cxx">
+      <Filter>source%28%2a.cxx%29</Filter>
+    </ClCompile>
+    <ClCompile Include="..\_common\SipSession.cxx">
+      <Filter>source%28%2a.cxx%29</Filter>
+    </ClCompile>
+    <ClCompile Include="..\_common\SipStack.cxx">
+      <Filter>source%28%2a.cxx%29</Filter>
+    </ClCompile>
+    <ClCompile Include="..\_common\SipUri.cxx">
+      <Filter>source%28%2a.cxx%29</Filter>
+    </ClCompile>
+    <ClCompile Include="..\_common\SMSEncoder.cxx">
+      <Filter>source%28%2a.cxx%29</Filter>
+    </ClCompile>
+    <ClCompile Include="tinyWRAP_wrap.cxx">
+      <Filter>source%28%2a.cxx%29</Filter>
+    </ClCompile>
+    <ClCompile Include="..\_common\Xcap.cxx">
+      <Filter>source%28%2a.cxx%29</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\_common\ActionConfig.h">
+      <Filter>headers%28%2a.h%29</Filter>
+    </ClInclude>
+    <ClInclude Include="..\_common\AudioResampler.h">
+      <Filter>headers%28%2a.h%29</Filter>
+    </ClInclude>
+    <ClInclude Include="..\_common\Common.h">
+      <Filter>headers%28%2a.h%29</Filter>
+    </ClInclude>
+    <ClInclude Include="..\_common\DDebug.h">
+      <Filter>headers%28%2a.h%29</Filter>
+    </ClInclude>
+    <ClInclude Include="..\_common\MediaContent.h">
+      <Filter>headers%28%2a.h%29</Filter>
+    </ClInclude>
+    <ClInclude Include="..\_common\MediaSessionMgr.h">
+      <Filter>headers%28%2a.h%29</Filter>
+    </ClInclude>
+    <ClInclude Include="..\_common\Msrp.h">
+      <Filter>headers%28%2a.h%29</Filter>
+    </ClInclude>
+    <ClInclude Include="..\_common\ProxyConsumer.h">
+      <Filter>headers%28%2a.h%29</Filter>
+    </ClInclude>
+    <ClInclude Include="..\_common\ProxyPluginMgr.h">
+      <Filter>headers%28%2a.h%29</Filter>
+    </ClInclude>
+    <ClInclude Include="..\_common\ProxyProducer.h">
+      <Filter>headers%28%2a.h%29</Filter>
+    </ClInclude>
+    <ClInclude Include="..\_common\SafeObject.h">
+      <Filter>headers%28%2a.h%29</Filter>
+    </ClInclude>
+    <ClInclude Include="..\_common\SipCallback.h">
+      <Filter>headers%28%2a.h%29</Filter>
+    </ClInclude>
+    <ClInclude Include="..\_common\SipEvent.h">
+      <Filter>headers%28%2a.h%29</Filter>
+    </ClInclude>
+    <ClInclude Include="..\_common\SipMessage.h">
+      <Filter>headers%28%2a.h%29</Filter>
+    </ClInclude>
+    <ClInclude Include="..\_common\SipSession.h">
+      <Filter>headers%28%2a.h%29</Filter>
+    </ClInclude>
+    <ClInclude Include="..\_common\SipStack.h">
+      <Filter>headers%28%2a.h%29</Filter>
+    </ClInclude>
+    <ClInclude Include="..\_common\SipUri.h">
+      <Filter>headers%28%2a.h%29</Filter>
+    </ClInclude>
+    <ClInclude Include="..\_common\SMSEncoder.h">
+      <Filter>headers%28%2a.h%29</Filter>
+    </ClInclude>
+    <ClInclude Include="..\_common\tinyWRAP_config.h">
+      <Filter>headers%28%2a.h%29</Filter>
+    </ClInclude>
+    <ClInclude Include="tinyWRAP_wrap.h">
+      <Filter>headers%28%2a.h%29</Filter>
+    </ClInclude>
+    <ClInclude Include="..\_common\Xcap.h">
+      <Filter>headers%28%2a.h%29</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\_common\Msrp.i">
+      <Filter>interfaces%28%2a.i%29\common</Filter>
+    </None>
+    <None Include="..\_common\SipStack.i">
+      <Filter>interfaces%28%2a.i%29\common</Filter>
+    </None>
+    <None Include="..\_common\SMS.i">
+      <Filter>interfaces%28%2a.i%29\common</Filter>
+    </None>
+    <None Include="..\_common\tinyWRAP.i">
+      <Filter>interfaces%28%2a.i%29\common</Filter>
+    </None>
+    <None Include="..\_common\Xcap.i">
+      <Filter>interfaces%28%2a.i%29\common</Filter>
+    </None>
+    <None Include="csharp.i">
+      <Filter>interfaces%28%2a.i%29\languages</Filter>
+    </None>
+    <None Include="..\java\java.i">
+      <Filter>interfaces%28%2a.i%29\languages</Filter>
+    </None>
+    <None Include="..\perl\perl.i">
+      <Filter>interfaces%28%2a.i%29\languages</Filter>
+    </None>
+    <None Include="..\python\python.i">
+      <Filter>interfaces%28%2a.i%29\languages</Filter>
+    </None>
+    <None Include="..\ruby\ruby.i">
+      <Filter>interfaces%28%2a.i%29\languages</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="..\version.rc">
+      <Filter>resources%28%2a.rc%29</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+</Project>

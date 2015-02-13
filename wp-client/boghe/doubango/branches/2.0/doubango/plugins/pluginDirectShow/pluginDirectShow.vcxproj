@@ -1,0 +1,157 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{6A69773C-0C70-4BD4-8362-C274CAFD58F2}</ProjectGuid>
+    <RootNamespace>pluginDirectShow</RootNamespace>
+    <Keyword>Win32Proj</Keyword>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <PlatformToolset>v120</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <PlatformToolset>v120</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>12.0.30501.0</_ProjectFileVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>$(SolutionDir)$(Configuration)\</OutDir>
+    <IntDir>$(Configuration)\</IntDir>
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>$(SolutionDir)$(Configuration)\</OutDir>
+    <IntDir>$(Configuration)\</IntDir>
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>.;..\..\thirdparties\win32\include;..\..\thirdparties\win32\include\directshow;..\..\tinySAK\src;..\..\tinyMEDIA\include;..\..\tinySDP\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;_USRDLL;PLUGIN_DSHOW_EXPORTS;_WIN32_WINNT=0x0501;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>true</MinimalRebuild>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <PrecompiledHeader />
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>..\..\thirdparties\win32\lib\directshow\strmbasd.lib;dmoguids.lib;strmiids.lib;uuid.lib;Winmm.lib;$(OutDir)tinySAK.lib;$(OutDir)tinyMEDIA.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <Optimization>Full</Optimization>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <AdditionalIncludeDirectories>.;..\..\thirdparties\win32\include;..\..\thirdparties\win32\include\directshow;..\..\tinySAK\src;..\..\tinyMEDIA\include;..\..\tinySDP\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;_USRDLL;PLUGIN_DSHOW_EXPORTS;_WIN32_WINNT=0x0501;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <PrecompiledHeader />
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat />
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>..\..\thirdparties\win32\lib\directshow\strmbase.lib;dmoguids.lib;strmiids.lib;uuid.lib;Winmm.lib;$(OutDir)tinySAK.lib;$(OutDir)tinyMEDIA.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <OptimizeReferences>true</OptimizeReferences>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="dllmain_dshow.cxx" />
+    <ClCompile Include="internals\DSCaptureFormat.cxx" />
+    <ClCompile Include="internals\DSCaptureGraph.cxx" />
+    <ClCompile Include="internals\DSCaptureUtils.cxx" />
+    <ClCompile Include="internals\DSDibHelper.cxx" />
+    <ClCompile Include="internals\DSDisplay.cxx" />
+    <ClCompile Include="internals\DSDisplayGraph.cxx" />
+    <ClCompile Include="internals\DSDisplayOverlay.cxx" />
+    <ClCompile Include="internals\DSDisplayOverlay.VMR.cxx" />
+    <ClCompile Include="internals\DSDisplayOverlay.VMR9.cxx" />
+    <ClCompile Include="internals\DSFrameRateFilter.cxx" />
+    <ClCompile Include="internals\DSGrabber.cxx" />
+    <ClCompile Include="internals\DSOutputFilter.cxx" />
+    <ClCompile Include="internals\DSOutputStream.cxx" />
+    <ClCompile Include="internals\DSPushSourceDesktop.cxx" />
+    <ClCompile Include="internals\DSScreenCastGraph.cxx" />
+    <ClCompile Include="internals\DSUtils.cxx" />
+    <ClCompile Include="internals\Resizer.cxx" />
+    <ClCompile Include="internals\VideoDisplayName.cxx" />
+    <ClCompile Include="internals\VideoGrabberName.cxx" />
+    <ClCompile Include="plugin_screencast_dshow_producer.cxx" />
+    <ClCompile Include="plugin_video_dshow_consumer.cxx" />
+    <ClCompile Include="plugin_video_dshow_producer.cxx" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="internals\DSBaseCaptureGraph.h" />
+    <ClInclude Include="internals\DSBufferWriter.h" />
+    <ClInclude Include="internals\DSCaptureFormat.h" />
+    <ClInclude Include="internals\DSCaptureGraph.h" />
+    <ClInclude Include="internals\DSCaptureUtils.h" />
+    <ClInclude Include="internals\DSDibHelper.h" />
+    <ClInclude Include="internals\DSDisplay.h" />
+    <ClInclude Include="internals\DSDisplayGraph.h" />
+    <ClInclude Include="internals\DSDisplayOverlay.h" />
+    <ClInclude Include="internals\DSFrameRateFilter.h" />
+    <ClInclude Include="internals\DSGrabber.h" />
+    <ClInclude Include="internals\DSOutputFilter.h" />
+    <ClInclude Include="internals\DSOutputStream.h" />
+    <ClInclude Include="internals\DSPushSource.h" />
+    <ClInclude Include="internals\DSScreenCastGraph.h" />
+    <ClInclude Include="internals\DSUtils.h" />
+    <ClInclude Include="internals\Resizer.h" />
+    <ClInclude Include="internals\VideoDisplayName.h" />
+    <ClInclude Include="internals\VideoFrame.h" />
+    <ClInclude Include="internals\VideoGrabberName.h" />
+    <ClInclude Include="plugin_dshow_config.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="version.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\tinyMEDIA\tinyMEDIA.vcxproj">
+      <Project>{52814b0d-7dca-45b8-9a16-8b147040d619}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="..\..\tinySAK\tinySAK.vcxproj">
+      <Project>{6bc9b796-10c6-4cf7-a6e4-e2daccda84da}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

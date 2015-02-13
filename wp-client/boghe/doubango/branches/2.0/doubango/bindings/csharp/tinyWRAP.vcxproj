@@ -1,0 +1,212 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{6B60DF14-D5D7-4654-B8F9-1CBC8892CFC8}</ProjectGuid>
+    <RootNamespace>tinyWRAP</RootNamespace>
+    <Keyword>Win32Proj</Keyword>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <PlatformToolset>v120</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <PlatformToolset>v120</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>12.0.30501.0</_ProjectFileVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>$(SolutionDir)$(Configuration)\</OutDir>
+    <IntDir>$(Configuration)\</IntDir>
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>$(SolutionDir)$(Configuration)\</OutDir>
+    <IntDir>$(Configuration)\</IntDir>
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>..\_common;..\.;..\..\thirdparties\win32\include;..\..\tinySAK\src;..\..\tinyNET\src;..\..\tinyHTTP\include;..\..\tinySIP\include;..\..\tinyDAV\include;..\..\tinySDP\include;..\..\tinyMEDIA\include;..\..\tinyXCAP\include;..\..\tinySMS\include;..\..\tinyMSRP\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;_USRDLL;TINYWRAP_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>true</MinimalRebuild>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <PrecompiledHeader />
+      <WarningLevel>Level3</WarningLevel>
+      <TreatWarningAsError>true</TreatWarningAsError>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>$(OutDir)tinySAK.lib;$(OutDir)tinySIP.lib;$(OutDir)tinyNET.lib;$(OutDir)tinyDAV.lib;$(OutDir)tinyMEDIA.lib;$(OutDir)tinyHTTP.lib;$(OutDir)tinyXCAP.lib;$(OutDir)tinySMS.lib;$(OutDir)tinyMSRP.lib;$(OutDir)tinySDP.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <Optimization>Full</Optimization>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <AdditionalIncludeDirectories>..\_common;..\.;..\..\thirdparties\win32\include;..\..\tinySAK\src;..\..\tinyNET\src;..\..\tinyHTTP\include;..\..\tinySIP\include;..\..\tinyDAV\include;..\..\tinySDP\include;..\..\tinyMEDIA\include;..\..\tinyXCAP\include;..\..\tinySMS\include;..\..\tinyMSRP\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;_USRDLL;TINYWRAP_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <FunctionLevelLinking>false</FunctionLevelLinking>
+      <PrecompiledHeader />
+      <WarningLevel>Level3</WarningLevel>
+      <TreatWarningAsError>true</TreatWarningAsError>
+      <DebugInformationFormat />
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>$(OutDir)tinySAK.lib;$(OutDir)tinySIP.lib;$(OutDir)tinyNET.lib;$(OutDir)tinyDAV.lib;$(OutDir)tinyMEDIA.lib;$(OutDir)tinyHTTP.lib;$(OutDir)tinyXCAP.lib;$(OutDir)tinySMS.lib;$(OutDir)tinyMSRP.lib;$(OutDir)tinySDP.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <IgnoreSpecificDefaultLibraries>MSVCRTD;%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <OptimizeReferences>true</OptimizeReferences>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <TargetMachine>NotSet</TargetMachine>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="..\_common\ActionConfig.cxx" />
+    <ClCompile Include="..\_common\AudioResampler.cxx" />
+    <ClCompile Include="..\_common\DDebug.cxx" />
+    <ClCompile Include="..\_common\MediaContent.cxx" />
+    <ClCompile Include="..\_common\MediaSessionMgr.cxx" />
+    <ClCompile Include="..\_common\Msrp.cxx" />
+    <ClCompile Include="..\_common\ProxyConsumer.cxx" />
+    <ClCompile Include="..\_common\ProxyPluginMgr.cxx" />
+    <ClCompile Include="..\_common\ProxyProducer.cxx" />
+    <ClCompile Include="..\_common\SafeObject.cxx" />
+    <ClCompile Include="..\_common\SipCallback.cxx" />
+    <ClCompile Include="..\_common\SipEvent.cxx" />
+    <ClCompile Include="..\_common\SipMessage.cxx" />
+    <ClCompile Include="..\_common\SipSession.cxx" />
+    <ClCompile Include="..\_common\SipStack.cxx" />
+    <ClCompile Include="..\_common\SipUri.cxx" />
+    <ClCompile Include="..\_common\SMSEncoder.cxx" />
+    <ClCompile Include="..\_common\Xcap.cxx" />
+    <ClCompile Include="tinyWRAP_wrap.cxx" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\_common\ActionConfig.h" />
+    <ClInclude Include="..\_common\AudioResampler.h" />
+    <ClInclude Include="..\_common\Common.h" />
+    <ClInclude Include="..\_common\DDebug.h" />
+    <ClInclude Include="..\_common\MediaContent.h" />
+    <ClInclude Include="..\_common\MediaSessionMgr.h" />
+    <ClInclude Include="..\_common\Msrp.h" />
+    <ClInclude Include="..\_common\ProxyConsumer.h" />
+    <ClInclude Include="..\_common\ProxyPluginMgr.h" />
+    <ClInclude Include="..\_common\ProxyProducer.h" />
+    <ClInclude Include="..\_common\SafeObject.h" />
+    <ClInclude Include="..\_common\SipCallback.h" />
+    <ClInclude Include="..\_common\SipEvent.h" />
+    <ClInclude Include="..\_common\SipMessage.h" />
+    <ClInclude Include="..\_common\SipSession.h" />
+    <ClInclude Include="..\_common\SipStack.h" />
+    <ClInclude Include="..\_common\SipUri.h" />
+    <ClInclude Include="..\_common\SMSEncoder.h" />
+    <ClInclude Include="..\_common\tinyWRAP_config.h" />
+    <ClInclude Include="..\_common\Xcap.h" />
+    <ClInclude Include="tinyWRAP_wrap.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\java\java.i" />
+    <None Include="..\perl\perl.i" />
+    <None Include="..\python\python.i" />
+    <None Include="..\ruby\ruby.i" />
+    <None Include="..\_common\Msrp.i" />
+    <None Include="..\_common\SipStack.i" />
+    <None Include="..\_common\SMS.i" />
+    <None Include="..\_common\tinyWRAP.i" />
+    <None Include="..\_common\Xcap.i" />
+    <None Include="csharp.i" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="..\version.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\tinyDAV\tinyDAV.vcxproj">
+      <Project>{8e2f0b2e-2596-4010-bf4a-2f688975b5c1}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="..\..\tinyHTTP\tinyHTTP.vcxproj">
+      <Project>{b3e45009-c7c3-4090-837c-2d30c9058443}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="..\..\tinyIPSec\tinyIPSec.vcxproj">
+      <Project>{002ff064-588f-402e-a096-c8d033f49f40}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="..\..\tinyMEDIA\tinyMEDIA.vcxproj">
+      <Project>{52814b0d-7dca-45b8-9a16-8b147040d619}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="..\..\tinyMSRP\tinyMSRP.vcxproj">
+      <Project>{aa46af16-9678-4054-8e48-98dc21ecec82}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="..\..\tinyNET\tinyNET.vcxproj">
+      <Project>{7522a458-92f4-4259-b906-e84c2a65d9f1}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="..\..\tinyRTP\tinyRTP.vcxproj">
+      <Project>{99b7d02f-8c70-4b45-af3c-92313c3cee15}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="..\..\tinySAK\tinySAK.vcxproj">
+      <Project>{6bc9b796-10c6-4cf7-a6e4-e2daccda84da}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="..\..\tinySDP\tinySDP.vcxproj">
+      <Project>{e45db518-6562-4033-80e8-60030f0b169f}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="..\..\tinySIGCOMP\tinySIGCOMP.vcxproj">
+      <Project>{76261dc8-25b3-43f4-9fb5-112c4ac0880e}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="..\..\tinySIP\tinySIP.vcxproj">
+      <Project>{4ce20732-9978-4a88-b586-cfefcb63e82d}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="..\..\tinySMS\tinySMS.vcxproj">
+      <Project>{9a3a5af3-2333-4477-b880-7f901f9d8972}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="..\..\tinyXCAP\tinyXCAP.vcxproj">
+      <Project>{570cf33d-e65f-448f-8ac2-f9ae2f23152f}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

@@ -36,8 +36,8 @@
 * <h1>6	ANSI-C Object Programming</h1>
 * As you probably know, C is not an object oriented language.<br>
 * Today, OOP (Object-Oriented Programing) is the best way to program well designed softwares.<br>
-* In this chapter a “well-defined object” is a special C structure. All functions shown in this chapter are part of tinySAK project.<br>
-* To explain how well-defined objects are implemented and used, I will give an example based on “Person” object.<br>
+* In this chapter a “well-defined object?is a special C structure. All functions shown in this chapter are part of tinySAK project.<br>
+* To explain how well-defined objects are implemented and used, I will give an example based on “Person?object.<br>
 * The person object is declared like this:<br>
 * @code
 * typedef struct person_s
@@ -70,10 +70,10 @@ tsk_object_def_t;
 * @endcode
 *
 * <p>
-* An object is created in two phases. The first phase consists of dynamically allocating the object on the heap; this is why its size is mandatory in the object definition structure. When a new object is allocated on the heap, all its members (char*, void*, int, long …) will be zeroed. In the second phase, the newly created object will be initialized by calling the supplied constructor. To perform these two phases, you should call @ref tsk_object_new() or @ref tsk_object_new_2().
+* An object is created in two phases. The first phase consists of dynamically allocating the object on the heap; this is why its size is mandatory in the object definition structure. When a new object is allocated on the heap, all its members (char*, void*, int, long ? will be zeroed. In the second phase, the newly created object will be initialized by calling the supplied constructor. To perform these two phases, you should call @ref tsk_object_new() or @ref tsk_object_new_2().
 * </p>
 * <p>
-* An object is destroyed in two phases. The first phase consists of freeing its members (void*, char* …). It’s the destructor which is responsible of this task. In the second phase, the object itself is destroyed. As the object cannot destroy itself, you should use @ref tsk_object_unref() or @ref tsk_object_delete() to perform these two phases. The difference between these two functions is explained in the coming sections.
+* An object is destroyed in two phases. The first phase consists of freeing its members (void*, char* ?. It’s the destructor which is responsible of this task. In the second phase, the object itself is destroyed. As the object cannot destroy itself, you should use @ref tsk_object_unref() or @ref tsk_object_delete() to perform these two phases. The difference between these two functions is explained in the coming sections.
 * </p>
 * A well-defined object must never be freed using free() standard C function.<br>
 * Below, an example of how to declare an object definition:<br>

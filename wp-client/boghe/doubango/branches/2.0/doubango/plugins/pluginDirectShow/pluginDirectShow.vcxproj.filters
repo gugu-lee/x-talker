@@ -1,0 +1,163 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Source Files\internals">
+      <UniqueIdentifier>{d54810fe-6bc0-4069-b9d3-6727c0397f65}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Header Files\internals">
+      <UniqueIdentifier>{8d220653-9af2-4f00-9f59-9d9f732482f5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{d195eab0-c564-4622-9394-745d548eb764}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="dllmain_dshow.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="plugin_screencast_dshow_producer.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="plugin_video_dshow_consumer.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="plugin_video_dshow_producer.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="internals\DSCaptureFormat.cxx">
+      <Filter>Source Files\internals</Filter>
+    </ClCompile>
+    <ClCompile Include="internals\DSCaptureGraph.cxx">
+      <Filter>Source Files\internals</Filter>
+    </ClCompile>
+    <ClCompile Include="internals\DSCaptureUtils.cxx">
+      <Filter>Source Files\internals</Filter>
+    </ClCompile>
+    <ClCompile Include="internals\DSDibHelper.cxx">
+      <Filter>Source Files\internals</Filter>
+    </ClCompile>
+    <ClCompile Include="internals\DSDisplay.cxx">
+      <Filter>Source Files\internals</Filter>
+    </ClCompile>
+    <ClCompile Include="internals\DSDisplayGraph.cxx">
+      <Filter>Source Files\internals</Filter>
+    </ClCompile>
+    <ClCompile Include="internals\DSDisplayOverlay.cxx">
+      <Filter>Source Files\internals</Filter>
+    </ClCompile>
+    <ClCompile Include="internals\DSDisplayOverlay.VMR.cxx">
+      <Filter>Source Files\internals</Filter>
+    </ClCompile>
+    <ClCompile Include="internals\DSDisplayOverlay.VMR9.cxx">
+      <Filter>Source Files\internals</Filter>
+    </ClCompile>
+    <ClCompile Include="internals\DSFrameRateFilter.cxx">
+      <Filter>Source Files\internals</Filter>
+    </ClCompile>
+    <ClCompile Include="internals\DSGrabber.cxx">
+      <Filter>Source Files\internals</Filter>
+    </ClCompile>
+    <ClCompile Include="internals\DSOutputFilter.cxx">
+      <Filter>Source Files\internals</Filter>
+    </ClCompile>
+    <ClCompile Include="internals\DSOutputStream.cxx">
+      <Filter>Source Files\internals</Filter>
+    </ClCompile>
+    <ClCompile Include="internals\DSPushSourceDesktop.cxx">
+      <Filter>Source Files\internals</Filter>
+    </ClCompile>
+    <ClCompile Include="internals\DSScreenCastGraph.cxx">
+      <Filter>Source Files\internals</Filter>
+    </ClCompile>
+    <ClCompile Include="internals\DSUtils.cxx">
+      <Filter>Source Files\internals</Filter>
+    </ClCompile>
+    <ClCompile Include="internals\Resizer.cxx">
+      <Filter>Source Files\internals</Filter>
+    </ClCompile>
+    <ClCompile Include="internals\VideoDisplayName.cxx">
+      <Filter>Source Files\internals</Filter>
+    </ClCompile>
+    <ClCompile Include="internals\VideoGrabberName.cxx">
+      <Filter>Source Files\internals</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="plugin_dshow_config.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="internals\DSBaseCaptureGraph.h">
+      <Filter>Header Files\internals</Filter>
+    </ClInclude>
+    <ClInclude Include="internals\DSBufferWriter.h">
+      <Filter>Header Files\internals</Filter>
+    </ClInclude>
+    <ClInclude Include="internals\DSCaptureFormat.h">
+      <Filter>Header Files\internals</Filter>
+    </ClInclude>
+    <ClInclude Include="internals\DSCaptureGraph.h">
+      <Filter>Header Files\internals</Filter>
+    </ClInclude>
+    <ClInclude Include="internals\DSCaptureUtils.h">
+      <Filter>Header Files\internals</Filter>
+    </ClInclude>
+    <ClInclude Include="internals\DSDibHelper.h">
+      <Filter>Header Files\internals</Filter>
+    </ClInclude>
+    <ClInclude Include="internals\DSDisplay.h">
+      <Filter>Header Files\internals</Filter>
+    </ClInclude>
+    <ClInclude Include="internals\DSDisplayGraph.h">
+      <Filter>Header Files\internals</Filter>
+    </ClInclude>
+    <ClInclude Include="internals\DSDisplayOverlay.h">
+      <Filter>Header Files\internals</Filter>
+    </ClInclude>
+    <ClInclude Include="internals\DSFrameRateFilter.h">
+      <Filter>Header Files\internals</Filter>
+    </ClInclude>
+    <ClInclude Include="internals\DSGrabber.h">
+      <Filter>Header Files\internals</Filter>
+    </ClInclude>
+    <ClInclude Include="internals\DSOutputFilter.h">
+      <Filter>Header Files\internals</Filter>
+    </ClInclude>
+    <ClInclude Include="internals\DSOutputStream.h">
+      <Filter>Header Files\internals</Filter>
+    </ClInclude>
+    <ClInclude Include="internals\DSPushSource.h">
+      <Filter>Header Files\internals</Filter>
+    </ClInclude>
+    <ClInclude Include="internals\DSScreenCastGraph.h">
+      <Filter>Header Files\internals</Filter>
+    </ClInclude>
+    <ClInclude Include="internals\DSUtils.h">
+      <Filter>Header Files\internals</Filter>
+    </ClInclude>
+    <ClInclude Include="internals\Resizer.h">
+      <Filter>Header Files\internals</Filter>
+    </ClInclude>
+    <ClInclude Include="internals\VideoDisplayName.h">
+      <Filter>Header Files\internals</Filter>
+    </ClInclude>
+    <ClInclude Include="internals\VideoFrame.h">
+      <Filter>Header Files\internals</Filter>
+    </ClInclude>
+    <ClInclude Include="internals\VideoGrabberName.h">
+      <Filter>Header Files\internals</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="version.rc">
+      <Filter>Resource Files</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+</Project>

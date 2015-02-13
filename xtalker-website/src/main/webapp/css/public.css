@@ -1,0 +1,16 @@
+.table_in_form > table
+{
+	
+}
+
+.label_cell_in_form >td
+{
+	text-align:right;
+	padding:3px;
+}
+
+.form_cell_in_form >td
+{
+	text-align:left;
+	padding:3px;
+}

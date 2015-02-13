@@ -4,10 +4,10 @@
 
 
  /* File created by MIDL compiler version 8.00.0595 */
-/* at Sat Sep 20 11:34:44 2014
+/* at Wed Jan 07 10:42:41 2015
  */
-/* Compiler settings for C:\Users\Á¢À¼\AppData\Local\Temp\doubango_rt.BackEnd.OutOfProcess.idl-0c7f00ba:
-    Oicf, W1, Zp8, env=Win32 (32b run), target_arch=X86 8.00.0595 
+/* Compiler settings for C:\Users\Á¢À¼\AppData\Local\Temp\doubango_rt.BackEnd.OutOfProcess.idl-9aecd6fd:
+    Oicf, W1, Zp8, env=Win32 (32b run), target_arch=ARM 8.00.0595 
     protocol : dce , ms_ext, c_ext, robust
     error checks: allocation ref bounds_check enum stub_data 
     VC __declspec() decoration level: 

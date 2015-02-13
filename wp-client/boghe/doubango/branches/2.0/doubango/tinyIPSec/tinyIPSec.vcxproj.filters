@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="source%28%2a.c%29">
+      <UniqueIdentifier>{123bed97-e322-43a2-a562-a4fb2a1b4af2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include%28%2a.h%29">
+      <UniqueIdentifier>{49d533e3-e481-4c0c-9d70-58438f4953e1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="resources%28%2a.rc%29">
+      <UniqueIdentifier>{ce34dd36-2bc7-4727-ba0c-ebd2e9adecbe}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\tipsec.c">
+      <Filter>source%28%2a.c%29</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="src\tinyipsec_config.h">
+      <Filter>include%28%2a.h%29</Filter>
+    </ClInclude>
+    <ClInclude Include="src\tipsec.h">
+      <Filter>include%28%2a.h%29</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="version.rc">
+      <Filter>resources%28%2a.rc%29</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+</Project>

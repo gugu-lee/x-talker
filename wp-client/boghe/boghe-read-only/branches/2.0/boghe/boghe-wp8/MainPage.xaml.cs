@@ -232,5 +232,10 @@ namespace BogheApp
         }
 
         #endregion
+
+        private void panoramaMain_Loaded(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }

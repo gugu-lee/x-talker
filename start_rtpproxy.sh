@@ -1,0 +1,1 @@
+rtpproxy -p /var/run/rtpproxy.pid -f -s udp:10.168.44.62:9000  -i -t 0xB8 -r /var/spool/rtpproxy -r /var/spool/rtpproxy/recorded -u imscore  -m 1024 -M 65535 -d DBUG

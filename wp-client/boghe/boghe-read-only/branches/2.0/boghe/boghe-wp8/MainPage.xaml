@@ -93,7 +93,7 @@
         </Grid.Resources>
 
         <TextBlock Text="{Binding ConnectionStateText}" Foreground="White" />
-        <phone:Panorama x:Name="panoramaMain" Title="Boghe" SelectionChanged="panoramaMain_SelectionChanged" Grid.Row="1">
+        <phone:Panorama x:Name="panoramaMain" Title="xTalker" SelectionChanged="panoramaMain_SelectionChanged" Grid.Row="1" Loaded="panoramaMain_Loaded">
 
             <!-- DIAL -->
             <phone:PanoramaItem x:Name="panoramaItemDial" Header="Dial" HeaderTemplate="{StaticResource PanoramaItemTemplate}">

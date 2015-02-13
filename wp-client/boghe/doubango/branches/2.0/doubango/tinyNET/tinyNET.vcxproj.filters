@@ -1,0 +1,409 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="source%28%2a.c%29">
+      <UniqueIdentifier>{4d25ca2f-3da8-492d-8933-42c3dbe2f3c7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="source%28%2a.c%29\stun">
+      <UniqueIdentifier>{c7a9391e-3d61-494c-9488-84b13dacdf70}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="source%28%2a.c%29\turn">
+      <UniqueIdentifier>{b04ec824-51c1-4f17-95c1-1dc4003a2510}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="source%28%2a.c%29\ice">
+      <UniqueIdentifier>{f373f1be-d6b4-4199-802f-aa2a102581ef}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="source%28%2a.c%29\dns">
+      <UniqueIdentifier>{a468721f-c3e7-455a-a2d4-666901ffc4c0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="source%28%2a.c%29\dhcp4">
+      <UniqueIdentifier>{37a9152e-738d-4c1d-88a1-83f2e8d45b55}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="source%28%2a.c%29\dhcp6">
+      <UniqueIdentifier>{317d3f88-b7a8-4e48-b4a3-b18408aff032}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="source%28%2a.c%29\tls">
+      <UniqueIdentifier>{f34711d1-be60-4a31-b82c-bc9e4d6c61da}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include%28%2a.h%29">
+      <UniqueIdentifier>{60b98380-fa5f-451a-a8c6-38bd6f26d17d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include%28%2a.h%29\stun">
+      <UniqueIdentifier>{92ef5d49-b35c-4b2c-af63-0504092db9cb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include%28%2a.h%29\turn">
+      <UniqueIdentifier>{4a1995c7-6533-41ef-b39b-3ce3b22c94a6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include%28%2a.h%29\ice">
+      <UniqueIdentifier>{805f1d0d-8460-4997-abba-cdd9789657c6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include%28%2a.h%29\dns">
+      <UniqueIdentifier>{40fb6b2e-6e76-4283-8613-45be916781c9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include%28%2a.h%29\dhcp">
+      <UniqueIdentifier>{d16b5ce9-9a4f-4289-a6aa-2f7aaba99642}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include%28%2a.h%29\dhcp6">
+      <UniqueIdentifier>{789b89df-3541-42a1-85b4-41cdf9986160}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include%28%2a.h%29\tls">
+      <UniqueIdentifier>{22139e0e-789d-4aed-a2af-8d0239091051}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ragel%28.rl%29">
+      <UniqueIdentifier>{89bfa165-3475-4ca5-8343-24aa4dcdc1e7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="resources%28%2a.rc%29">
+      <UniqueIdentifier>{0702ad49-73fa-4d1a-bedc-df0021286241}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\tnet.c">
+      <Filter>source%28%2a.c%29</Filter>
+    </ClCompile>
+    <ClCompile Include="src\tnet_auth.c">
+      <Filter>source%28%2a.c%29</Filter>
+    </ClCompile>
+    <ClCompile Include="src\tnet_endianness.c">
+      <Filter>source%28%2a.c%29</Filter>
+    </ClCompile>
+    <ClCompile Include="src\tnet_nat.c">
+      <Filter>source%28%2a.c%29</Filter>
+    </ClCompile>
+    <ClCompile Include="src\tnet_poll.c">
+      <Filter>source%28%2a.c%29</Filter>
+    </ClCompile>
+    <ClCompile Include="src\tnet_socket.c">
+      <Filter>source%28%2a.c%29</Filter>
+    </ClCompile>
+    <ClCompile Include="src\tnet_transport.c">
+      <Filter>source%28%2a.c%29</Filter>
+    </ClCompile>
+    <ClCompile Include="src\tnet_transport_cfsocket.c">
+      <Filter>source%28%2a.c%29</Filter>
+    </ClCompile>
+    <ClCompile Include="src\tnet_transport_poll.c">
+      <Filter>source%28%2a.c%29</Filter>
+    </ClCompile>
+    <ClCompile Include="src\tnet_transport_win32.c">
+      <Filter>source%28%2a.c%29</Filter>
+    </ClCompile>
+    <ClCompile Include="src\tnet_utils.c">
+      <Filter>source%28%2a.c%29</Filter>
+    </ClCompile>
+    <ClCompile Include="src\stun\tnet_stun.c">
+      <Filter>source%28%2a.c%29\stun</Filter>
+    </ClCompile>
+    <ClCompile Include="src\stun\tnet_stun_attr.c">
+      <Filter>source%28%2a.c%29\stun</Filter>
+    </ClCompile>
+    <ClCompile Include="src\stun\tnet_stun_attribute.c">
+      <Filter>source%28%2a.c%29\stun</Filter>
+    </ClCompile>
+    <ClCompile Include="src\stun\tnet_stun_binding.c">
+      <Filter>source%28%2a.c%29\stun</Filter>
+    </ClCompile>
+    <ClCompile Include="src\stun\tnet_stun_message.c">
+      <Filter>source%28%2a.c%29\stun</Filter>
+    </ClCompile>
+    <ClCompile Include="src\stun\tnet_stun_pkt.c">
+      <Filter>source%28%2a.c%29\stun</Filter>
+    </ClCompile>
+    <ClCompile Include="src\stun\tnet_stun_utils.c">
+      <Filter>source%28%2a.c%29\stun</Filter>
+    </ClCompile>
+    <ClCompile Include="src\turn\tnet_turn.c">
+      <Filter>source%28%2a.c%29\turn</Filter>
+    </ClCompile>
+    <ClCompile Include="src\turn\tnet_turn_attr.c">
+      <Filter>source%28%2a.c%29\turn</Filter>
+    </ClCompile>
+    <ClCompile Include="src\turn\tnet_turn_attribute.c">
+      <Filter>source%28%2a.c%29\turn</Filter>
+    </ClCompile>
+    <ClCompile Include="src\turn\tnet_turn_message.c">
+      <Filter>source%28%2a.c%29\turn</Filter>
+    </ClCompile>
+    <ClCompile Include="src\turn\tnet_turn_session.c">
+      <Filter>source%28%2a.c%29\turn</Filter>
+    </ClCompile>
+    <ClCompile Include="src\ice\tnet_ice_candidate.c">
+      <Filter>source%28%2a.c%29\ice</Filter>
+    </ClCompile>
+    <ClCompile Include="src\ice\tnet_ice_ctx.c">
+      <Filter>source%28%2a.c%29\ice</Filter>
+    </ClCompile>
+    <ClCompile Include="src\ice\tnet_ice_event.c">
+      <Filter>source%28%2a.c%29\ice</Filter>
+    </ClCompile>
+    <ClCompile Include="src\ice\tnet_ice_pair.c">
+      <Filter>source%28%2a.c%29\ice</Filter>
+    </ClCompile>
+    <ClCompile Include="src\ice\tnet_ice_utils.c">
+      <Filter>source%28%2a.c%29\ice</Filter>
+    </ClCompile>
+    <ClCompile Include="src\dns\tnet_dns.c">
+      <Filter>source%28%2a.c%29\dns</Filter>
+    </ClCompile>
+    <ClCompile Include="src\dns\tnet_dns_a.c">
+      <Filter>source%28%2a.c%29\dns</Filter>
+    </ClCompile>
+    <ClCompile Include="src\dns\tnet_dns_aaaa.c">
+      <Filter>source%28%2a.c%29\dns</Filter>
+    </ClCompile>
+    <ClCompile Include="src\dns\tnet_dns_cname.c">
+      <Filter>source%28%2a.c%29\dns</Filter>
+    </ClCompile>
+    <ClCompile Include="src\dns\tnet_dns_message.c">
+      <Filter>source%28%2a.c%29\dns</Filter>
+    </ClCompile>
+    <ClCompile Include="src\dns\tnet_dns_mx.c">
+      <Filter>source%28%2a.c%29\dns</Filter>
+    </ClCompile>
+    <ClCompile Include="src\dns\tnet_dns_naptr.c">
+      <Filter>source%28%2a.c%29\dns</Filter>
+    </ClCompile>
+    <ClCompile Include="src\dns\tnet_dns_ns.c">
+      <Filter>source%28%2a.c%29\dns</Filter>
+    </ClCompile>
+    <ClCompile Include="src\dns\tnet_dns_opt.c">
+      <Filter>source%28%2a.c%29\dns</Filter>
+    </ClCompile>
+    <ClCompile Include="src\dns\tnet_dns_ptr.c">
+      <Filter>source%28%2a.c%29\dns</Filter>
+    </ClCompile>
+    <ClCompile Include="src\dns\tnet_dns_regexp.c">
+      <Filter>source%28%2a.c%29\dns</Filter>
+    </ClCompile>
+    <ClCompile Include="src\dns\tnet_dns_resolvconf.c">
+      <Filter>source%28%2a.c%29\dns</Filter>
+    </ClCompile>
+    <ClCompile Include="src\dns\tnet_dns_rr.c">
+      <Filter>source%28%2a.c%29\dns</Filter>
+    </ClCompile>
+    <ClCompile Include="src\dns\tnet_dns_soa.c">
+      <Filter>source%28%2a.c%29\dns</Filter>
+    </ClCompile>
+    <ClCompile Include="src\dns\tnet_dns_srv.c">
+      <Filter>source%28%2a.c%29\dns</Filter>
+    </ClCompile>
+    <ClCompile Include="src\dns\tnet_dns_txt.c">
+      <Filter>source%28%2a.c%29\dns</Filter>
+    </ClCompile>
+    <ClCompile Include="src\dhcp\tnet_dhcp.c">
+      <Filter>source%28%2a.c%29\dhcp4</Filter>
+    </ClCompile>
+    <ClCompile Include="src\dhcp\tnet_dhcp_message.c">
+      <Filter>source%28%2a.c%29\dhcp4</Filter>
+    </ClCompile>
+    <ClCompile Include="src\dhcp\tnet_dhcp_option.c">
+      <Filter>source%28%2a.c%29\dhcp4</Filter>
+    </ClCompile>
+    <ClCompile Include="src\dhcp\tnet_dhcp_option_sip.c">
+      <Filter>source%28%2a.c%29\dhcp4</Filter>
+    </ClCompile>
+    <ClCompile Include="src\dhcp6\tnet_dhcp6.c">
+      <Filter>source%28%2a.c%29\dhcp6</Filter>
+    </ClCompile>
+    <ClCompile Include="src\dhcp6\tnet_dhcp6_duid.c">
+      <Filter>source%28%2a.c%29\dhcp6</Filter>
+    </ClCompile>
+    <ClCompile Include="src\dhcp6\tnet_dhcp6_message.c">
+      <Filter>source%28%2a.c%29\dhcp6</Filter>
+    </ClCompile>
+    <ClCompile Include="src\dhcp6\tnet_dhcp6_option.c">
+      <Filter>source%28%2a.c%29\dhcp6</Filter>
+    </ClCompile>
+    <ClCompile Include="src\tls\tnet_dtls.c">
+      <Filter>source%28%2a.c%29\tls</Filter>
+    </ClCompile>
+    <ClCompile Include="src\tls\tnet_tls.c">
+      <Filter>source%28%2a.c%29\tls</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="src\tinynet.h">
+      <Filter>include%28%2a.h%29</Filter>
+    </ClInclude>
+    <ClInclude Include="src\tinynet_config.h">
+      <Filter>include%28%2a.h%29</Filter>
+    </ClInclude>
+    <ClInclude Include="src\tnet.h">
+      <Filter>include%28%2a.h%29</Filter>
+    </ClInclude>
+    <ClInclude Include="src\tnet_auth.h">
+      <Filter>include%28%2a.h%29</Filter>
+    </ClInclude>
+    <ClInclude Include="src\tnet_endianness.h">
+      <Filter>include%28%2a.h%29</Filter>
+    </ClInclude>
+    <ClInclude Include="src\tnet_hardwares.h">
+      <Filter>include%28%2a.h%29</Filter>
+    </ClInclude>
+    <ClInclude Include="src\tnet_nat.h">
+      <Filter>include%28%2a.h%29</Filter>
+    </ClInclude>
+    <ClInclude Include="src\tnet_poll.h">
+      <Filter>include%28%2a.h%29</Filter>
+    </ClInclude>
+    <ClInclude Include="src\tnet_proto.h">
+      <Filter>include%28%2a.h%29</Filter>
+    </ClInclude>
+    <ClInclude Include="src\tnet_socket.h">
+      <Filter>include%28%2a.h%29</Filter>
+    </ClInclude>
+    <ClInclude Include="src\tnet_transport.h">
+      <Filter>include%28%2a.h%29</Filter>
+    </ClInclude>
+    <ClInclude Include="src\tnet_types.h">
+      <Filter>include%28%2a.h%29</Filter>
+    </ClInclude>
+    <ClInclude Include="src\tnet_utils.h">
+      <Filter>include%28%2a.h%29</Filter>
+    </ClInclude>
+    <ClInclude Include="src\stun\tnet_stun.h">
+      <Filter>include%28%2a.h%29\stun</Filter>
+    </ClInclude>
+    <ClInclude Include="src\stun\tnet_stun_attr.h">
+      <Filter>include%28%2a.h%29\stun</Filter>
+    </ClInclude>
+    <ClInclude Include="src\stun\tnet_stun_attribute.h">
+      <Filter>include%28%2a.h%29\stun</Filter>
+    </ClInclude>
+    <ClInclude Include="src\stun\tnet_stun_binding.h">
+      <Filter>include%28%2a.h%29\stun</Filter>
+    </ClInclude>
+    <ClInclude Include="src\stun\tnet_stun_message.h">
+      <Filter>include%28%2a.h%29\stun</Filter>
+    </ClInclude>
+    <ClInclude Include="src\stun\tnet_stun_pkt.h">
+      <Filter>include%28%2a.h%29\stun</Filter>
+    </ClInclude>
+    <ClInclude Include="src\stun\tnet_stun_types.h">
+      <Filter>include%28%2a.h%29\stun</Filter>
+    </ClInclude>
+    <ClInclude Include="src\stun\tnet_stun_utils.h">
+      <Filter>include%28%2a.h%29\stun</Filter>
+    </ClInclude>
+    <ClInclude Include="src\turn\tnet_turn.h">
+      <Filter>include%28%2a.h%29\turn</Filter>
+    </ClInclude>
+    <ClInclude Include="src\turn\tnet_turn_attr.h">
+      <Filter>include%28%2a.h%29\turn</Filter>
+    </ClInclude>
+    <ClInclude Include="src\turn\tnet_turn_attribute.h">
+      <Filter>include%28%2a.h%29\turn</Filter>
+    </ClInclude>
+    <ClInclude Include="src\turn\tnet_turn_message.h">
+      <Filter>include%28%2a.h%29\turn</Filter>
+    </ClInclude>
+    <ClInclude Include="src\turn\tnet_turn_session.h">
+      <Filter>include%28%2a.h%29\turn</Filter>
+    </ClInclude>
+    <ClInclude Include="src\ice\tnet_ice_candidate.h">
+      <Filter>include%28%2a.h%29\ice</Filter>
+    </ClInclude>
+    <ClInclude Include="src\ice\tnet_ice_ctx.h">
+      <Filter>include%28%2a.h%29\ice</Filter>
+    </ClInclude>
+    <ClInclude Include="src\ice\tnet_ice_event.h">
+      <Filter>include%28%2a.h%29\ice</Filter>
+    </ClInclude>
+    <ClInclude Include="src\ice\tnet_ice_pair.h">
+      <Filter>include%28%2a.h%29\ice</Filter>
+    </ClInclude>
+    <ClInclude Include="src\ice\tnet_ice_utils.h">
+      <Filter>include%28%2a.h%29\ice</Filter>
+    </ClInclude>
+    <ClInclude Include="src\dns\tnet_dns.h">
+      <Filter>include%28%2a.h%29\dns</Filter>
+    </ClInclude>
+    <ClInclude Include="src\dns\tnet_dns_a.h">
+      <Filter>include%28%2a.h%29\dns</Filter>
+    </ClInclude>
+    <ClInclude Include="src\dns\tnet_dns_aaaa.h">
+      <Filter>include%28%2a.h%29\dns</Filter>
+    </ClInclude>
+    <ClInclude Include="src\dns\tnet_dns_cname.h">
+      <Filter>include%28%2a.h%29\dns</Filter>
+    </ClInclude>
+    <ClInclude Include="src\dns\tnet_dns_message.h">
+      <Filter>include%28%2a.h%29\dns</Filter>
+    </ClInclude>
+    <ClInclude Include="src\dns\tnet_dns_mx.h">
+      <Filter>include%28%2a.h%29\dns</Filter>
+    </ClInclude>
+    <ClInclude Include="src\dns\tnet_dns_naptr.h">
+      <Filter>include%28%2a.h%29\dns</Filter>
+    </ClInclude>
+    <ClInclude Include="src\dns\tnet_dns_ns.h">
+      <Filter>include%28%2a.h%29\dns</Filter>
+    </ClInclude>
+    <ClInclude Include="src\dns\tnet_dns_opt.h">
+      <Filter>include%28%2a.h%29\dns</Filter>
+    </ClInclude>
+    <ClInclude Include="src\dns\tnet_dns_ptr.h">
+      <Filter>include%28%2a.h%29\dns</Filter>
+    </ClInclude>
+    <ClInclude Include="src\dns\tnet_dns_regexp.h">
+      <Filter>include%28%2a.h%29\dns</Filter>
+    </ClInclude>
+    <ClInclude Include="src\dns\tnet_dns_resolvconf.h">
+      <Filter>include%28%2a.h%29\dns</Filter>
+    </ClInclude>
+    <ClInclude Include="src\dns\tnet_dns_rr.h">
+      <Filter>include%28%2a.h%29\dns</Filter>
+    </ClInclude>
+    <ClInclude Include="src\dns\tnet_dns_soa.h">
+      <Filter>include%28%2a.h%29\dns</Filter>
+    </ClInclude>
+    <ClInclude Include="src\dns\tnet_dns_srv.h">
+      <Filter>include%28%2a.h%29\dns</Filter>
+    </ClInclude>
+    <ClInclude Include="src\dns\tnet_dns_txt.h">
+      <Filter>include%28%2a.h%29\dns</Filter>
+    </ClInclude>
+    <ClInclude Include="src\dhcp\tnet_dhcp.h">
+      <Filter>include%28%2a.h%29\dhcp</Filter>
+    </ClInclude>
+    <ClInclude Include="src\dhcp\tnet_dhcp_message.h">
+      <Filter>include%28%2a.h%29\dhcp</Filter>
+    </ClInclude>
+    <ClInclude Include="src\dhcp\tnet_dhcp_option.h">
+      <Filter>include%28%2a.h%29\dhcp</Filter>
+    </ClInclude>
+    <ClInclude Include="src\dhcp\tnet_dhcp_option_sip.h">
+      <Filter>include%28%2a.h%29\dhcp</Filter>
+    </ClInclude>
+    <ClInclude Include="src\dhcp6\tnet_dhcp6.h">
+      <Filter>include%28%2a.h%29\dhcp6</Filter>
+    </ClInclude>
+    <ClInclude Include="src\dhcp6\tnet_dhcp6_duid.h">
+      <Filter>include%28%2a.h%29\dhcp6</Filter>
+    </ClInclude>
+    <ClInclude Include="src\dhcp6\tnet_dhcp6_message.h">
+      <Filter>include%28%2a.h%29\dhcp6</Filter>
+    </ClInclude>
+    <ClInclude Include="src\dhcp6\tnet_dhcp6_option.h">
+      <Filter>include%28%2a.h%29\dhcp6</Filter>
+    </ClInclude>
+    <ClInclude Include="src\tls\tnet_dtls.h">
+      <Filter>include%28%2a.h%29\tls</Filter>
+    </ClInclude>
+    <ClInclude Include="src\tls\tnet_tls.h">
+      <Filter>include%28%2a.h%29\tls</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ragel\tnet_dns_regexp.rl">
+      <Filter>ragel%28.rl%29</Filter>
+    </None>
+    <None Include="ragel\tnet_dns_resolvconf.rl">
+      <Filter>ragel%28.rl%29</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="version.rc">
+      <Filter>resources%28%2a.rc%29</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+</Project>

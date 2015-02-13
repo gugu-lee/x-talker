@@ -37,18 +37,18 @@ namespace BogheCore.Model
         public static String PCSCF_DISCOVERY_DNS = "DNS NAPTR+SRV";
 
         // Default values
-        public static String DEFAULT_IDENTITY_DISPLAY_NAME = "John Doe";
-        public static String DEFAULT_IDENTITY_IMPI = "johndoe@open-ims.test";
-        public static String DEFAULT_IDENTITY_IMPU = "sip:johndoe@open-ims.test";
+        public static String DEFAULT_IDENTITY_DISPLAY_NAME = "bob";
+        public static String DEFAULT_IDENTITY_IMPI = "bob@x-talker.net";
+        public static String DEFAULT_IDENTITY_IMPU = "sip:bob@x-talker.net";
         public static String DEFAULT_IDENTITY_PASSWORD = String.Empty;
         public static String DEFAULT_IDENTITY_PRIVACY = "none";
 
         public static bool DEFAULT_NETWORK_EARLY_IMS = false;
         public static bool DEFAULT_NETWORK_PCSCF_DISCOVERY_DNS = false;
         public static bool DEFAULT_NETWORK_PCSCF_DISCOVERY_DHCP = false;
-        public static String DEFAULT_NETWORK_PCSCF_HOST = "127.0.0.1";
-        public static int DEFAULT_NETWORK_PCSCF_PORT = 5060;
-        public static String DEFAULT_NETWORK_REALM = "open-ims.test";
+        public static String DEFAULT_NETWORK_PCSCF_HOST = "pcscf.x-talker.net";
+        public static int DEFAULT_NETWORK_PCSCF_PORT = 4060;
+        public static String DEFAULT_NETWORK_REALM = "x-talker.net";
         public static bool DEFAULT_NETWORK_SIGCOMP = false;
         public static String DEFAULT_NETWORK_TRANSPORT = "UDP";
         public static String DEFAULT_NETWORK_IP_VERSION = "ipv4";
@@ -66,7 +66,7 @@ namespace BogheCore.Model
 
         public static String DEFAULT_RCS_AVATAR_PATH = "";
         public static bool DEFAULT_RCS_BINARY_SMS = false;
-        public static String DEFAULT_RCS_CONF_FACT = "sip:Conference-Factory@open-ims.test";
+        public static String DEFAULT_RCS_CONF_FACT = "sip:Conference-Factory@x-talker.net";
         public static String DEFAULT_RCS_FREE_TEXT = "Hello world";
         public static bool DEFAULT_RCS_MSRP_FAILURE = true;
         public static bool DEFAULT_RCS_MSRP_SUCCESS = false;
@@ -76,8 +76,8 @@ namespace BogheCore.Model
         public static bool DEFAULT_RCS_PRESENCE_SUB = true;
         public static bool DEFAULT_RCS_PRESENCE_PUB = true;
         public static bool DEFAULT_RCS_RLS = true;
-        public static String DEFAULT_RCS_SMSC = "sip:+331000000000@open-ims.test";
-        public static String DEFAULT_RCS_HOME_PAGE = "http://www.doubango.org";
+        public static String DEFAULT_RCS_SMSC = "sip:+331000000000@x-talker.net";
+        public static String DEFAULT_RCS_HOME_PAGE = "http://www.x-talker.net";
         public static int DEFAULT_RCS_HYPERAVAILABILITY_TIMEOUT = 1; //minutes
         public static bool DEFAULT_RCS_IMDN = false;
         public static bool DEFAULT_RCS_ISCOMOPING = true;
@@ -121,8 +121,8 @@ namespace BogheCore.Model
         public static String DEFAULT_NATT_STUN_PASSWORD = String.Empty;
 
         public static bool DEFAULT_XCAP_ENABLED = false;
-        public static String DEFAULT_XCAP_ROOT = "http://doubango.org:8080/services";
-        public static String DEFAULT_XUI = "sip:johndoe@open-ims.test";
+        public static String DEFAULT_XCAP_ROOT = "http://x-talker.net:9080/services";
+        public static String DEFAULT_XUI = "sip:bob@x-talker.net";
         public static int DEFAULT_XCAP_TIMEOUT = 6000; // milliseconds
 
         public static int DEFAULT_MEDIA_CODECS = 
