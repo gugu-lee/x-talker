@@ -112,6 +112,24 @@ public class IMPI implements Serializable{
 	}
 	
 	
+	public static String getIdentityName(String identity)
+	{
+		if (identity == null || identity.length()==0)
+		{
+			return "";
+		}
+		int atPos = identity.indexOf('@');
+		if (atPos == -1){
+			return identity;
+		}
+		return identity.substring(0,atPos);
+	}
+	
+	public String getIdentityName()
+	{
+		return getIdentityName(this.identity);
+	}
+	
 	// getters and setters
 	public int getAuth_scheme() {
 		return auth_scheme;

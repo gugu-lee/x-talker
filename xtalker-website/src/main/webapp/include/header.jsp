@@ -23,10 +23,9 @@
 
 <style type="text/css">
 body {
-  padding-top: 50px;
-  padding-bottom: 20px;
+	padding-top: 50px;
+	padding-bottom: 20px;
 }
-
 </style>
 
 <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
@@ -39,29 +38,30 @@ body {
       <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
-    
+
 </head>
 
 <body>
 
 	<div class="container">
-
+	<!--  <div class="container-fluid"><img src="<c:url value="/image/icon140.png"/>"  class="img-rounded"  width="50" height="50">
+		</div>-->
 		<!-- Static navbar -->
 		<nav class="navbar navbar-default" role="navigation">
+		
 			<div class="container-fluid">
+			
 				<div class="navbar-header">
-					<button type="button" class="navbar-toggle collapsed"
-						data-toggle="collapse" data-target="#navbar" aria-expanded="false"
-						aria-controls="navbar">
-						<span class="sr-only">Toggle navigation</span> <span
-							class="icon-bar"></span> <span class="icon-bar"></span> <span
-							class="icon-bar"></span>
-					</button>
 					<a class="navbar-brand" href="#">xTalker</a>
 				</div>
 				<div id="navbar" class="navbar-collapse collapse">
 					<ul class="nav navbar-nav">
 						<li class="active"><a href="#">Profile</a></li>
+						<c:if test="${not empty CurrentUser}">
+						<li><a href="<c:url value="/web/user/account.form"/>">Account</a></li>
+						</c:if>
+						<li><a href="<c:url value="/index.jsp#contact"/>">Contact</a></li>
+						<li><a href="<c:url value="/index.jsp#about"/>">About</a></li>
 						<%--
 						<li><a href="#">Doc</a></li>
 						<li><a href="#">Download</a></li>
@@ -81,10 +81,29 @@ body {
               </li>
                --%>
 					</ul>
-					<ul class="nav navbar-nav navbar-right">
-						<li><a href="<c:url value="/index.jsp#contact"/>">Contact</a></li>
-						<li><a href="<c:url value="/index.jsp#about"/>">About</a></li>
-					</ul>
+					<div id="navbar" class="navbar-collapse collapse">
+						
+						<form class="navbar-form navbar-right" action="<c:url value="/web/user/login.form"/>" method="Post">
+							<c:if test="${ empty CurrentUser}">
+							<div class="form-group">
+								<input name="identity" type="text" placeholder="somebody@x-talker.net" class="form-control">
+							</div>
+							<div class="form-group">
+								<input name ="k" type="password" placeholder="Password"
+									class="form-control">
+							</div>
+							<button type="submit" class="btn btn-default">Sign in</button>
+							</c:if><c:if test="${not empty CurrentUser}">&nbsp;&nbsp;
+						${CurrentUser} <button type="button" class="btn btn-default" onclick="location.href='<c:url value="/web/user/logout.form"/>'">Sign Out</button>
+						</c:if>
+						&nbsp;
+						<button type="button" class="btn btn-default" onclick="location.href='<c:url value="/web/user/registerView.form" />'">Register</button>
+							
+						</form>
+						
+						
+					</div>
+					<!--/.navbar-collapse -->
 				</div>
 				<!--/.nav-collapse -->
 			</div>

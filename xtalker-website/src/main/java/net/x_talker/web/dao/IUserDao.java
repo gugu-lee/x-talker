@@ -1,5 +1,6 @@
 package net.x_talker.web.dao;
 
+import java.util.Map;
 //import org.mybatis.spring.annotation.*;
 import net.x_talker.web.entity.*;
 
@@ -14,6 +15,8 @@ public interface IUserDao {
 
 	public boolean isExistIMPI(String impiIdentify);
 	
-	//public void fetch(int id);
-	//public void resetPassword(String oldPassword,String newPassword);
+	public String fetchPassword(String identity);
+	
+	
+	public void resetPassword(String oldPassword,String newPassword);
 }

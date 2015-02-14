@@ -50,5 +50,7 @@
     <servlet-name>dispatcher</servlet-name>
     <url-pattern>*.form</url-pattern>
   </servlet-mapping>
-
+  <welcome-file-list>
+    <welcome-file>index.form</welcome-file>
+  </welcome-file-list>
 </web-app>
