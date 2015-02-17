@@ -58,6 +58,7 @@ public class IMPI implements Serializable{
 	private int id;
 	private String identity;
 	private byte[] k;
+	private String email;
 	private int auth_scheme;
 	private int default_auth_scheme;
 	
@@ -125,6 +126,16 @@ public class IMPI implements Serializable{
 		return identity.substring(0,atPos);
 	}
 	
+	
+	
+	public String getEmail() {
+		return email;
+	}
+
+	public void setEmail(String email) {
+		this.email = email;
+	}
+
 	public String getIdentityName()
 	{
 		return getIdentityName(this.identity);

@@ -13,10 +13,8 @@ public interface IUserDao {
 	public void insertIMPU_VisitedNetwork(IMPU_VisitedNetwork v);
 	
 
-	public boolean isExistIMPI(String impiIdentify);
-	
+	public boolean isExistIMPI(String identity);
 	public String fetchPassword(String identity);
-	
-	
-	public void resetPassword(String oldPassword,String newPassword);
+	public void resetPassword(IMPI impi);
+	public IMPI fetchIMPI(String identity);
 }

@@ -16,6 +16,7 @@
 		<result property="id_imsu" column="id_imsu" />
 		<result property="identity" column="identity" />
 		<result property="k" column="k" />
+		<result property="email" column="email" />
 	</resultMap>
 	<resultMap type="net.x_talker.web.entity.IMPU" id="impu">
 		<id property="id" column="id" />
@@ -57,7 +58,8 @@
 		line_identifier,
 		zh_uicc_type,
 		zh_key_life_time,
-		zh_default_auth_scheme)
+		zh_default_auth_scheme,
+		email)
 		
 		values(4,
 		#{identity},
@@ -71,7 +73,8 @@
 		'',
 		0,
 		3600,
-		1)
+		1,
+		#{email})
 	</insert>
 	<!-- INSERT INTO `impu` VALUES (1,'sip:alice@open-ims.test',0,0,0,1,1,1,'','',0,1), 
 		(2,'sip:bob@open-ims.test',0,0,0,1,2,1,'','',0,1); `id` int(11) NOT NULL 
@@ -100,7 +103,7 @@
 	<!-- CREATE TABLE `impu_visited_network` ( `id` int(11) NOT NULL auto_increment, 
 		`id_impu` int(11) NOT NULL default '0', `id_visited_network` int(11) NOT 
 		NULL default '0', INSERT INTO `impu_visited_network` VALUES (1,1,1),(2,2,1); -->
-		<insert id="insertIMPU_VisitedNetwork" parameterType="net.x_talker.web.entity.IMPU_VisitedNetwork" useGeneratedKeys="true" keyProperty="id">
+	<insert id="insertIMPU_VisitedNetwork" parameterType="net.x_talker.web.entity.IMPU_VisitedNetwork" useGeneratedKeys="true" keyProperty="id">
 		 INSERT INTO `impu_visited_network`(id_impu,id_visited_network) VALUES (#{id_impu},#{id_visited_network})
 	</insert>
 	<!-- CREATE TABLE `imsu` ( `id` int(11) NOT NULL auto_increment, `name` 
@@ -114,11 +117,18 @@
 	</insert>
 	
 	<select id="isExistIMPI" parameterType="java.lang.String"  resultType="boolean">
-		select exists(select 1 from impi where identity=#{impiIdentify})
+		select exists(select 1 from impi where identity=#{identity})
 	</select>
 	
 	<select id="fetchPassword" parameterType="java.lang.String"  resultType="java.lang.String">
-		select k from impi where identity=#{impiIdentify}
+		select k from impi where identity=#{identity}
 	</select>
+	
+	<select id="fetchIMPI" parameterType="java.lang.String"  resultType="net.x_talker.web.entity.IMPI">
+		select * from impi where identity=#{identify}
+	</select>
+	<update id="resetPassword" parameterType="net.x_talker.web.entity.IMPI" >
+		update impi set k=#{k} where identity=#{identity}
+	</update>
 
 </mapper>

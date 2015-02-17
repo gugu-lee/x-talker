@@ -17,7 +17,7 @@
 <!-- Bootstrap core CSS -->
 <link href="<c:url value="/css/bootstrap/css/bootstrap.min.css"/>"
 	rel="stylesheet">
-
+<link href="<c:url value="/css/bootstrap/docs.min.css"/>" rel="stylesheet">
 <!-- Custom styles for this template -->
 <link href="<c:url value="/css/bootstrap/navbar.css"/>" rel="stylesheet">
 
@@ -52,16 +52,16 @@ body {
 			<div class="container-fluid">
 			
 				<div class="navbar-header">
-					<a class="navbar-brand" href="#">xTalker</a>
+					<a class="navbar-brand" href="<c:url value="/index.form#home"/>">xTalker</a>
 				</div>
 				<div id="navbar" class="navbar-collapse collapse">
 					<ul class="nav navbar-nav">
-						<li class="active"><a href="#">Profile</a></li>
+						<li <c:if test="${CurrentNode ne 'account'}" >class="active"</c:if>><a href="<c:url value="/index.form#home"/>">Profile</a></li>
 						<c:if test="${not empty CurrentUser}">
-						<li><a href="<c:url value="/web/user/account.form"/>">Account</a></li>
+						<li <c:if test="${CurrentNode eq 'account'}" >class="active"</c:if>><a href="<c:url value="/web/user/account.form"/>">Account</a></li>
 						</c:if>
-						<li><a href="<c:url value="/index.jsp#contact"/>">Contact</a></li>
-						<li><a href="<c:url value="/index.jsp#about"/>">About</a></li>
+						<li><a href="<c:url value="/index.form#contact"/>">Contact</a></li>
+						<li><a href="<c:url value="/index.form#about"/>">About</a></li>
 						<%--
 						<li><a href="#">Doc</a></li>
 						<li><a href="#">Download</a></li>
@@ -93,11 +93,13 @@ body {
 									class="form-control">
 							</div>
 							<button type="submit" class="btn btn-default">Sign in</button>
-							</c:if><c:if test="${not empty CurrentUser}">&nbsp;&nbsp;
+							<button type="button" class="btn btn-default" onclick="location.href='<c:url value="/web/user/registerView.form" />'">Register</button>
+							</c:if>
+							<c:if test="${not empty CurrentUser}">&nbsp;&nbsp;
 						${CurrentUser} <button type="button" class="btn btn-default" onclick="location.href='<c:url value="/web/user/logout.form"/>'">Sign Out</button>
 						</c:if>
 						&nbsp;
-						<button type="button" class="btn btn-default" onclick="location.href='<c:url value="/web/user/registerView.form" />'">Register</button>
+						
 							
 						</form>
 						
