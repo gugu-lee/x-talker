@@ -74,7 +74,8 @@ public class UserControllerMVC {
 			session.setAttribute("CurrentUser", identity);
 			return "index";
 		}
-		return "loginFailed";
+		request.setAttribute("result", result);
+		return "user/loginFailed";
 	}
 	
 	@RequestMapping(value = "/web/user/logout", method = RequestMethod.GET)

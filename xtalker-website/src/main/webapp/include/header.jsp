@@ -86,7 +86,7 @@ body {
 						<form class="navbar-form navbar-right" action="<c:url value="/web/user/login.form"/>" method="Post">
 							<c:if test="${ empty CurrentUser}">
 							<div class="form-group">
-								<input name="identity" type="text" placeholder="somebody@x-talker.net" class="form-control">
+								<input name="identity" type="text" placeholder="someone" class="form-control">
 							</div>
 							<div class="form-group">
 								<input name ="k" type="password" placeholder="Password"
