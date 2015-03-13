@@ -36,6 +36,14 @@ public class UserService {
 			return result;
 		}
 		
+		isExist = userDao.isExistEmail(email);
+		if (isExist)
+		{
+			result.setErrorMessage("\""+email+"\"is exist.");
+			result.setErrorNo(3);
+			return result;
+		}
+		
 		userConf.setIdentity(identity);
 		
 		IMSU imsu = new IMSU();
@@ -84,6 +92,19 @@ public class UserService {
 		result.setResult(impi);
 		return result;
 	}
+	public ActionResult fetchByEmail(IUserDao userDao ,String email)
+	{
+		ActionResult result = new ActionResult();
+		IMPI impi = userDao.fetchIMPIByEmail(email);	
+		if (impi==null){
+			result.setErrorNo(2);
+			result.setErrorMessage("No such identity");
+			return result;
+		}
+		result.setResult(impi);
+		return result;
+	}
+	
 	public ActionResult resetPassword(IUserDao userDao ,String identity,String newPassword)
 	{
 		ActionResult result = new ActionResult();
@@ -91,6 +112,15 @@ public class UserService {
 		impi.setIdentity(identity);
 		impi.setK(newPassword.getBytes());
 		userDao.resetPassword(impi);
+		return result;
+	}
+	public ActionResult systemResetPassword(IUserDao userDao ,String email,String newPassword)
+	{
+		ActionResult result = new ActionResult();
+		IMPI impi = new IMPI();
+		impi.setEmail(email);
+		impi.setK(newPassword.getBytes());
+		userDao.systemResetPassword(impi);
 		return result;
 	}
 	public ActionResult login(IUserDao userDao ,String identity,String password)

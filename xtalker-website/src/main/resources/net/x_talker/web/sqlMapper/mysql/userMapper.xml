@@ -119,16 +119,27 @@
 	<select id="isExistIMPI" parameterType="java.lang.String"  resultType="boolean">
 		select exists(select 1 from impi where identity=#{identity})
 	</select>
+	<select id="isExistIMPI" parameterType="java.lang.String"  resultType="boolean">
+		select exists(select 1 from impi where email=#{email})
+	</select>
 	
 	<select id="fetchPassword" parameterType="java.lang.String"  resultType="java.lang.String">
 		select k from impi where identity=#{identity}
 	</select>
 	
+	
 	<select id="fetchIMPI" parameterType="java.lang.String"  resultType="net.x_talker.web.entity.IMPI">
 		select * from impi where identity=#{identify}
 	</select>
+	
+	<select id="fetchIMPIByEmail" parameterType="java.lang.String"  resultType="net.x_talker.web.entity.IMPI">
+		select * from impi where email=#{email}
+	</select>
 	<update id="resetPassword" parameterType="net.x_talker.web.entity.IMPI" >
 		update impi set k=#{k} where identity=#{identity}
+	</update>
+	<update id="systemResetPassword" parameterType="net.x_talker.web.entity.IMPI" >
+		update impi set k=#{k} where identity=#{email}
 	</update>
 
 </mapper>

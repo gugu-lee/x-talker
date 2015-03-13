@@ -14,7 +14,10 @@ public interface IUserDao {
 	
 
 	public boolean isExistIMPI(String identity);
+	public boolean isExistEmail(String email);
 	public String fetchPassword(String identity);
 	public void resetPassword(IMPI impi);
+	public void systemResetPassword(IMPI impi);
 	public IMPI fetchIMPI(String identity);
+	public IMPI fetchIMPIByEmail(String email);
 }
