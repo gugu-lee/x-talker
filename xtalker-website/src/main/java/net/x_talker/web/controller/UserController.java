@@ -2,7 +2,6 @@ package net.x_talker.web.controller;
 
 import java.util.Date;
 import java.util.Properties;
-import java.util.PropertyResourceBundle;
 import java.util.Random;
 
 import javax.mail.Message;
@@ -80,13 +79,13 @@ public class UserController {
 		return result;
 	}
 
-	@RequestMapping(value = "/service/user/fetch", method = RequestMethod.GET)
+	/*@RequestMapping(value = "/service/user/fetch", method = RequestMethod.GET)
 	public ActionResult fetchIMPI(@RequestParam("identity") String identity) {
 		UserService service = new UserService();
 		ActionResult result = service.fetch(userDao, identity);
 		return result;
 	}
-
+*/
 	@RequestMapping(value = "/service/user/login", method = RequestMethod.POST)
 	public ActionResult login(@RequestParam("identity") String identity,
 			@RequestParam("k") String password) {
