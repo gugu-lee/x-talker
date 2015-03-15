@@ -146,14 +146,15 @@ public class UserController {
 
 		try {
 			MimeMessage msg = new MimeMessage(session);
-			msg.setFrom("no-reply@x-talker.net");
+			System.out.println("to:"+email);
+			msg.setFrom("no-replay@x-talker.net");
 			msg.setRecipients(Message.RecipientType.TO,
 					email);
-			msg.setSubject("JavaMail hello world example");
+			msg.setSubject("your password is reseted.");
 			msg.setSentDate(new Date());
 			String mailContent = sm.getString("mail.content", impi.getIdentityName(),newPassword);
 			msg.setText(mailContent);
-			Transport.send(msg, "no-reply", "1234");
+			Transport.send(msg, " no-replay", "1234");
 		} catch (MessagingException mex) {
 			System.out.println("send failed, exception: " + mex);
 		}
