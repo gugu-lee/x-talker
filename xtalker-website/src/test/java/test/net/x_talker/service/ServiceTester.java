@@ -58,22 +58,65 @@ public class ServiceTester {
 
 	
 	@Test
-	public void testRegister()
+	public void testRegister() throws Exception
 	{
-		
+		mockMvc.perform((post("/service/user/register.form")
+				 .param("userName", "guzhangli")
+				 .param("email", "gulilan_2011@yahoo.com")
+				 .param("inputPassword", "gulilan_2011@yahoo.com")
+				 .param("reInputPassword", "gulilan_2011@yahoo.com"))) 
+				 	.andExpect(status().isOk())
+				 	.andDo(print()); 
+		mockMvc.perform((post("/service/user/register.form")
+				 .param("userName", "_guzhangli")
+				 .param("email", "gulilan_2011@yahoo.com")
+				 .param("inputPassword", "gulilan_2011@yahoo.com")
+				 .param("reInputPassword", "gulilan_2011@yahoo.com"))) 
+				 	.andExpect(status().isOk())
+				 	.andDo(print()); 
+		mockMvc.perform((post("/service/user/register.form")
+				 .param("userName", "guzhangli&^")
+				 .param("email", "gulilan_2011@yahoo.com")
+				 .param("inputPassword", "gulilan_2011@yahoo.com")
+				 .param("reInputPassword", "gulilan_2011@yahoo.com"))) 
+				 	.andExpect(status().isOk())
+				 	.andDo(print()); 
+		mockMvc.perform((post("/service/user/register.form")
+				 .param("userName", "gulilan_")
+				 .param("email", "gulilan_2011@yahoo.com")
+				 .param("inputPassword", "gulilan_2011@yahoo.com")
+				 .param("reInputPassword", "gulilan_2011@yahoo.com"))) 
+				 	.andExpect(status().isOk())
+				 	.andDo(print()); 
+		mockMvc.perform((post("/service/user/register.form")
+				 .param("userName", "gulilan_")
+				 .param("email", "gulilan@yahoo.com")
+				 .param("inputPassword", "gulilan@yahoo.com")
+				 .param("reInputPassword", "gulilan@yahoo.com"))) 
+				 	.andExpect(status().isOk())
+				 	.andDo(print()); 
 	}
 	
 	@Test
-	public void testLogin()
+	public void testLoginOK() throws Exception
 	{
-		
+		mockMvc.perform((post("/service/user/login.form")
+				 .param("identity", "gulilan")
+				 .param("k", "`=\\9[yR.fb'G")))  
+				 	.andExpect(status().isOk())
+				 	.andDo(print()); 
 	}
 	
+	/*
 	@Test
 	public void testResetPassword() throws Exception
 	{
-		 mockMvc.perform((post("/service/user/systemResetPassword.form").param("username", "gulilan").param("email", "gulilan_2011@yahoo.com")))  
-         .andExpect(status().isOk()).andDo(print());  
+		 mockMvc.perform((post("/service/user/systemResetPassword.form")
+				 .param("username", "gulilan")
+				 .param("email", "gulilan_2011@yahoo.com")))  
+				 	.andExpect(status().isOk())
+				 	.andDo(print());  
 	}
+	*/
 
 }

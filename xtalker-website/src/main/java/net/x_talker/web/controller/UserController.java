@@ -50,7 +50,7 @@ public class UserController {
 			return result;
 		};
 		
-		if (!GenericValidator.matchRegexp(userName, "$[a-zA-Z][a-zA-Z0-9_]*")){
+		if (!GenericValidator.matchRegexp(userName, "^[a-zA-Z][a-zA-Z0-9_]*")){
 			result.setErrorMessage(sm.getString("error.6", "username"));
 			result.setErrorNo(6);
 			return result;
