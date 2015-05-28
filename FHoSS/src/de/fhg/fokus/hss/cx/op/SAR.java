@@ -714,7 +714,7 @@ public class SAR {
 
 	public static String downloadUserData(String privateIdentity, int id_implicit_set){
 		Session session = HibernateUtil.getCurrentSession();
-		List initial_impus_list = IMPU_DAO.get_all_from_set(session, id_implicit_set).subList(0,1); //List of IMPUs that belong to the same implicit set
+		List initial_impus_list = IMPU_DAO.get_all_from_set(session, id_implicit_set); //List of IMPUs that belong to the same implicit set
 		Iterator iter = initial_impus_list.iterator();
 		List<List> ifcs_list = new ArrayList<List>();    // List of list of iFCs associated to each IMPU
 		List<Integer> Sps = new ArrayList<Integer>(); // List of SP id
