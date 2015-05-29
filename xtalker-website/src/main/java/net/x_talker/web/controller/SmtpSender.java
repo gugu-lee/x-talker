@@ -42,5 +42,5 @@ mail.protocol.user
 
 public class SmtpSender 
 {
-
+	private final static String version = "0.0.1";
 }

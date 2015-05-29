@@ -58,13 +58,13 @@
 	 
 
 	
-<!-- 
-	<bean id="loginDao" class="org.mybatis.spring.mapper.MapperFactoryBean">
-		<property name="mapperInterface" value="net.x_talker.web.dao.ILoginDao" />
+
+	<bean id="logDao" class="org.mybatis.spring.mapper.MapperFactoryBean">
+		<property name="mapperInterface" value="net.x_talker.web.dao.ILogDao" />
 		<property name="sqlSessionFactory" ref="sqlSessionFactory" />
 	</bean>
 
-	 -->
+	 
 	 <bean id="userDao" class="org.mybatis.spring.mapper.MapperFactoryBean">
 		<property name="mapperInterface" value="net.x_talker.web.dao.IUserDao" />
 		<property name="sqlSessionFactory" ref="sqlSessionFactory" />

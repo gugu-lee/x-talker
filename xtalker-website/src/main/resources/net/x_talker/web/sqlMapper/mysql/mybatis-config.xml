@@ -6,5 +6,6 @@
 	<mappers>
 		<mapper resource="net/x_talker/web/sqlMapper/mysql/loginMapper.xml" />
 		<mapper resource="net/x_talker/web/sqlMapper/mysql/userMapper.xml" />
+		<mapper resource="net/x_talker/web/sqlMapper/mysql/logMapper.xml" />
 	</mappers>
 </configuration>

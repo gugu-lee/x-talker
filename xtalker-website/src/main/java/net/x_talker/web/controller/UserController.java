@@ -19,17 +19,30 @@ import org.springframework.web.bind.annotation.*;
 import net.x_talker.web.dao.*;
 import net.x_talker.web.entity.ActionResult;
 import net.x_talker.web.entity.IMPI;
+import net.x_talker.web.entity.Log;
 import net.x_talker.web.util.StringManager;
 
 @RestController
 public class UserController {
 	@Autowired
 	private IUserDao userDao;
+	@Autowired
+	private ILogDao logDao;
+	
 
 	private StringManager sm = StringManager
 			.getManager("net.x_talker.web.controller");
 	//private GenericValidator v = new GenericValidator();
 
+	@RequestMapping(value = "/service/active", method = RequestMethod.GET)
+	public ActionResult active(
+			HttpServletRequest request)
+	{
+		ActionResult result ;
+		UserService service = new UserService();
+		result = service.active(logDao, request.getRemoteAddr());
+		return result;
+	}
 	@RequestMapping(value = "/service/user/register", method = RequestMethod.POST)
 	public ActionResult register(@RequestParam("userName") String userName,
 			@RequestParam("email") String email,
@@ -37,6 +50,20 @@ public class UserController {
 			@RequestParam("reInputPassword") String rePassword,
 			HttpServletRequest request) {
 
+		UserService service = new UserService();
+		
+		try{
+		Log log = new Log();
+		log.setImpi(userName);
+		log.setHost(request.getRemoteAddr());
+		log.setAction("register");
+		
+		
+		service.insertLog(logDao,log);
+		}catch(Exception ex)
+		{
+			
+		}
 		ActionResult result = new ActionResult();
 
 		if (! GenericValidator.isInRange(userName.getBytes().length, 6, 16)){
@@ -61,7 +88,7 @@ public class UserController {
 			return result;
 		}
 		
-		UserService service = new UserService();
+		
 
 		if (!password.equals(rePassword)) {
 			result.setErrorMessage(sm.getString("error.5"));

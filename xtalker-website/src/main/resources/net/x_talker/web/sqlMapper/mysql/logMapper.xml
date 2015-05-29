@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd"> 
+<mapper namespace="net.x_talker.web.dao.ILogDao">
+	
+		<resultMap type="net.x_talker.web.entity.Log" id="log">
+		<id property="id" column="id" />
+		<result property="host" column="host" />
+		<result property="impi" column="impi" />
+		<result property="logDateTime" column="logDateTime" />
+		<result property="action" column="action" />
+		<result property="content" column="content" />
+		
+	</resultMap>
+	<insert id="insertLog" parameterType="net.x_talker.web.entity.Log" useGeneratedKeys="true" keyProperty="id">
+		insert into
+		log(host,
+		impi,
+		logDateTime,
+		action,
+		content)
+		
+		values(
+		#{host},
+		#{impi},
+		now(),
+		#{action},
+		#{content}
+		)
+	</insert>
+</mapper>

@@ -8,20 +8,38 @@ import org.apache.log4j.Logger;
 import net.x_talker.web.entity.ActionResult;
 import net.x_talker.web.entity.UserConf;
 import net.x_talker.web.dao.IUserDao;
-
+import net.x_talker.web.dao.ILogDao;
 import net.x_talker.web.entity.IMPI;
 import net.x_talker.web.entity.IMSU;
 import net.x_talker.web.entity.IMPU;
 import net.x_talker.web.entity.IMPI_IMPU;
 import net.x_talker.web.entity.IMPU_VisitedNetwork;
-import net.x_talker.web.entity.UserConf;
+import net.x_talker.web.entity.Log;
+
 
 
 
 public class UserService {
 
 	
-	private static Logger logger = Logger.getLogger(UserService.class);
+	//private static Logger logger = Logger.getLogger(UserService.class);
+	
+	public ActionResult active(ILogDao dao,String host)
+	{
+		ActionResult result = new ActionResult();
+		Log log = new Log();
+		log.setHost(host);
+		log.setAction("active");
+		dao.insertLog(log);
+		return result;
+	}
+	public ActionResult insertLog(ILogDao dao,Log log)
+	{
+		ActionResult result = new ActionResult();
+
+		dao.insertLog(log);
+		return result;
+	}
 	
 	public ActionResult register(IUserDao userDao,String identity,String k,String email)
 	{
