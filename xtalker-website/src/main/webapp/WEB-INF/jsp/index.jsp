@@ -8,22 +8,23 @@
 	<p>
 		xTalker is The Full VoLTE Solution For Enterprise .<br>
 		 xTalker provide text message, MMS Message,voice
-		call,video call communcation.<br>
+		call,video call communication.<br>
 		 xTalker support IMS
-		standard.<br> xTalker is base of the OpenIMSCore.<br> It's
-		use case diagram is blow:<br>
+		standard.<br> <!--  xTalker is base of the OpenIMSCore.<br> -->
+		It have implemented the communication of inter-imscore.<br>
+		The diagram is blow:<br>
 		<!-- 
 			<p>
 				<a class="btn btn-lg btn-primary" href="../../components/#navbar"
 					role="button">View navbar docs &raquo;</a>
 			</p>
 			 -->
-		<img align="middle" src="<c:url value="/image/UseCase.jpg"/>" />
+		<img align="middle" src="<c:url value="/image/network.png"/>" />
 	</p>
 
 	<h3>Application Scene</h3>
 	<p>You could use this solution when you:<br>
-	want setup a LTE core network;<br>
+	want setup a LTE core network ;<br>
 	want debug a LTE mobile terminal;<br>
 	want setup a instant message system.
 	</p>
