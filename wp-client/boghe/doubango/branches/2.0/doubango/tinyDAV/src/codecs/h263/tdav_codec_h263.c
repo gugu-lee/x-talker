@@ -1150,21 +1150,21 @@ static void tdav_codec_h263_rtp_callback(tdav_codec_h263_t *self, const void *da
 	* 5.1.1 Picture Start Code (PSC) (22 bits)
 	* 5.1.2 Temporal Reference (TR) (8 bits)
 	* 5.1.3 Type Information (PTYPE) (Variable Length)
-	*	– Bit 1: Always "1", in order to avoid start code emulation.
-	*	– Bit 2: Always "0", for distinction with Recommendation H.261.
+	*	?Bit 1: Always "1", in order to avoid start code emulation.
+	*	?Bit 2: Always "0", for distinction with Recommendation H.261.
 	
-	*	– Bit 3: Split screen indicator, "0" off, "1" on.
-	*	– Bit 4: Document camera indicator, "0" off, "1" on.
-	*	– Bit 5: Full Picture Freeze Release, "0" off, "1" on.
-	*	– Bits 6-8: Source Format, "000" forbidden, "001" sub-QCIF, "010" QCIF, "011" CIF,
+	*	?Bit 3: Split screen indicator, "0" off, "1" on.
+	*	?Bit 4: Document camera indicator, "0" off, "1" on.
+	*	?Bit 5: Full Picture Freeze Release, "0" off, "1" on.
+	*	?Bits 6-8: Source Format, "000" forbidden, "001" sub-QCIF, "010" QCIF, "011" CIF,
 		"100" 4CIF, "101" 16CIF, "110" reserved, "111" extended PTYPE.
 		If bits 6-8 are not equal to "111", which indicates an extended PTYPE (PLUSPTYPE), the following
 		five bits are also present in PTYPE:
-		– Bit 9: Picture Coding Type, "0" INTRA (I-picture), "1" INTER (P-picture).
-		– Bit 10: Optional Unrestricted Motion Vector mode (see Annex D), "0" off, "1" on.
-		– Bit 11: Optional Syntax-based Arithmetic Coding mode (see Annex E), "0" off, "1" on.
-		– Bit 12: Optional Advanced Prediction mode (see Annex F), "0" off, "1" on.
-		– Bit 13: Optional PB-frames mode (see Annex G), "0" normal I- or P-picture, "1" PB-frame.
+		?Bit 9: Picture Coding Type, "0" INTRA (I-picture), "1" INTER (P-picture).
+		?Bit 10: Optional Unrestricted Motion Vector mode (see Annex D), "0" off, "1" on.
+		?Bit 11: Optional Syntax-based Arithmetic Coding mode (see Annex E), "0" off, "1" on.
+		?Bit 12: Optional Advanced Prediction mode (see Annex F), "0" off, "1" on.
+		?Bit 13: Optional PB-frames mode (see Annex G), "0" normal I- or P-picture, "1" PB-frame.
 	*/
 	if(pdata[0] == 0x00 && pdata[1] == 0x00 && (pdata[2] & 0xfc)==0x80){ /* PSC */
 		/* RFC 2190 -5.1 Mode A

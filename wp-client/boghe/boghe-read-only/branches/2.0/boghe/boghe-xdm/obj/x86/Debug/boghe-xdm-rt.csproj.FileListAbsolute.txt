@@ -2,3 +2,7 @@ E:\home\ims\boghe-read-only\boghe-read-only\branches\2.0\boghe\boghe-xdm\Bin\x86
 E:\home\ims\boghe-read-only\boghe-read-only\branches\2.0\boghe\boghe-xdm\Bin\x86\Debug\boghe_xdm_rt.pdb
 E:\home\ims\boghe-read-only\boghe-read-only\branches\2.0\boghe\boghe-xdm\obj\x86\Debug\boghe_xdm_rt.dll
 E:\home\ims\boghe-read-only\boghe-read-only\branches\2.0\boghe\boghe-xdm\obj\x86\Debug\boghe_xdm_rt.pdb
+E:\github\x-talker\wp-client\boghe\boghe-read-only\branches\2.0\boghe\boghe-xdm\Bin\x86\Debug\boghe_xdm_rt.dll
+E:\github\x-talker\wp-client\boghe\boghe-read-only\branches\2.0\boghe\boghe-xdm\Bin\x86\Debug\boghe_xdm_rt.pdb
+E:\github\x-talker\wp-client\boghe\boghe-read-only\branches\2.0\boghe\boghe-xdm\obj\x86\Debug\boghe_xdm_rt.dll
+E:\github\x-talker\wp-client\boghe\boghe-read-only\branches\2.0\boghe\boghe-xdm\obj\x86\Debug\boghe_xdm_rt.pdb

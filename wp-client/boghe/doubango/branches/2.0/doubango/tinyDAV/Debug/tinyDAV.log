@@ -1,5 +1,97 @@
-﻿生成启动时间为 2/14/2015 1:22:18 AM。
+﻿生成启动时间为 4/1/2015 11:28:22 AM。
+     1>项目“E:\github\x-talker\wp-client\boghe\doubango\branches\2.0\doubango\tinyDAV\tinyDAV.vcxproj”在节点 3 上(Build 个目标)。
+     1>Link:
+         D:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"E:\github\x-talker\wp-client\boghe\boghe-read-only\branches\2.0\boghe\Debug\tinyDAV.dll" /INCREMENTAL /NOLOGO Winmm.lib Shlwapi.lib "E:\github\x-talker\wp-client\boghe\boghe-read-only\branches\2.0\boghe\Debug\tinySAK.lib" "E:\github\x-talker\wp-client\boghe\boghe-read-only\branches\2.0\boghe\Debug\tinyIPSec.lib" "E:\github\x-talker\wp-client\boghe\boghe-read-only\branches\2.0\boghe\Debug\tinyNET.lib" "E:\github\x-talker\wp-client\boghe\boghe-read-only\branches\2.0\boghe\Debug\tinyRTP.lib" "E:\github\x-talker\wp-client\boghe\boghe-read-only\branches\2.0\boghe\Debug\tinyMSRP.lib" "E:\github\x-talker\wp-client\boghe\boghe-read-only\branches\2.0\boghe\Debug\tinySDP.lib" "E:\github\x-talker\wp-client\boghe\boghe-read-only\branches\2.0\boghe\Debug\tinyBFCP.lib" "E:\github\x-talker\wp-client\boghe\boghe-read-only\branches\2.0\boghe\Debug\tinyMEDIA.lib" ..\thirdparties\win32\lib\opus\libopus.a ..\thirdparties\win32\lib\gsm\libgsm.a ..\thirdparties\win32\lib\ilbc\libiLBC.a ..\thirdparties\win32\lib\speex\libspeex.a ..\thirdparties\win32\lib\speex\libspeexdsp.a ..\thirdparties\win32\lib\ffmpeg\libavcodec.a ..\thirdparties\win32\lib\ffmpeg\libavutil.a ..\thirdparties\win32\lib\ffmpeg\libswscale.a ..\thirdparties\win32\lib\libgcc.a ..\thirdparties\win32\lib\libmingwex.a ..\thirdparties\win32\lib\ffmpeg\libx264.a ..\thirdparties\win32\lib\ffmpeg\libtheora.a ..\thirdparties\win32\lib\ffmpeg\libogg.a ..\thirdparties\win32\lib\webrtc\aec.lib ..\thirdparties\win32\lib\webrtc\aec_sse2.lib ..\thirdparties\win32\lib\webrtc\apm_util.lib ..\thirdparties\win32\lib\webrtc\system_wrappers.lib ..\thirdparties\win32\lib\webrtc\spl.lib ..\thirdparties\win32\lib\webrtc\ns.lib ..\thirdparties\win32\lib\libyuv\libyuv.lib ..\thirdparties\win32\lib\vpx\vpxmt.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /NODEFAULTLIB:LIBCMTD /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"E:\github\x-talker\wp-client\boghe\boghe-read-only\branches\2.0\boghe\Debug\tinyDAV.pdb" /SUBSYSTEM:WINDOWS /TLBID:1 /DYNAMICBASE:NO /IMPLIB:"E:\github\x-talker\wp-client\boghe\boghe-read-only\branches\2.0\boghe\Debug\tinyDAV.lib" /MACHINE:X86 /SAFESEH /SAFESEH:NO /DLL Debug\version.res
+         Debug\tdav_audiounit.obj
+         Debug\tdav_consumer_audioqueue.obj
+         Debug\tdav_consumer_audiounit.obj
+         Debug\tdav_producer_audioqueue.obj
+         Debug\tdav_producer_audiounit.obj
+         Debug\tdav_consumer_dsound.obj
+         Debug\tdav_producer_dsound.obj
+         Debug\tdav_consumer_audio.obj
+         Debug\tdav_jitterbuffer.obj
+         Debug\tdav_producer_audio.obj
+         Debug\tdav_session_audio.obj
+         Debug\tdav_speakup_jitterbuffer.obj
+         Debug\tdav_speex_denoise.obj
+         Debug\tdav_speex_jitterbuffer.obj
+         Debug\tdav_speex_resampler.obj
+         Debug\tdav_webrtc_denoise.obj
+         Debug\tdav_consumer_waveapi.obj
+         Debug\tdav_producer_waveapi.obj
+         Debug\tdav_session_bfcp.obj
+         Debug\tdav_codec_amr.obj
+         Debug\tdav_codec_bfcp.obj
+         Debug\tdav_codec_bv16.obj
+         Debug\tdav_codec_bv32.obj
+         Debug\tdav_codec_dtmf.obj
+         Debug\tdav_codec_red.obj
+         Debug\tdav_codec_ulpfec.obj
+         Debug\g711.obj
+         Debug\tdav_codec_g711.obj
+         Debug\g722_decode.obj
+         Debug\g722_encode.obj
+         Debug\tdav_codec_g722.obj
+         Debug\tdav_codec_g729.obj
+         Debug\tdav_codec_gsm.obj
+         Debug\tdav_codec_h261.obj
+         Debug\tdav_codec_h263.obj
+         Debug\tdav_codec_h264.obj
+         Debug\tdav_codec_h264_cuda.obj
+         Debug\tdav_codec_h264_rtp.obj
+         Debug\tdav_codec_ilbc.obj
+         Debug\tdav_codec_mp4ves.obj
+         Debug\tdav_codec_msrp.obj
+         Debug\tdav_codec_opus.obj
+         Debug\tdav_codec_speex.obj
+         Debug\tdav_codec_t140.obj
+         Debug\tdav_codec_theora.obj
+         Debug\tdav_codec_vp8.obj
+         Debug\tdav_consumer_msrp.obj
+         Debug\tdav_producer_msrp.obj
+         Debug\tdav_session_msrp.obj
+         Debug\tdav_consumer_t140.obj
+         Debug\tdav_producer_t140.obj
+         Debug\tdav_session_t140.obj
+         Debug\tdav.obj
+         Debug\tdav_session_av.obj
+         Debug\tdav_win32.obj
+         Debug\tdav_producer_screencast_gdi.obj
+         Debug\tdav_video_frame.obj
+         Debug\tdav_video_jb.obj
+         Debug\tdav_consumer_video.obj
+         Debug\tdav_converter_video.obj
+         Debug\tdav_runnable_video.obj
+         Debug\tdav_session_video.obj
+         "E:\github\x-talker\wp-client\boghe\boghe-read-only\branches\2.0\boghe\Debug\pluginWinIPSecVista.lib"
+         "E:\github\x-talker\wp-client\boghe\boghe-read-only\branches\2.0\boghe\Debug\tinyBFCP.lib"
+         "E:\github\x-talker\wp-client\boghe\boghe-read-only\branches\2.0\boghe\Debug\tinyIPSec.lib"
+         "E:\github\x-talker\wp-client\boghe\boghe-read-only\branches\2.0\boghe\Debug\tinyMEDIA.lib"
+         "E:\github\x-talker\wp-client\boghe\boghe-read-only\branches\2.0\boghe\Debug\tinyMSRP.lib"
+         "E:\github\x-talker\wp-client\boghe\boghe-read-only\branches\2.0\boghe\Debug\tinyNET.lib"
+         "E:\github\x-talker\wp-client\boghe\boghe-read-only\branches\2.0\boghe\Debug\tinyRTP.lib"
+         "E:\github\x-talker\wp-client\boghe\boghe-read-only\branches\2.0\boghe\Debug\tinySAK.lib"
+         "E:\github\x-talker\wp-client\boghe\boghe-read-only\branches\2.0\boghe\Debug\tinySDP.lib"
+     1>LIBCMT.lib(strtoq.obj) : error LNK2005: _strtoll 已经在 libmingwex.a(strtoimax.o) 中定义
+     1>LIBCMT.lib(strtoq.obj) : error LNK2005: _strtoimax 已经在 libmingwex.a(strtoimax.o) 中定义
+            正在创建库 E:\github\x-talker\wp-client\boghe\boghe-read-only\branches\2.0\boghe\Debug\tinyDAV.lib 和对象 E:\github\x-talker\wp-client\boghe\boghe-read-only\branches\2.0\boghe\Debug\tinyDAV.exp
+     1>libspeexdsp.a(fftwrap.o) : warning LNK4049: 已导入本地定义的符号 __iob
+     1>libavutil.a(log.o) : warning LNK4217: 本地定义的符号 __iob 在函数 _T.47 中导入
+     1>libx264.a(common.o) : warning LNK4217: 本地定义的符号 __iob 在函数 _x264_reduce_fraction64 中导入
+     1>libspeex.a(sb_celp.o) : warning LNK4217: 本地定义的符号 __iob 在函数 _sb_decode 中导入
+     1>libspeexdsp.a(preprocess.o) : warning LNK4217: 本地定义的符号 __iob 在函数 _speex_preprocess_ctl 中导入
+     1>libspeexdsp.a(mdf.o) : warning LNK4217: 本地定义的符号 __iob 在函数 _speex_echo_state_init_mc 中导入
+     1>libspeexdsp.a(jitter.o) : warning LNK4217: 本地定义的符号 __iob 在函数 _jitter_buffer_get 中导入
+     1>libspeex.a(bits.o) : warning LNK4217: 本地定义的符号 __iob 在函数 _speex_bits_pack 中导入
+     1>libspeex.a(speex.o) : warning LNK4049: 已导入本地定义的符号 __iob
+     1>libspeex.a(modes_wb.o) : warning LNK4049: 已导入本地定义的符号 __iob
+     1>libspeex.a(nb_celp.o) : warning LNK4217: 本地定义的符号 __iob 在函数 _nb_encoder_destroy 中导入
+     1>libmingwex.a(strtoimax.o) : warning LNK4217: 本地定义的符号 __pctype 在函数 _strtoll 中导入
+     1>libmingwex.a(strtoimax.o) : warning LNK4217: 本地定义的符号 ___mb_cur_max 在函数 _strtoll 中导入
+     1>E:\github\x-talker\wp-client\boghe\boghe-read-only\branches\2.0\boghe\Debug\tinyDAV.dll : fatal error LNK1169: 找到一个或多个多重定义的符号
+     1>已完成生成项目“E:\github\x-talker\wp-client\boghe\doubango\branches\2.0\doubango\tinyDAV\tinyDAV.vcxproj”(Build 个目标)的操作 - 失败。
 
-生成成功。
+生成失败。
 
-已用时间 00:00:00.01
+已用时间 00:00:09.56

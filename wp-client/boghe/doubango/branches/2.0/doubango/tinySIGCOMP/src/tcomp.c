@@ -38,7 +38,7 @@
 * This API is designed to efficiently work on embedded systems whith limited memory and low computing power.
 *
 * As many operators have begun to commercially deploy IMS, the relevance of using SigComp to lower bandwidth usage will come quickly. 
-* In my own opinion I think that most operators (especially those using RCS) will question how to reduce SIP signaling (registration, billing, presence, messaging …) 
+* In my own opinion I think that most operators (especially those using RCS) will question how to reduce SIP signaling (registration, billing, presence, messaging ? 
 * bandwidth usage (who will pay bits?). 
 * These questions will especially concern using SIP (or all other text-based protocols) in wireless handsets as part of 2.5G, 3G and 4G cellular networks. 
 *
@@ -70,9 +70,8 @@
 *
 * - Could be used as an external API or Framework
 * - Highly portable (Coded in ANSI-C without any external dependencies)
-* - Easily configurable (memory usage, priorities in static dictionaries, stateful/stateless modes, dynamic/static/shared compression types …)
-* - Easy to integrate with any existing SIP/IMS stack, Proxy-CSCF, PoC client …
-* - Allow to easily plug your own compressor (DEFLATE – RFC 1951- will be the default)
+* - Easily configurable (memory usage, priorities in static dictionaries, stateful/stateless modes, dynamic/static/shared compression types ?
+* - Easy to integrate with any existing SIP/IMS stack, Proxy-CSCF, PoC client ?* - Allow to easily plug your own compressor (DEFLATE ?RFC 1951- will be the default)
 * -
 * - Robust
 * - Efficiently run on mobile handsets (small footprint)

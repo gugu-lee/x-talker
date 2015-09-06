@@ -87,7 +87,7 @@ int tsip_challenge_get_akares(tsip_challenge_t *self, char const *password, char
 #define SQN_XOR_AK() (AUTN + 0)
 #define SERVER_DATA() (nonce + AKA_RAND_SIZE + AKA_AUTN_SIZE)
 
-	// § ==> XOR
+	// ?==> XOR
 	// || ==> append
 
 	AKA_RES_T akares;

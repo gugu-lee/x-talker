@@ -1,1 +1,6 @@
 E:\home\ims\boghe-read-only\boghe-read-only\branches\2.0\boghe\boghe-core\obj\Debug\boghe-core.csprojResolveAssemblyReference.cache
+E:\github\x-talker\wp-client\boghe\boghe-read-only\branches\2.0\boghe\Debug\BogheCore.dll
+E:\github\x-talker\wp-client\boghe\boghe-read-only\branches\2.0\boghe\Debug\BogheCore.pdb
+E:\github\x-talker\wp-client\boghe\boghe-read-only\branches\2.0\boghe\boghe-core\obj\Debug\boghe-core.csprojResolveAssemblyReference.cache
+E:\github\x-talker\wp-client\boghe\boghe-read-only\branches\2.0\boghe\boghe-core\obj\Debug\BogheCore.dll
+E:\github\x-talker\wp-client\boghe\boghe-read-only\branches\2.0\boghe\boghe-core\obj\Debug\BogheCore.pdb

@@ -56,7 +56,7 @@
       <AdditionalIncludeDirectories>..\thirdparties\common\include\libxml2;..\thirdparties\common\include;..\thirdparties\win32\include;..\tinySIP\include;..\tinySAK\src;..\tinyNET\src;..\tinyHTTP\include;..\tinySIGCOMP\src;..\tinyIPSec\src;..\tinySDP\include;..\tinyMEDIA\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <PreprocessorDefinitions>DEBUG_LEVEL=DEBUG_LEVEL_INFO;BODILESS_INVITE=0;HAVE_LIBXML2=1;WIN32;_DEBUG;_WINDOWS;_USRDLL;TINYSIP_EXPORTS;_WIN32_WINNT 0x0501;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <MinimalRebuild>true</MinimalRebuild>
-      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
       <PrecompiledHeader />
       <WarningLevel>Level3</WarningLevel>
       <TreatWarningAsError>true</TreatWarningAsError>

@@ -1,5 +1,55 @@
-﻿生成启动时间为 2/14/2015 1:22:18 AM。
+﻿生成启动时间为 4/1/2015 10:27:39 AM。
+     1>项目“E:\github\x-talker\wp-client\boghe\doubango\branches\2.0\doubango\plugins\audio_webrtc\audio_webrtc.vcxproj”在节点 2 上(Build 个目标)。
+     1>ClCompile:
+         D:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /I..\..\thirdparties\win32\include /I..\..\tinySAK\src /I..\..\tinyDAV\include /I..\..\tinyMEDIA\include /I..\..\tinySDP\include /I..\..\tinyRTP\include /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _WINDOWS /D _USRDLL /D DOUBANGO_AUDIO_WEBRTC_EXPORTS /D TINYDAV_EXPORTS /D _WINDLL /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MTd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TC /analyze- /errorReport:prompt ..\..\tinyDAV\src\audio\tdav_consumer_audio.c ..\..\tinyDAV\src\audio\tdav_producer_audio.c
+         tdav_producer_audio.c
+         tdav_consumer_audio.c
+         正在生成代码...
+         D:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /I..\..\thirdparties\win32\include /I..\..\tinySAK\src /I..\..\tinyDAV\include /I..\..\tinyMEDIA\include /I..\..\tinySDP\include /I..\..\tinyRTP\include /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _WINDOWS /D _USRDLL /D DOUBANGO_AUDIO_WEBRTC_EXPORTS /D TINYDAV_EXPORTS /D _WINDLL /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MTd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt audio_webrtc.cxx audio_webrtc_consumer.cxx audio_webrtc_producer.cxx audio_webrtc_transport.cxx
+         audio_webrtc_transport.cxx
+         audio_webrtc_producer.cxx
+         audio_webrtc_consumer.cxx
+         audio_webrtc.cxx
+     1>e:\github\x-talker\wp-client\boghe\doubango\branches\2.0\doubango\thirdparties\win32\include\webrtc\common_types.h(586): warning C4351: 新增行为:  默认情况下初始化数组“webrtc::OverUseDetectorOptions::initial_e”的元素
+     1>e:\github\x-talker\wp-client\boghe\doubango\branches\2.0\doubango\thirdparties\win32\include\webrtc\common_types.h(586): warning C4351: 新增行为:  默认情况下初始化数组“webrtc::OverUseDetectorOptions::initial_process_noise”的元素
+         正在生成代码...
+         D:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /I..\..\thirdparties\win32\include /I..\..\tinySAK\src /I..\..\tinyDAV\include /I..\..\tinyMEDIA\include /I..\..\tinySDP\include /I..\..\tinyRTP\include /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _WINDOWS /D _USRDLL /D DOUBANGO_AUDIO_WEBRTC_EXPORTS /D TINYDAV_EXPORTS /D _WINDLL /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MTd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt dllmain.cxx
+         dllmain.cxx
+       Link:
+         D:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"E:\github\x-talker\wp-client\boghe\boghe-read-only\branches\2.0\boghe\Debug\audio_webrtc.dll" /INCREMENTAL /NOLOGO Winmm.lib msdmo.lib dmoguids.lib wmcodecdspuuid.lib strmiids.lib uuid.lib "E:\github\x-talker\wp-client\boghe\boghe-read-only\branches\2.0\boghe\Debug\tinySAK.lib" "E:\github\x-talker\wp-client\boghe\boghe-read-only\branches\2.0\boghe\Debug\tinyMEDIA.lib" ..\..\thirdparties\win32\lib\webrtc\audio_device.lib ..\..\thirdparties\win32\lib\webrtc\system_wrappers.lib ..\..\thirdparties\win32\lib\webrtc\spl.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"E:\github\x-talker\wp-client\boghe\boghe-read-only\branches\2.0\boghe\Debug\audio_webrtc.pdb" /SUBSYSTEM:WINDOWS /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"E:\github\x-talker\wp-client\boghe\boghe-read-only\branches\2.0\boghe\Debug\audio_webrtc.lib" /MACHINE:X86 /SAFESEH /DLL Debug\tdav_consumer_audio.obj
+         Debug\tdav_producer_audio.obj
+         Debug\audio_webrtc.obj
+         Debug\audio_webrtc_consumer.obj
+         Debug\audio_webrtc_producer.obj
+         Debug\audio_webrtc_transport.obj
+         Debug\dllmain.obj
+     1>tdav_consumer_audio.obj : warning LNK4075: 
+            
+     1>LINK : warning LNK4098: 
+     1>audio_device.lib(audio_device_utility.obj) : warning LNK4099: 
+     1>audio_device.lib(audio_device_impl.obj) : warning LNK4099: 
+     1>audio_device.lib(audio_device_buffer.obj) : warning LNK4099: 
+     1>audio_device.lib(audio_device_generic.obj) : warning LNK4099: 
+     1>audio_device.lib(audio_mixer_manager_win.obj) : warning LNK4099: 
+     1>audio_device.lib(audio_device_core_win.obj) : warning LNK4099: 
+     1>audio_device.lib(audio_device_utility_win.obj) : warning LNK4099: 
+     1>audio_device.lib(audio_device_wave_win.obj) : warning LNK4099: 
+     1>system_wrappers.lib(thread_win.obj) : warning LNK4099: 
+     1>system_wrappers.lib(file_impl.obj) : warning LNK4099: 
+     1>system_wrappers.lib(event_win.obj) : warning LNK4099: 
+     1>system_wrappers.lib(critical_section.obj) : warning LNK4099: 
+     1>system_wrappers.lib(trace_win.obj) : warning LNK4099: 
+     1>system_wrappers.lib(atomic32_win.obj) : warning LNK4099: 
+     1>system_wrappers.lib(trace_impl.obj) : warning LNK4099: 
+     1>system_wrappers.lib(critical_section_win.obj) : warning LNK4099: 
+     1>system_wrappers.lib(thread.obj) : warning LNK4099: 
+     1>system_wrappers.lib(list_no_stl.obj) : warning LNK4099: 
+     1>system_wrappers.lib(event.obj) : warning LNK4099: 
+     1>system_wrappers.lib(sleep.obj) : warning LNK4099: 
+     1>spl.lib(min_max_operations.obj) : warning LNK4099: 
+         audio_webrtc.vcxproj -> E:\github\x-talker\wp-client\boghe\boghe-read-only\branches\2.0\boghe\Debug\audio_webrtc.dll
+     1>已完成生成项目“E:\github\x-talker\wp-client\boghe\doubango\branches\2.0\doubango\plugins\audio_webrtc\audio_webrtc.vcxproj”(Build 个目标)的操作。
 
 生成成功。
 
-已用时间 00:00:00.01
+已用时间 00:00:02.97

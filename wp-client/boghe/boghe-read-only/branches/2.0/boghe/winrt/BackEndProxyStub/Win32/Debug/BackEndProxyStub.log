@@ -1,5 +1,23 @@
-﻿生成启动时间为 2/14/2015 1:22:56 AM。
+﻿生成启动时间为 3/17/2015 9:33:36 AM。
+     1>项目“E:\github\x-talker\wp-client\boghe\boghe-read-only\branches\2.0\boghe\winrt\BackEndProxyStub\BackEndProxyStub.vcxproj”在节点 3 上(Build 个目标)。
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\WPSDK\WP80\bin\CL.exe /c /I"E:\github\x-talker\wp-client\boghe\boghe-read-only\branches\2.0\boghe\winrt\BackEndProxyStub\\" /ZI /nologo /W1 /WX- /Od /Oy- /D WIN32_LEAN_AND_MEAN /D WIN32 /D REGISTER_PROXY_DLL /D _USRDLL /D _WINDLL /D WINAPI_FAMILY=WINAPI_FAMILY_PHONE_APP /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Win32\Debug\\" /Fd"Win32\Debug\vc110.pdb" /Gd /TC /analyze- /errorReport:prompt dlldata.c doubango_rt.BackEnd.OutOfProcess_i.c doubango_rt.BackEnd.OutOfProcess_p.c doubango_rt.BackEnd_i.c doubango_rt.BackEnd_p.c
+         doubango_rt.BackEnd_p.c
+         doubango_rt.BackEnd_i.c
+         doubango_rt.BackEnd.OutOfProcess_p.c
+         doubango_rt.BackEnd.OutOfProcess_i.c
+         dlldata.c
+         正在生成代码...
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\WPSDK\WP80\bin\link.exe /ERRORREPORT:PROMPT /OUT:"E:\github\x-talker\wp-client\boghe\boghe-read-only\branches\2.0\boghe\Debug\BackEndProxyStub\doubango_rt.BackEndProxyStub.dll" /INCREMENTAL /NOLOGO windowsphonecore.lib runtimeobject.lib rpcrt4.lib WindowsPhoneCore.lib RuntimeObject.lib PhoneAppModelHost.lib /DEF:"BackEndProxyStub.def" /MANIFEST:NO /PDB:"E:\github\x-talker\wp-client\boghe\boghe-read-only\branches\2.0\boghe\Debug\BackEndProxyStub\doubango_rt.BackEndProxyStub.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /WINMD:NO /DYNAMICBASE /NXCOMPAT /IMPLIB:"E:\github\x-talker\wp-client\boghe\boghe-read-only\branches\2.0\boghe\Debug\BackEndProxyStub\doubango_rt.BackEndProxyStub.lib" /MACHINE:X86 /DLL Win32\Debug\dlldata.obj
+         Win32\Debug\doubango_rt.BackEnd.OutOfProcess_i.obj
+         Win32\Debug\doubango_rt.BackEnd.OutOfProcess_p.obj
+         Win32\Debug\doubango_rt.BackEnd_i.obj
+         Win32\Debug\doubango_rt.BackEnd_p.obj
+            正在创建库 E:\github\x-talker\wp-client\boghe\boghe-read-only\branches\2.0\boghe\Debug\BackEndProxyStub\doubango_rt.BackEndProxyStub.lib 和对象 E:\github\x-talker\wp-client\boghe\boghe-read-only\branches\2.0\boghe\Debug\BackEndProxyStub\doubango_rt.BackEndProxyStub.exp
+         BackEndProxyStub.vcxproj -> E:\github\x-talker\wp-client\boghe\boghe-read-only\branches\2.0\boghe\Debug\BackEndProxyStub\doubango_rt.BackEndProxyStub.dll
+     1>已完成生成项目“E:\github\x-talker\wp-client\boghe\boghe-read-only\branches\2.0\boghe\winrt\BackEndProxyStub\BackEndProxyStub.vcxproj”(Build 个目标)的操作。
 
 生成成功。
 
-已用时间 00:00:00
+已用时间 00:00:02.23

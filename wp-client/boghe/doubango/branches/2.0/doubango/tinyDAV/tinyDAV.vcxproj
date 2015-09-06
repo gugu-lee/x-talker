@@ -57,7 +57,7 @@
       <PreprocessorDefinitions>HAVE_SRTP=1;HAVE_G729=0;HAVE_BV16=0;HAVE_OPENCORE_AMR=1;HAVE_H264=1;HAVE_ILBC=0;HAVE_LIBGSM=1;HAVE_LIBOPUS=1;HAVE_DSOUND_H=1;HAVE_WAVE_API=1;HAVE_FFMPEG=1;HAVE_SPEEX_DSP=1;HAVE_WEBRTC=1;HAVE_SPEEX_JB=1;HAVE_LIB_SPEEX=1;HAVE_LIBVPX=1;HAVE_LIBYUV=1;G192BITSTREAM=0;DEBUG_LEVEL=DEBUG_LEVEL_INFO;GOTHAM_CITY = 0;WIN32;_DEBUG;_WINDOWS;_USRDLL;_WIN32_WINNT=0x0501;TINYDAV_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <MinimalRebuild>true</MinimalRebuild>
       <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
-      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
       <PrecompiledHeader />
       <WarningLevel>Level3</WarningLevel>
       <TreatWarningAsError>true</TreatWarningAsError>
@@ -66,12 +66,13 @@
     </ClCompile>
     <Link>
       <AdditionalDependencies>Winmm.lib;Shlwapi.lib;$(OutDir)tinySAK.lib;$(OutDir)tinyIPSec.lib;$(OutDir)tinyNET.lib;$(OutDir)tinyRTP.lib;$(OutDir)tinyMSRP.lib;$(OutDir)tinySDP.lib;$(OutDir)tinyBFCP.lib;$(OutDir)tinyMEDIA.lib;..\thirdparties\win32\lib\opus\libopus.a;..\thirdparties\win32\lib\gsm\libgsm.a;..\thirdparties\win32\lib\ilbc\libiLBC.a;..\thirdparties\win32\lib\speex\libspeex.a;..\thirdparties\win32\lib\speex\libspeexdsp.a;..\thirdparties\win32\lib\ffmpeg\libavcodec.a;..\thirdparties\win32\lib\ffmpeg\libavutil.a;..\thirdparties\win32\lib\ffmpeg\libswscale.a;..\thirdparties\win32\lib\libgcc.a;..\thirdparties\win32\lib\libmingwex.a;..\thirdparties\win32\lib\ffmpeg\libx264.a;..\thirdparties\win32\lib\ffmpeg\libtheora.a;..\thirdparties\win32\lib\ffmpeg\libogg.a;..\thirdparties\win32\lib\webrtc\aec.lib;..\thirdparties\win32\lib\webrtc\aec_sse2.lib;..\thirdparties\win32\lib\webrtc\apm_util.lib;..\thirdparties\win32\lib\webrtc\system_wrappers.lib;..\thirdparties\win32\lib\webrtc\spl.lib;..\thirdparties\win32\lib\webrtc\ns.lib;..\thirdparties\win32\lib\libyuv\libyuv.lib;..\thirdparties\win32\lib\vpx\vpxmt.lib;%(AdditionalDependencies)</AdditionalDependencies>
-      <IgnoreSpecificDefaultLibraries>MSVCRT;LIBCMTD;LIBCMT;%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <IgnoreSpecificDefaultLibraries>LIBCMTD;%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <SubSystem>Windows</SubSystem>
       <RandomizedBaseAddress>false</RandomizedBaseAddress>
       <DataExecutionPrevention />
       <TargetMachine>MachineX86</TargetMachine>
+      <AdditionalOptions>/SAFESEH:NO %(AdditionalOptions)</AdditionalOptions>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">

@@ -609,7 +609,7 @@ static tsk_size_t tdav_converter_video_ffmpeg_process(tmedia_converter_video_t* 
 		}
 	}
 
-	/*FIXME: For now only 90° rotation is supported this is why we always use libyuv on mobile devices */
+	/*FIXME: For now only 90?rotation is supported this is why we always use libyuv on mobile devices */
 	_rotate = (PIX_FMT_YUV420P == self->dstFormat) && _self->rotation==90;
 
 	// if no rotation then, flip while scaling othersize do it after rotation

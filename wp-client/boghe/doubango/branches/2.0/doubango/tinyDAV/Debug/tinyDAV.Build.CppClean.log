@@ -54,6 +54,13 @@ e:\github\x-talker\wp-client\boghe\doubango\branches\2.0\doubango\tinydav\debug\
 e:\github\x-talker\wp-client\boghe\doubango\branches\2.0\doubango\tinydav\debug\tdav_producer_waveapi.obj
 e:\github\x-talker\wp-client\boghe\doubango\branches\2.0\doubango\tinydav\debug\tdav_session_bfcp.obj
 e:\github\x-talker\wp-client\boghe\doubango\branches\2.0\doubango\tinydav\debug\tdav_codec_amr.obj
+e:\github\x-talker\wp-client\boghe\doubango\branches\2.0\doubango\tinydav\debug\tdav.obj
+e:\github\x-talker\wp-client\boghe\doubango\branches\2.0\doubango\tinydav\debug\tdav_codec_h263.obj
+e:\github\x-talker\wp-client\boghe\doubango\branches\2.0\doubango\tinydav\debug\tdav_codec_h264.obj
+e:\github\x-talker\wp-client\boghe\doubango\branches\2.0\doubango\tinydav\debug\tdav_codec_h264_rtp.obj
+e:\github\x-talker\wp-client\boghe\doubango\branches\2.0\doubango\tinydav\debug\tdav_codec_mp4ves.obj
+e:\github\x-talker\wp-client\boghe\doubango\branches\2.0\doubango\tinydav\debug\tdav_session_av.obj
+e:\github\x-talker\wp-client\boghe\doubango\branches\2.0\doubango\tinydav\debug\tdav_codec_h264_cuda.obj
 e:\github\x-talker\wp-client\boghe\doubango\branches\2.0\doubango\tinydav\debug\tinydav.tlog\cl.command.1.tlog
 e:\github\x-talker\wp-client\boghe\doubango\branches\2.0\doubango\tinydav\debug\tinydav.tlog\cl.read.1.tlog
 e:\github\x-talker\wp-client\boghe\doubango\branches\2.0\doubango\tinydav\debug\tinydav.tlog\cl.write.1.tlog

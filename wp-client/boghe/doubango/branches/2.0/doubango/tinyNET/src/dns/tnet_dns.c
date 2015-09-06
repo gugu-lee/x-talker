@@ -58,7 +58,7 @@ const tnet_dns_cache_entry_t* tnet_dns_cache_entry_get(tnet_dns_ctx_t *ctx, cons
 * </p>
 * <p>
 * The DNS servers are automatically loaded by the stack when you create a context (@ref tnet_dns_ctx_create()). <br>
-* On Windows systems (XP, VISTA, 7 and CE) the servers are retrieved using WIN32 APIs. On Unix-like systems (both desktop and embedded) such as Debian, Ubuntu, Nokia’s N900… the list of DNS servers comes from “/etc/resolv.conf” file. <br>
+* On Windows systems (XP, VISTA, 7 and CE) the servers are retrieved using WIN32 APIs. On Unix-like systems (both desktop and embedded) such as Debian, Ubuntu, Nokia’s N900?the list of DNS servers comes from ?etc/resolv.conf?file. <br>
 * On Google Android operating system, this file is missing and the DNS settings are stored in the shared memory. You can access this shared memory by using @a property_get() and @a property_set() function which are part of Bionic. <br>
 * In all cases, you can retrieve the DNS servers yourself (e.g. using java/C# Frameworks) and add them to the context using @ref tnet_dns_add_server().
 * </p>
@@ -128,8 +128,7 @@ TSK_OBJECT_SAFE_FREE(ctx);
 *
 * <h2>11.2	ENUM</h2>
 * ENUM (E.164 Number Mapping) protocol has been defined in RFC 3761.
-* ENUM protocol is used to transform telephone numbers of the PSTN network (e.g. +33600000) into internet resource addresses (e.g. sip:diopmamadou@example.com) by using DNS lookup (NAPTR). The internet resource address could be an email, ICQ, IAX2, H.323 …
-* In our case (3GPP IMS) it is typically used to convert TEL URIs (e.g. tel:+33600000) into SIP URIs (sip:+33600000;user=phone). The telephone number to convert should be a valid E.164 number.
+* ENUM protocol is used to transform telephone numbers of the PSTN network (e.g. +33600000) into internet resource addresses (e.g. sip:diopmamadou@example.com) by using DNS lookup (NAPTR). The internet resource address could be an email, ICQ, IAX2, H.323 ?* In our case (3GPP IMS) it is typically used to convert TEL URIs (e.g. tel:+33600000) into SIP URIs (sip:+33600000;user=phone). The telephone number to convert should be a valid E.164 number.
 *
 * <h3>11.2.1	Usage</h3>
 * The code below shows how to gets the SIP address (with the higher order) associated to an E.164 telephone number.
@@ -155,7 +154,7 @@ TSK_OBJECT_SAFE_FREE(ctx);
 * <i>INFO: URI=sip:16416418000-555-5555@sip.tollfreegateway.com</i><br>
 *
 * E2U+SIP is the name of SIP ENUM service assigned by the IANA. Any assigned service () could be used even if the associated addresse type isn’t a well-knonw internet address.
-* To get all internet addresses (email, IAX2, ICQ, H.323 …) associated to the telephone, use @ref tnet_dns_enum() instead of @ref tnet_dns_enum_2().
+* To get all internet addresses (email, IAX2, ICQ, H.323 ? associated to the telephone, use @ref tnet_dns_enum() instead of @ref tnet_dns_enum_2().
 */
 
 /**@ingroup tnet_dns_group

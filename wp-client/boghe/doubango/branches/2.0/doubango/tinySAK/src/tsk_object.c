@@ -70,7 +70,7 @@ tsk_object_t* tsk_object_new(const tsk_object_def_t *objdef, ...)
 			}
 
 #if TSK_DEBUG_OBJECTS
-		TSK_DEBUG_INFO("N∞ objects:%d", ++tsk_objects_count);
+		TSK_DEBUG_INFO("N�� objects:%d", ++tsk_objects_count);
 #endif
 		}
 		else{
@@ -101,7 +101,7 @@ tsk_object_t* tsk_object_new_2(const tsk_object_def_t *objdef, va_list* ap)
 			newobj = objdef->constructor(newobj, ap);
 
 #if TSK_DEBUG_OBJECTS
-		TSK_DEBUG_INFO("N∞ objects:%d", ++tsk_objects_count);
+		TSK_DEBUG_INFO("N�� objects:%d", ++tsk_objects_count);
 #endif
 		}
 		else {
@@ -219,7 +219,7 @@ void tsk_object_delete(tsk_object_t *self)
 		if ((*objdef)->destructor) {
 			self = (*objdef)->destructor(self);
 #if TSK_DEBUG_OBJECTS
-		TSK_DEBUG_INFO("N∞ objects:%d", --tsk_objects_count);
+		TSK_DEBUG_INFO("N�� objects:%d", --tsk_objects_count);
 #endif
 		}
 		else {
@@ -264,7 +264,7 @@ person_t;
 Notice on the above code how @ref TSK_DECLARE_OBJECT macro is used to tag the struct. This macro must be the first element to appear an adds a definition (see next section) to the struct.
 *
 <h2>@anchor _Anchor_TinySAK_Object_Definition Object Definition</h2>
-* An object definition could be considered as a class definition. The definition holds the object’s mandatory functions, size and a reference counter.<br>
+* An object definition could be considered as a class definition. The definition holds the object��s mandatory functions, size and a reference counter.<br>
 * The mandatory functions are the constructor, the destructor and the comparator.<br>
 * A C structure is tagged as an object by using @ref TSK_DECLARE_OBJECT macro in its body.<br>
 * A pointer to an object definition shall point to a struct @ref tsk_object_def_s.<br>
@@ -284,10 +284,10 @@ tsk_object_def_t;
 * @endcode
 *
 * <p>
-* An object is created in two phases. The first phase consists of dynamically allocating the object on the heap; this is why its size is mandatory in the object definition structure. When a new object is allocated on the heap, all its members (char*, void*, int, long …) will be zeroed. In the second phase, the newly created object will be initialized by calling the supplied constructor. To perform these two phases, you should call @ref tsk_object_new() or @ref tsk_object_new_2().
+* An object is created in two phases. The first phase consists of dynamically allocating the object on the heap; this is why its size is mandatory in the object definition structure. When a new object is allocated on the heap, all its members (char*, void*, int, long ��) will be zeroed. In the second phase, the newly created object will be initialized by calling the supplied constructor. To perform these two phases, you should call @ref tsk_object_new() or @ref tsk_object_new_2().
 * </p>
 * <p>
-* An object is destroyed in two phases. The first phase consists of freeing its members (void*, char* …). It’s the destructor which is responsible of this task. In the second phase, the object itself is freed. As the object cannot free itself, you should use @ref tsk_object_unref() or @ref tsk_object_delete() to perform these two phases. The difference between these two functions is explained in the coming sections.
+* An object is destroyed in two phases. The first phase consists of freeing its members (void*, char* ��). It��s the destructor which is responsible of this task. In the second phase, the object itself is freed. As the object cannot free itself, you should use @ref tsk_object_unref() or @ref tsk_object_delete() to perform these two phases. The difference between these two functions is explained in the coming sections.
 * </p>
 * A well-defined object <b>must never be freed by yourself using free() standard C function</b>. This task is up to the memory manager.<br>
 * Below, an example of how to declare an object definition:<br>
@@ -302,7 +302,7 @@ tsk_object_def_t;
  };
 * @endcode 
 * <h2>@anchor _Anchor_TinySAK_Object_Constructor Constructor</h2>
-* The constructor is only responsible for the initialization and won’t allocate the object. When passed to the constructor, the object is already allocated.<br>
+* The constructor is only responsible for the initialization and won��t allocate the object. When passed to the constructor, the object is already allocated.<br>
 * Here is an example:<br>
 * @code
 // (constructor)
@@ -316,7 +316,7 @@ static tsk_object_t* person_ctor(tsk_object_t * self, va_list * app)
  }
 * @endcode 
 * <h2>@anchor _Anchor_TinySAK_Object_Destructor Destructor</h2>
-* The destructor will free the object’s members and won’t free the object itself (Phase 1). The destructor function must return a pointer to itself to allow the caller to perform the second phase (freeing the object itself).<br>
+* The destructor will free the object��s members and won��t free the object itself (Phase 1). The destructor function must return a pointer to itself to allow the caller to perform the second phase (freeing the object itself).<br>
 * Here is an example:<br>
 * @code
 // (destructor)
@@ -385,7 +385,7 @@ student_t* s = tsk_null;
 * As <b>person_t</b> is a well-defined object, then <b>student_t</b> is also well-defined.<br>
 *
 * <h2>@anchor _Anchor_TinySAK_Object_Basic_Usage Basic usage</h2>
-* Once the object’s definition is declared and all its mandatory functions implemented, it is used like this:<br>
+* Once the object��s definition is declared and all its mandatory functions implemented, it is used like this:<br>
 * @code
 // creates a person: will call the constructor
 person_t* bob = tsk_object_new(&person_def_t, "bob");
@@ -394,7 +394,7 @@ bob->girlfriend = tsk_object_new(&person_def_t, "alice");
 // deletes bob: will delete both bob and bob's girlfriend field by calling their destructors
 tsk_object_unref(bob);
 * @endcode
-* As it’s hard to guest which parameters the construct expects, it’s common to use macro (or function) helpers. In our example the helper function will look like this:
+* As it��s hard to guest which parameters the construct expects, it��s common to use macro (or function) helpers. In our example the helper function will look like this:
 * @code
 // create a person
 static person_t* person_create(const char* name)

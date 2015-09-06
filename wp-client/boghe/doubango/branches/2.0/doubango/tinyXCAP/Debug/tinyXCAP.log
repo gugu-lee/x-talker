@@ -1,5 +1,20 @@
-﻿生成启动时间为 2/14/2015 1:22:18 AM。
+﻿生成启动时间为 4/1/2015 10:48:10 AM。
+     1>项目“E:\github\x-talker\wp-client\boghe\doubango\branches\2.0\doubango\tinyXCAP\tinyXCAP.vcxproj”在节点 4 上(Build 个目标)。
+     1>Link:
+         D:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"E:\github\x-talker\wp-client\boghe\boghe-read-only\branches\2.0\boghe\Debug\tinyXCAP.dll" /INCREMENTAL /NOLOGO "E:\github\x-talker\wp-client\boghe\boghe-read-only\branches\2.0\boghe\Debug\tinyHTTP.lib" "E:\github\x-talker\wp-client\boghe\boghe-read-only\branches\2.0\boghe\Debug\tinyNET.lib" "E:\github\x-talker\wp-client\boghe\boghe-read-only\branches\2.0\boghe\Debug\tinySAK.lib" kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"E:\github\x-talker\wp-client\boghe\boghe-read-only\branches\2.0\boghe\Debug\tinyXCAP.pdb" /SUBSYSTEM:WINDOWS /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"E:\github\x-talker\wp-client\boghe\boghe-read-only\branches\2.0\boghe\Debug\tinyXCAP.lib" /MACHINE:X86 /SAFESEH /DLL Debug\version.res
+         Debug\txcap.obj
+         Debug\txcap_action.obj
+         Debug\txcap_auid.obj
+         Debug\txcap_document.obj
+         Debug\txcap_node.obj
+         Debug\txcap_selector.obj
+         "E:\github\x-talker\wp-client\boghe\boghe-read-only\branches\2.0\boghe\Debug\tinyNET.lib"
+         "E:\github\x-talker\wp-client\boghe\boghe-read-only\branches\2.0\boghe\Debug\tinySAK.lib"
+     1>txcap.obj : warning LNK4075: 
+            
+         tinyXCAP.vcxproj -> E:\github\x-talker\wp-client\boghe\boghe-read-only\branches\2.0\boghe\Debug\tinyXCAP.dll
+     1>已完成生成项目“E:\github\x-talker\wp-client\boghe\doubango\branches\2.0\doubango\tinyXCAP\tinyXCAP.vcxproj”(Build 个目标)的操作。
 
 生成成功。
 
-已用时间 00:00:00.04
+已用时间 00:00:01.60

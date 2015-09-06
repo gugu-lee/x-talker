@@ -1,1 +1,6 @@
 E:\home\ims\boghe-read-only\boghe-read-only\branches\2.0\boghe\doubango\obj\Debug\doubango.csprojResolveAssemblyReference.cache
+E:\github\x-talker\wp-client\boghe\boghe-read-only\branches\2.0\boghe\Debug\doubango.dll
+E:\github\x-talker\wp-client\boghe\boghe-read-only\branches\2.0\boghe\Debug\doubango.pdb
+E:\github\x-talker\wp-client\boghe\boghe-read-only\branches\2.0\boghe\doubango\obj\Debug\doubango.csprojResolveAssemblyReference.cache
+E:\github\x-talker\wp-client\boghe\boghe-read-only\branches\2.0\boghe\doubango\obj\Debug\doubango.dll
+E:\github\x-talker\wp-client\boghe\boghe-read-only\branches\2.0\boghe\doubango\obj\Debug\doubango.pdb

@@ -218,6 +218,7 @@ pip-log.txt
 ##java output file
 ###############
 .class
-
+.settings/
 .log
 target/
+deploy/

@@ -57,10 +57,10 @@ TDAV_BEGIN_DECLS
 #	define H264_FS_MAX_COUNT						16 // max number of DPBFS in the list
 #endif
 #if !defined(H264_LEVEL_MAX_COUNT)
-#	define H264_LEVEL_MAX_COUNT					16 // Table A-1 – Level limits: "1", "1b"... "5.1"
+#	define H264_LEVEL_MAX_COUNT					16 // Table A-1 ?Level limits: "1", "1b"... "5.1"
 #endif
 
-// Table A-1 – Level limits
+// Table A-1 ?Level limits
 static const int32_t MaxMBPS[H264_LEVEL_MAX_COUNT] = { 1485, 1485, 3000, 6000, 11880, 11880, 19800, 20250, 40500, 108000, 216000, 245760, 245760, 522240, 589824, 983040 };
 static const int32_t MaxFS[H264_LEVEL_MAX_COUNT] =  { 99, 99, 396, 396, 396, 396, 792, 1620, 1620, 3600, 5120, 8192, 8192, 8704, 22080, 36864 };
 static const int32_t MaxDpbMbs[H264_LEVEL_MAX_COUNT] = { 396, 396, 900, 2376, 2376, 2376, 4752, 8100, 8100, 18000, 20480, 32768, 32768, 34816, 110400, 184320 };
@@ -122,7 +122,7 @@ typedef struct tdav_codec_h264_common_level_size_xs
 	level_idc_t level;
 	unsigned width;
     unsigned height;
-	unsigned maxFS; // From "Table A-1 – Level limits"
+	unsigned maxFS; // From "Table A-1 ?Level limits"
 }
 tdav_codec_h264_common_level_size_xt;
 

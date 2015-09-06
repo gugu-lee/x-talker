@@ -10,8 +10,6 @@
 //------------------------------------------------------------------------------
 
 using BogheApp.embedded;
-using BogheControls;
-using BogheCore.Model;
 using System;
 using System.Diagnostics;
 using System.Windows;

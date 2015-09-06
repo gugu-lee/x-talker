@@ -1,5 +1,14 @@
-﻿生成启动时间为 2/14/2015 1:22:18 AM。
+﻿生成启动时间为 4/1/2015 10:48:10 AM。
+     1>项目“E:\github\x-talker\wp-client\boghe\doubango\branches\2.0\doubango\plugins\pluginCUDA\pluginCUDA.vcxproj”在节点 4 上(Build 个目标)。
+     1>ClCompile:
+         D:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /Iinclude /I. /I..\..\thirdparties\win32\include /I..\..\tinySAK\src /I..\..\tinyMEDIA\include /I..\..\tinySDP\include /I..\..\tinyDAV\include /I..\..\tinyRTP\include /ZI /nologo /W3 /WX /Od /Oy- /D WIN32 /D _DEBUG /D _WINDOWS /D _USRDLL /D PLUGIN_CUDA_EXPORTS /D _WINDLL /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt plugin_cuda_codec_h264.cxx plugin_cuda_utils.cxx
+         plugin_cuda_utils.cxx
+     1>e:\github\x-talker\wp-client\boghe\doubango\branches\2.0\doubango\plugins\plugincuda\plugin_cuda_utils.cxx(23): fatal error C1083: 无法打开包括文件: “NVEncoderAPI.h”: No such file or directory
+         plugin_cuda_codec_h264.cxx
+     1>e:\github\x-talker\wp-client\boghe\doubango\branches\2.0\doubango\plugins\plugincuda\plugin_cuda_codec_h264.cxx(36): fatal error C1083: 无法打开包括文件: “nvcuvid.h”: No such file or directory
+         正在生成代码...
+     1>已完成生成项目“E:\github\x-talker\wp-client\boghe\doubango\branches\2.0\doubango\plugins\pluginCUDA\pluginCUDA.vcxproj”(Build 个目标)的操作 - 失败。
 
-生成成功。
+生成失败。
 
-已用时间 00:00:00.01
+已用时间 00:00:01.72

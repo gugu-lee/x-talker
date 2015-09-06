@@ -51,7 +51,7 @@
 * <h1>15 HTTP/HTTPS</h1>
 * <p>
 * The HTTP/HTTPS stack is a basic thread-safe client API and is used in conjunction with the XCAP protocol. 
-* Almost all HTTP methods such as OPTIONS, HEAD, GET, DELETE, POST, CONNET, TRACE or PUT … are supported for outgoing requests. Only response messages will be correctly handled by the stack. Requests will be passed to the application layer “as is” and no new connection will be opened.
+* Almost all HTTP methods such as OPTIONS, HEAD, GET, DELETE, POST, CONNET, TRACE or PUT ?are supported for outgoing requests. Only response messages will be correctly handled by the stack. Requests will be passed to the application layer “as is?and no new connection will be opened.
 * </p>
 * <p>
 * Both IPv4 and IPv6 are supported. If the host name (FQDN) resolution leads to both IPv4 and IPv6 results, then IPv4 will be used by default.
@@ -145,7 +145,7 @@ if((ret = thttp_stack_start(stack))){
 * The network connection will be definitely closed when the session is destroyed.
 * </p>
 * <p>
-* As the connection is persistent, then you can send multiple requests without waiting for each response. This mode is called “Pipelining” and is defined as per RFC 2616 section 8.1.2.2.
+* As the connection is persistent, then you can send multiple requests without waiting for each response. This mode is called “Pipelining?and is defined as per RFC 2616 section 8.1.2.2.
 * </p>
 * <p>
 * You should not pipeline requests using non-idempotent methods or non-idempotent sequences of methods. This means that you can safely pipeline GET or HEAD methods but should not with PUT or POST requests. Only HTTP version 1.1(or later) requests should be pipelined.<br>
@@ -208,10 +208,10 @@ THTTP_SESSION_SET_CRED("ali baba", "open sesame"),
 * 
 * <h2>15.3 Requests</h2>
 * <p>
-* A HTTP request is referred to as an “action” and is always associated to a session. There are nine well-know actions you can perform: <b>CONNET</b>, <b>DELETE</b>, <b>GET</b>, <b>HEAD</b>, <b>OPTIONS</b>, <b>PATCH</b>, <b>POST</b>, <b>PUT</b> and <b>TRACE</b>. You can use @ref thttp_action_perform(session, url, method, …) function to send a custom request. All <i>thttp_action_*()</i> functions are non-blocking.<br>
+* A HTTP request is referred to as an “action?and is always associated to a session. There are nine well-know actions you can perform: <b>CONNET</b>, <b>DELETE</b>, <b>GET</b>, <b>HEAD</b>, <b>OPTIONS</b>, <b>PATCH</b>, <b>POST</b>, <b>PUT</b> and <b>TRACE</b>. You can use @ref thttp_action_perform(session, url, method, ? function to send a custom request. All <i>thttp_action_*()</i> functions are non-blocking.<br>
 * </p>
 * <p>
-* All requests are sent in an asynchronous manner and the result (HTTP messages, errors, time out …) will be passed to the callback function.
+* All requests are sent in an asynchronous manner and the result (HTTP messages, errors, time out ? will be passed to the callback function.
 * </p>
 *
 * The code below shows how to send HTTP <b>PUT</b> request.

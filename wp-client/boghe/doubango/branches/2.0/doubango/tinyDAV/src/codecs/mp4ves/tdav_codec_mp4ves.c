@@ -103,8 +103,8 @@ typedef enum mp4v_codes_e
 	// To identify the beginning of user data. The user data continues until receipt of another start code. (6.3.2.1)
 	user_data_start_code = 0x000001B2,
 	// The video_object_layer_start_code is a string of 32 bits. The first 28 bits are
-	// ‘0000 0000 0000 0000 0000 0001 0010‘ in binary and the last 4-bits represent one of the values in the range of
-	// ‘0000’ to ‘1111’ in binary. The video_object_layer_start_code marks a new video object layer. (6.3.3)
+	// ?000 0000 0000 0000 0000 0001 0010?in binary and the last 4-bits represent one of the values in the range of
+	// ?000?to ?111?in binary. The video_object_layer_start_code marks a new video object layer. (6.3.3)
 	video_object_layer_start_code = 0x0000012,
 	// To identify the beginning of a GOV header (6.3.4)
 	group_of_vop_start_code = 0x000001B3,

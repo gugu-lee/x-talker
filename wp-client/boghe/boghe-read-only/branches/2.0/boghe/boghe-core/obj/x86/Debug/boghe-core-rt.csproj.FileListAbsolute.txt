@@ -11,3 +11,16 @@ E:\home\ims\boghe-read-only\boghe-read-only\branches\2.0\boghe\boghe-core\Bin\x8
 E:\home\ims\boghe-read-only\boghe-read-only\branches\2.0\boghe\boghe-core\Bin\x86\Debug\doubango_rt.BackEnd.pdb
 E:\home\ims\boghe-read-only\boghe-read-only\branches\2.0\boghe\boghe-core\obj\x86\Debug\boghe_core_rt.dll
 E:\home\ims\boghe-read-only\boghe-read-only\branches\2.0\boghe\boghe-core\obj\x86\Debug\boghe_core_rt.pdb
+E:\github\x-talker\wp-client\boghe\boghe-read-only\branches\2.0\boghe\boghe-core\Bin\x86\Debug\boghe_core_rt.dll
+E:\github\x-talker\wp-client\boghe\boghe-read-only\branches\2.0\boghe\boghe-core\Bin\x86\Debug\boghe_core_rt.pdb
+E:\github\x-talker\wp-client\boghe\boghe-read-only\branches\2.0\boghe\boghe-core\Bin\x86\Debug\boghe_xdm_rt.dll
+E:\github\x-talker\wp-client\boghe\boghe-read-only\branches\2.0\boghe\boghe-core\Bin\x86\Debug\doubango.dll
+E:\github\x-talker\wp-client\boghe\boghe-read-only\branches\2.0\boghe\boghe-core\Bin\x86\Debug\doubango_rt.Agents.dll
+E:\github\x-talker\wp-client\boghe\boghe-read-only\branches\2.0\boghe\boghe-core\Bin\x86\Debug\doubango_rt.BackEnd.winmd
+E:\github\x-talker\wp-client\boghe\boghe-read-only\branches\2.0\boghe\boghe-core\Bin\x86\Debug\boghe_xdm_rt.pdb
+E:\github\x-talker\wp-client\boghe\boghe-read-only\branches\2.0\boghe\boghe-core\Bin\x86\Debug\doubango.pdb
+E:\github\x-talker\wp-client\boghe\boghe-read-only\branches\2.0\boghe\boghe-core\Bin\x86\Debug\doubango_rt.Agents.pdb
+E:\github\x-talker\wp-client\boghe\boghe-read-only\branches\2.0\boghe\boghe-core\Bin\x86\Debug\doubango_rt.BackEnd.pdb
+E:\github\x-talker\wp-client\boghe\boghe-read-only\branches\2.0\boghe\boghe-core\obj\x86\Debug\boghe-core-rt.csprojResolveAssemblyReference.cache
+E:\github\x-talker\wp-client\boghe\boghe-read-only\branches\2.0\boghe\boghe-core\obj\x86\Debug\boghe_core_rt.dll
+E:\github\x-talker\wp-client\boghe\boghe-read-only\branches\2.0\boghe\boghe-core\obj\x86\Debug\boghe_core_rt.pdb

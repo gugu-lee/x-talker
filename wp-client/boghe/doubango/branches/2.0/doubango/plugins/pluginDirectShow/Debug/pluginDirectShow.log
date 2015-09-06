@@ -1,5 +1,49 @@
-﻿生成启动时间为 2/14/2015 1:22:18 AM。
+﻿生成启动时间为 4/1/2015 10:48:10 AM。
+     1>项目“E:\github\x-talker\wp-client\boghe\doubango\branches\2.0\doubango\plugins\pluginDirectShow\pluginDirectShow.vcxproj”在节点 6 上(Build 个目标)。
+     1>Link:
+         D:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"E:\github\x-talker\wp-client\boghe\boghe-read-only\branches\2.0\boghe\Debug\pluginDirectShow.dll" /INCREMENTAL /NOLOGO ..\..\thirdparties\win32\lib\directshow\strmbasd.lib dmoguids.lib strmiids.lib uuid.lib Winmm.lib "E:\github\x-talker\wp-client\boghe\boghe-read-only\branches\2.0\boghe\Debug\tinySAK.lib" "E:\github\x-talker\wp-client\boghe\boghe-read-only\branches\2.0\boghe\Debug\tinyMEDIA.lib" kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"E:\github\x-talker\wp-client\boghe\boghe-read-only\branches\2.0\boghe\Debug\pluginDirectShow.pdb" /SUBSYSTEM:WINDOWS /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"E:\github\x-talker\wp-client\boghe\boghe-read-only\branches\2.0\boghe\Debug\pluginDirectShow.lib" /MACHINE:X86 /SAFESEH /DLL Debug\version.res
+         Debug\dllmain_dshow.obj
+         Debug\DSCaptureFormat.obj
+         Debug\DSCaptureGraph.obj
+         Debug\DSCaptureUtils.obj
+         Debug\DSDibHelper.obj
+         Debug\DSDisplay.obj
+         Debug\DSDisplayGraph.obj
+         Debug\DSDisplayOverlay.obj
+         Debug\DSDisplayOverlay.VMR.obj
+         Debug\DSDisplayOverlay.VMR9.obj
+         Debug\DSFrameRateFilter.obj
+         Debug\DSGrabber.obj
+         Debug\DSOutputFilter.obj
+         Debug\DSOutputStream.obj
+         Debug\DSPushSourceDesktop.obj
+         Debug\DSScreenCastGraph.obj
+         Debug\DSUtils.obj
+         Debug\Resizer.obj
+         Debug\VideoDisplayName.obj
+         Debug\VideoGrabberName.obj
+         Debug\plugin_screencast_dshow_producer.obj
+         Debug\plugin_video_dshow_consumer.obj
+         Debug\plugin_video_dshow_producer.obj
+         "E:\github\x-talker\wp-client\boghe\boghe-read-only\branches\2.0\boghe\Debug\tinyMEDIA.lib"
+         "E:\github\x-talker\wp-client\boghe\boghe-read-only\branches\2.0\boghe\Debug\tinySAK.lib"
+     1>dllmain_dshow.obj : warning LNK4075: 
+            
+     1>strmbasd.lib(amfilter.obj) : warning LNK4099: 
+     1>strmbasd.lib(amvideo.obj) : warning LNK4099: 
+     1>strmbasd.lib(combase.obj) : warning LNK4099: 
+     1>strmbasd.lib(dllentry.obj) : warning LNK4099: 
+     1>strmbasd.lib(mtype.obj) : warning LNK4099: 
+     1>strmbasd.lib(source.obj) : warning LNK4099: 
+     1>strmbasd.lib(transfrm.obj) : warning LNK4099: 
+     1>strmbasd.lib(transip.obj) : warning LNK4099: 
+     1>strmbasd.lib(winutil.obj) : warning LNK4099: 
+     1>strmbasd.lib(wxdebug.obj) : warning LNK4099: 
+     1>strmbasd.lib(wxlist.obj) : warning LNK4099: 
+     1>strmbasd.lib(wxutil.obj) : warning LNK4099: 
+         pluginDirectShow.vcxproj -> E:\github\x-talker\wp-client\boghe\boghe-read-only\branches\2.0\boghe\Debug\pluginDirectShow.dll
+     1>已完成生成项目“E:\github\x-talker\wp-client\boghe\doubango\branches\2.0\doubango\plugins\pluginDirectShow\pluginDirectShow.vcxproj”(Build 个目标)的操作。
 
 生成成功。
 
-已用时间 00:00:00.01
+已用时间 00:00:02.41

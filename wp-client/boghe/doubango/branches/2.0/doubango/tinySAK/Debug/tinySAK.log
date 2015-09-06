@@ -1,5 +1,47 @@
-﻿生成启动时间为 2/14/2015 1:22:19 AM。
+﻿生成启动时间为 4/1/2015 10:35:32 AM。
+     1>项目“E:\github\x-talker\wp-client\boghe\doubango\branches\2.0\doubango\tinySAK\tinySAK.vcxproj”在节点 2 上(Build 个目标)。
+     1>ClCompile:
+         D:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /I..\thirdparties\win32\include /ZI /nologo /W3 /WX /Od /Oy- /D DEBUG_LEVEL=DEBUG_LEVEL_INFO /D WIN32 /D _DEBUG /D _WINDOWS /D _USRDLL /D TINYSAK_EXPORTS /D _WIN32_WINNT=0x0501 /D _WINDLL /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TC /analyze- /errorReport:prompt src\tsk_object.c
+         tsk_object.c
+       ResourceCompile:
+         C:\Program Files (x86)\Windows Kits\8.1\bin\x86\rc.exe /D _UNICODE /D UNICODE /l"0x0409" /nologo /fo"Debug\version.res" version.rc 
+       Link:
+         D:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"E:\github\x-talker\wp-client\boghe\boghe-read-only\branches\2.0\boghe\Debug\tinySAK.dll" /INCREMENTAL /NOLOGO Winmm.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"E:\github\x-talker\wp-client\boghe\boghe-read-only\branches\2.0\boghe\Debug\tinySAK.pdb" /SUBSYSTEM:WINDOWS /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"E:\github\x-talker\wp-client\boghe\boghe-read-only\branches\2.0\boghe\Debug\tinySAK.lib" /MACHINE:X86 /SAFESEH /DLL Debug\version.res
+         Debug\tsk.obj
+         Debug\tsk_base64.obj
+         Debug\tsk_binaryutils.obj
+         Debug\tsk_buffer.obj
+         Debug\tsk_condwait.obj
+         Debug\tsk_debug.obj
+         Debug\tsk_fsm.obj
+         Debug\tsk_hmac.obj
+         Debug\tsk_list.obj
+         Debug\tsk_md5.obj
+         Debug\tsk_memory.obj
+         Debug\tsk_mutex.obj
+         Debug\tsk_object.obj
+         Debug\tsk_options.obj
+         Debug\tsk_params.obj
+         Debug\tsk_plugin.obj
+         Debug\tsk_ppfcs16.obj
+         Debug\tsk_ppfcs32.obj
+         Debug\tsk_ragel_state.obj
+         Debug\tsk_runnable.obj
+         Debug\tsk_safeobj.obj
+         Debug\tsk_semaphore.obj
+         Debug\tsk_sha1.obj
+         Debug\tsk_string.obj
+         Debug\tsk_thread.obj
+         Debug\tsk_time.obj
+         Debug\tsk_timer.obj
+         Debug\tsk_url.obj
+         Debug\tsk_uuid.obj
+         Debug\tsk_xml.obj
+     1>tsk.obj : warning LNK4075: 忽略“/EDITANDCONTINUE”(由于“/SAFESEH”规范)
+            正在创建库 E:\github\x-talker\wp-client\boghe\boghe-read-only\branches\2.0\boghe\Debug\tinySAK.lib 和对象 E:\github\x-talker\wp-client\boghe\boghe-read-only\branches\2.0\boghe\Debug\tinySAK.exp
+         tinySAK.vcxproj -> E:\github\x-talker\wp-client\boghe\boghe-read-only\branches\2.0\boghe\Debug\tinySAK.dll
+     1>已完成生成项目“E:\github\x-talker\wp-client\boghe\doubango\branches\2.0\doubango\tinySAK\tinySAK.vcxproj”(Build 个目标)的操作。
 
 生成成功。
 
-已用时间 00:00:00.03
+已用时间 00:00:01.04

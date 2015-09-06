@@ -418,7 +418,7 @@ TSK_OBJECT_SAFE_FREE(rp_ack);
 * <h2> 18.3.4 RP-ERROR @anchor tsms_rpdu_group_ERROR</h2>
 * This message is sent between the MSC and the mobile station in both directions and used to relay an error cause from an erroneous short message or notification transfer attempt.<br>
 * For more information, please refer to 3GPP TS 24.011 section7.3.2.4.<br>
-* The code below shows how to send a <i>RP-ERROR</i> message with a <i>RP-User-Data</i> (see 3GPP TS 23.011 section 8.2.5.3) information element which includes <i>SMS-DELIVER-REPORT</i> as type indicator. In this example, the error message is sent because the “call is barred”. For more information about the cause values that may be contained in an <i>RP-ERROR</i> message, please refer to 3GPP TS 24.011 section 8.2.5.4.<br>
+* The code below shows how to send a <i>RP-ERROR</i> message with a <i>RP-User-Data</i> (see 3GPP TS 23.011 section 8.2.5.3) information element which includes <i>SMS-DELIVER-REPORT</i> as type indicator. In this example, the error message is sent because the “call is barred? For more information about the cause values that may be contained in an <i>RP-ERROR</i> message, please refer to 3GPP TS 24.011 section 8.2.5.4.<br>
 * 
 * @code
 #include "tsk.h"

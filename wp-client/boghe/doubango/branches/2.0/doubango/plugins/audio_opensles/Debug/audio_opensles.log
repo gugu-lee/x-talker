@@ -1,5 +1,19 @@
-﻿生成启动时间为 2/14/2015 1:22:18 AM。
+﻿生成启动时间为 4/1/2015 10:27:11 AM。
+     1>项目“E:\github\x-talker\wp-client\boghe\doubango\branches\2.0\doubango\plugins\audio_opensles\audio_opensles.vcxproj”在节点 2 上(Build 个目标)。
+     1>Link:
+         D:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"E:\github\x-talker\wp-client\boghe\boghe-read-only\branches\2.0\boghe\Debug\audio_opensles.dll" /INCREMENTAL /NOLOGO "E:\github\x-talker\wp-client\boghe\boghe-read-only\branches\2.0\boghe\Debug\tinySAK.lib" "E:\github\x-talker\wp-client\boghe\boghe-read-only\branches\2.0\boghe\Debug\tinyMEDIA.lib" kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"E:\github\x-talker\wp-client\boghe\boghe-read-only\branches\2.0\boghe\Debug\audio_opensles.pdb" /SUBSYSTEM:WINDOWS /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"E:\github\x-talker\wp-client\boghe\boghe-read-only\branches\2.0\boghe\Debug\audio_opensles.lib" /MACHINE:X86 /SAFESEH /DLL Debug\tdav_consumer_audio.obj
+         Debug\tdav_producer_audio.obj
+         Debug\audio_opensles.obj
+         Debug\audio_opensles_consumer.obj
+         Debug\audio_opensles_device.obj
+         Debug\audio_opensles_device_impl.obj
+         Debug\audio_opensles_producer.obj
+         Debug\dllmain.obj
+     1>tdav_consumer_audio.obj : warning LNK4075: 忽略“/EDITANDCONTINUE”(由于“/SAFESEH”规范)
+            正在创建库 E:\github\x-talker\wp-client\boghe\boghe-read-only\branches\2.0\boghe\Debug\audio_opensles.lib 和对象 E:\github\x-talker\wp-client\boghe\boghe-read-only\branches\2.0\boghe\Debug\audio_opensles.exp
+         audio_opensles.vcxproj -> E:\github\x-talker\wp-client\boghe\boghe-read-only\branches\2.0\boghe\Debug\audio_opensles.dll
+     1>已完成生成项目“E:\github\x-talker\wp-client\boghe\doubango\branches\2.0\doubango\plugins\audio_opensles\audio_opensles.vcxproj”(Build 个目标)的操作。
 
 生成成功。
 
-已用时间 00:00:00.01
+已用时间 00:00:00.42

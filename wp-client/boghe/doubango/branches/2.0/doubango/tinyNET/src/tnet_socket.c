@@ -76,8 +76,7 @@ tnet_socket_t* socket = tnet_socket_create(
 * -	The socket type (stream, dgram),
 * -	The socket protocol (udp, tcp, tls, sctp, ipsec),
 * -	The IP version (ipv6, ipv4),
-* -	…
-* <br>
+* -	?* <br>
 * A socket is a well-defined object and should be destroyed using @a TSK_DECLARE_SAFE_FREE() macro.
 * A socket will be automatically closed when destroyed.
 * 

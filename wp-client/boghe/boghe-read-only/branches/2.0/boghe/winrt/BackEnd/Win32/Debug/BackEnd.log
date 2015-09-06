@@ -1,5 +1,576 @@
-﻿生成启动时间为 2/14/2015 1:22:56 AM。
+﻿生成启动时间为 4/2/2015 1:17:51 AM。
+     1>项目“E:\github\x-talker\wp-client\boghe\boghe-read-only\branches\2.0\boghe\winrt\BackEnd\BackEnd.vcxproj”在节点 2 上(Build 个目标)。
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\WPSDK\WP80\bin\CL.exe /c /I..\..\..\..\..\..\doubango\branches\2.0\doubango\thirdparties\common\include /I..\..\..\..\..\..\doubango\branches\2.0\doubango\thirdparties\winrt\include /I..\..\..\..\..\..\doubango\branches\2.0\doubango\tinySAK\src /I..\..\..\..\..\..\doubango\branches\2.0\doubango\tinyNET\src /I..\..\..\..\..\..\doubango\branches\2.0\doubango\tinySIGCOMP\src /I..\..\..\..\..\..\doubango\branches\2.0\doubango\tinyIPSec\src /I..\..\..\..\..\..\doubango\branches\2.0\doubango\tinyHTTP\include /I..\..\..\..\..\..\doubango\branches\2.0\doubango\tinyBFCP\include /I..\..\..\..\..\..\doubango\branches\2.0\doubango\tinySDP\include /I..\..\..\..\..\..\doubango\branches\2.0\doubango\tinyDAV\include /I..\..\..\..\..\..\doubango\branches\2.0\doubango\tinySMS\include /I..\..\..\..\..\..\doubango\branches\2.0\doubango\tinyXCAP\include /I..\..\..\..\..\..\doubango\branches\2.0\doubango\tinyRTP\include /I..\..\..\..\..\..\doubango\branches\2.0\doubango\tinySIP\include /I..\..\..\..\..\..\doubango\branches\2.0\doubango\tinyMSRP\include /I..\..\..\..\..\..\doubango\branches\2.0\doubango\tinyMEDIA\include /I..\..\..\..\..\..\doubango\branches\2.0\doubango\bindings\_Common /I..\..\..\..\..\..\doubango\branches\2.0\doubango\bindings\winrt\doubango_rt\include /I"E:\github\x-talker\wp-client\boghe\boghe-read-only\branches\2.0\boghe\winrt\BackEnd\\" /I"Generated Files\\" /IWin32\Debug\ /I"E:\github\x-talker\wp-client\boghe\boghe-read-only\branches\2.0\boghe\winrt\BackEnd\\" /I"Generated Files\\" /IWin32\Debug\ /ZI /nologo /W3 /WX- /sdl /MP /Od /Oy- /D _WINRT_DLL /D COM_VISIBLE=1 /D WIN32_LEAN_AND_MEAN /D TINYSAK_IMPORTS_IGNORE /D TINYNET_IMPORTS_IGNORE /D TINYMEDIA_IMPORTS_IGNORE /D TINYSDP_IMPORTS_IGNORE /D TINYBFCP_IMPORTS_IGNORE /D TINYHTTP_IMPORTS_IGNORE /D TINYIPSEC_IMPORTS_IGNORE /D TINYSMS_IMPORTS_IGNORE /D TINYXCAP_IMPORTS_IGNORE /D TINYMSRP_IMPORTS_IGNORE /D TINYRTP_IMPORTS_IGNORE /D TINYSIGCOMP_IMPORTS_IGNORE /D TINYSIP_IMPORTS_IGNORE /D TINYDAV_IMPORTS_IGNORE /D TINYWRAP_IMPORTS_IGNORE /D DEBUG_LEVEL=DEBUG_LEVEL_INFO /D FLIP_ENCODED_PICT=0 /D FLIP_DECODED_PICT=0 /D HAVE_IPSEC=0 /D HAVE_SRTP=0 /D HAVE_CUDA=0 /D HAVE_G729=0 /D HAVE_BV16=0 /D HAVE_OPENCORE_AMR=0 /D HAVE_H264=0 /D HAVE_H264_PASSTHROUGH=1 /D HAVE_ILBC=0 /D HAVE_LIBGSM=1 /D HAVE_TINYDSHOW=0 /D HAVE_DSOUND=0 /D HAVE_WASAPI=1 /D HAVE_WINM=1 /D HAVE_WAVE_API=0 /D HAVE_FFMPEG=0 /D HAVE_SPEEX_DSP=1 /D HAVE_WEBRTC=0 /D HAVE_SPEEX_JB=1 /D HAVE_LIB_SPEEX=1 /D HAVE_LIBVPX=0 /D HAVE_LIBYUV=0 /D G192BITSTREAM=0 /D _WINDLL /D _UNICODE /D UNICODE /D _DEBUG /D WINAPI_FAMILY=WINAPI_FAMILY_PHONE_APP /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Win32\Debug\\" /Fd"Win32\Debug\vc110.pdb" /Gd /TC /analyze- /errorReport:prompt ..\..\..\..\..\..\doubango\branches\2.0\doubango\tinyDAV\src\codecs\h263\tdav_codec_h263.c ..\..\..\..\..\..\doubango\branches\2.0\doubango\tinyDAV\src\codecs\h264\tdav_codec_h264.c ..\..\..\..\..\..\doubango\branches\2.0\doubango\tinyDAV\src\codecs\h264\tdav_codec_h264_rtp.c ..\..\..\..\..\..\doubango\branches\2.0\doubango\tinyDAV\src\codecs\mp4ves\tdav_codec_mp4ves.c ..\..\..\..\..\..\doubango\branches\2.0\doubango\tinyDAV\src\tdav.c ..\..\..\..\..\..\doubango\branches\2.0\doubango\tinyDAV\src\tdav_session_av.c ..\..\..\..\..\..\doubango\branches\2.0\doubango\tinyHTTP\src\thttp.c ..\..\..\..\..\..\doubango\branches\2.0\doubango\tinyNET\src\dns\tnet_dns.c ..\..\..\..\..\..\doubango\branches\2.0\doubango\tinyNET\src\tnet_socket.c ..\..\..\..\..\..\doubango\branches\2.0\doubango\tinySAK\src\tsk_object.c ..\..\..\..\..\..\doubango\branches\2.0\doubango\tinySIGCOMP\src\tcomp.c ..\..\..\..\..\..\doubango\branches\2.0\doubango\tinySIP\src\authentication\tsip_challenge.c ..\..\..\..\..\..\doubango\branches\2.0\doubango\tinySMS\src\tsms.c ..\..\..\..\..\..\doubango\branches\2.0\doubango\tinyXCAP\src\txcap.c
+         tdav_codec_h263.c
+         tdav_codec_h264.c
+         tdav_codec_h264_rtp.c
+         tdav_codec_mp4ves.c
+         tdav.c
+         tdav_session_av.c
+         thttp.c
+         tnet_dns.c
+         tnet_socket.c
+         tsk_object.c
+         tcomp.c
+         tsip_challenge.c
+         tsms.c
+         txcap.c
+         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\WPSDK\WP80\bin\CL.exe /c /I..\..\..\..\..\..\doubango\branches\2.0\doubango\thirdparties\common\include /I..\..\..\..\..\..\doubango\branches\2.0\doubango\thirdparties\winrt\include /I..\..\..\..\..\..\doubango\branches\2.0\doubango\tinySAK\src /I..\..\..\..\..\..\doubango\branches\2.0\doubango\tinyNET\src /I..\..\..\..\..\..\doubango\branches\2.0\doubango\tinySIGCOMP\src /I..\..\..\..\..\..\doubango\branches\2.0\doubango\tinyIPSec\src /I..\..\..\..\..\..\doubango\branches\2.0\doubango\tinyHTTP\include /I..\..\..\..\..\..\doubango\branches\2.0\doubango\tinyBFCP\include /I..\..\..\..\..\..\doubango\branches\2.0\doubango\tinySDP\include /I..\..\..\..\..\..\doubango\branches\2.0\doubango\tinyDAV\include /I..\..\..\..\..\..\doubango\branches\2.0\doubango\tinySMS\include /I..\..\..\..\..\..\doubango\branches\2.0\doubango\tinyXCAP\include /I..\..\..\..\..\..\doubango\branches\2.0\doubango\tinyRTP\include /I..\..\..\..\..\..\doubango\branches\2.0\doubango\tinySIP\include /I..\..\..\..\..\..\doubango\branches\2.0\doubango\tinyMSRP\include /I..\..\..\..\..\..\doubango\branches\2.0\doubango\tinyMEDIA\include /I..\..\..\..\..\..\doubango\branches\2.0\doubango\bindings\_Common /I..\..\..\..\..\..\doubango\branches\2.0\doubango\bindings\winrt\doubango_rt\include /I"E:\github\x-talker\wp-client\boghe\boghe-read-only\branches\2.0\boghe\winrt\BackEnd\\" /I"Generated Files\\" /IWin32\Debug\ /I"E:\github\x-talker\wp-client\boghe\boghe-read-only\branches\2.0\boghe\winrt\BackEnd\\" /I"Generated Files\\" /IWin32\Debug\ /ZI /nologo /W3 /WX- /sdl /MP /Od /Oy- /D _WINRT_DLL /D COM_VISIBLE=1 /D WIN32_LEAN_AND_MEAN /D TINYSAK_IMPORTS_IGNORE /D TINYNET_IMPORTS_IGNORE /D TINYMEDIA_IMPORTS_IGNORE /D TINYSDP_IMPORTS_IGNORE /D TINYBFCP_IMPORTS_IGNORE /D TINYHTTP_IMPORTS_IGNORE /D TINYIPSEC_IMPORTS_IGNORE /D TINYSMS_IMPORTS_IGNORE /D TINYXCAP_IMPORTS_IGNORE /D TINYMSRP_IMPORTS_IGNORE /D TINYRTP_IMPORTS_IGNORE /D TINYSIGCOMP_IMPORTS_IGNORE /D TINYSIP_IMPORTS_IGNORE /D TINYDAV_IMPORTS_IGNORE /D TINYWRAP_IMPORTS_IGNORE /D DEBUG_LEVEL=DEBUG_LEVEL_INFO /D FLIP_ENCODED_PICT=0 /D FLIP_DECODED_PICT=0 /D HAVE_IPSEC=0 /D HAVE_SRTP=0 /D HAVE_CUDA=0 /D HAVE_G729=0 /D HAVE_BV16=0 /D HAVE_OPENCORE_AMR=0 /D HAVE_H264=0 /D HAVE_H264_PASSTHROUGH=1 /D HAVE_ILBC=0 /D HAVE_LIBGSM=1 /D HAVE_TINYDSHOW=0 /D HAVE_DSOUND=0 /D HAVE_WASAPI=1 /D HAVE_WINM=1 /D HAVE_WAVE_API=0 /D HAVE_FFMPEG=0 /D HAVE_SPEEX_DSP=1 /D HAVE_WEBRTC=0 /D HAVE_SPEEX_JB=1 /D HAVE_LIB_SPEEX=1 /D HAVE_LIBVPX=0 /D HAVE_LIBYUV=0 /D G192BITSTREAM=0 /D _WINDLL /D _UNICODE /D UNICODE /D _DEBUG /D WINAPI_FAMILY=WINAPI_FAMILY_PHONE_APP /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Win32\Debug\\" /Fd"Win32\Debug\vc110.pdb" /Gd /TP /analyze- /errorReport:prompt ..\..\..\..\..\..\doubango\branches\2.0\doubango\tinyDAV\src\video\tdav_converter_video.cxx
+         tdav_converter_video.cxx
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\WPSDK\WP80\bin\link.exe /ERRORREPORT:PROMPT /OUT:"E:\github\x-talker\wp-client\boghe\boghe-read-only\branches\2.0\boghe\Debug\BackEnd\doubango_rt.BackEnd.dll" /INCREMENTAL /NOLOGO ws2_32.lib windowsphonecore.lib runtimeobject.lib PhoneAudioSes.lib ..\..\..\..\..\..\doubango\branches\2.0\doubango\thirdparties\winrt\lib\x86\libspeex.lib ..\..\..\..\..\..\doubango\branches\2.0\doubango\thirdparties\winrt\lib\x86\libspeexdsp.lib ..\..\..\..\..\..\doubango\branches\2.0\doubango\thirdparties\winrt\lib\x86\libgsm.lib WindowsPhoneCore.lib RuntimeObject.lib PhoneAppModelHost.lib /NODEFAULTLIB:LIBCMT.lib /NODEFAULTLIB:ole32.lib /MANIFEST:NO /DEBUG /PDB:"E:\github\x-talker\wp-client\boghe\boghe-read-only\branches\2.0\boghe\Debug\BackEnd\doubango_rt.BackEnd.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /WINMD /WINMDFILE:"E:\github\x-talker\wp-client\boghe\boghe-read-only\branches\2.0\boghe\Debug\BackEnd\doubango_rt.BackEnd.winmd" /DYNAMICBASE /NXCOMPAT /MACHINE:X86 /DLL Win32\Debug\rt_ActionConfig.obj
+         Win32\Debug\rt_DDebug.obj
+         Win32\Debug\rt_Enums.obj
+         Win32\Debug\rt_MediaContent.obj
+         Win32\Debug\rt_MediaSessionMgr.obj
+         Win32\Debug\rt_Msrp.obj
+         Win32\Debug\rt_SipCallback.obj
+         Win32\Debug\rt_SipEvent.obj
+         Win32\Debug\rt_SipMessage.obj
+         Win32\Debug\rt_SipSession.obj
+         Win32\Debug\rt_SipStack.obj
+         Win32\Debug\rt_SipUri.obj
+         Win32\Debug\rt_SMSEncoder.obj
+         Win32\Debug\rt_String.obj
+         Win32\Debug\rt_Xcap.obj
+         Win32\Debug\ActionConfig.obj
+         Win32\Debug\AudioResampler.obj
+         Win32\Debug\DDebug.obj
+         Win32\Debug\MediaContent.obj
+         Win32\Debug\MediaSessionMgr.obj
+         Win32\Debug\Msrp.obj
+         Win32\Debug\ProxyConsumer.obj
+         Win32\Debug\ProxyPluginMgr.obj
+         Win32\Debug\ProxyProducer.obj
+         Win32\Debug\SafeObject.obj
+         Win32\Debug\SipCallback.obj
+         Win32\Debug\SipEvent.obj
+         Win32\Debug\SipMessage.obj
+         Win32\Debug\SipSession.obj
+         Win32\Debug\SipStack.obj
+         Win32\Debug\SipUri.obj
+         Win32\Debug\SMSEncoder.obj
+         Win32\Debug\Xcap.obj
+         Win32\Debug\tbfcp_attr.obj
+         Win32\Debug\tbfcp_pkt.obj
+         Win32\Debug\tbfcp_session.obj
+         Win32\Debug\tbfcp_utils.obj
+         Win32\Debug\tdav_audiounit.obj
+         Win32\Debug\tdav_consumer_audioqueue.obj
+         Win32\Debug\tdav_consumer_audiounit.obj
+         Win32\Debug\tdav_producer_audioqueue.obj
+         Win32\Debug\tdav_producer_audiounit.obj
+         Win32\Debug\tdav_consumer_dsound.obj
+         Win32\Debug\tdav_producer_dsound.obj
+         Win32\Debug\tdav_consumer_audio.obj
+         Win32\Debug\tdav_jitterbuffer.obj
+         Win32\Debug\tdav_producer_audio.obj
+         Win32\Debug\tdav_session_audio.obj
+         Win32\Debug\tdav_speakup_jitterbuffer.obj
+         Win32\Debug\tdav_speex_denoise.obj
+         Win32\Debug\tdav_speex_jitterbuffer.obj
+         Win32\Debug\tdav_speex_resampler.obj
+         Win32\Debug\tdav_webrtc_denoise.obj
+         Win32\Debug\tdav_consumer_wasapi.obj
+         Win32\Debug\tdav_producer_wasapi.obj
+         Win32\Debug\tdav_consumer_waveapi.obj
+         Win32\Debug\tdav_producer_waveapi.obj
+         Win32\Debug\tdav_session_bfcp.obj
+         Win32\Debug\tdav_codec_amr.obj
+         Win32\Debug\tdav_codec_bfcp.obj
+         Win32\Debug\tdav_codec_bv16.obj
+         Win32\Debug\tdav_codec_bv32.obj
+         Win32\Debug\tdav_codec_dtmf.obj
+         Win32\Debug\tdav_codec_red.obj
+         Win32\Debug\tdav_codec_ulpfec.obj
+         Win32\Debug\g711.obj
+         Win32\Debug\tdav_codec_g711.obj
+         Win32\Debug\g722_decode.obj
+         Win32\Debug\g722_encode.obj
+         Win32\Debug\tdav_codec_g722.obj
+         Win32\Debug\tdav_codec_g729.obj
+         Win32\Debug\tdav_codec_gsm.obj
+         Win32\Debug\tdav_codec_h261.obj
+         Win32\Debug\tdav_codec_h263.obj
+         Win32\Debug\tdav_codec_h264.obj
+         Win32\Debug\tdav_codec_h264_cuda.obj
+         Win32\Debug\tdav_codec_h264_rtp.obj
+         Win32\Debug\tdav_codec_ilbc.obj
+         Win32\Debug\tdav_codec_mp4ves.obj
+         Win32\Debug\tdav_codec_msrp.obj
+         Win32\Debug\tdav_codec_speex.obj
+         Win32\Debug\tdav_codec_t140.obj
+         Win32\Debug\tdav_codec_theora.obj
+         Win32\Debug\tdav_codec_vp8.obj
+         Win32\Debug\tdav_consumer_msrp.obj
+         Win32\Debug\tdav_producer_msrp.obj
+         Win32\Debug\tdav_session_msrp.obj
+         Win32\Debug\tdav_consumer_t140.obj
+         Win32\Debug\tdav_producer_t140.obj
+         Win32\Debug\tdav_session_t140.obj
+         Win32\Debug\tdav.obj
+         Win32\Debug\tdav_session_av.obj
+         Win32\Debug\tdav_win32.obj
+         Win32\Debug\tdav_video_frame.obj
+         Win32\Debug\tdav_video_jb.obj
+         Win32\Debug\tdav_consumer_video.obj
+         Win32\Debug\tdav_converter_video.obj
+         Win32\Debug\tdav_runnable_video.obj
+         Win32\Debug\tdav_session_video.obj
+         Win32\Debug\tdav_consumer_winm.obj
+         Win32\Debug\tdav_producer_winm.obj
+         Win32\Debug\thttp_auth.obj
+         Win32\Debug\thttp_challenge.obj
+         Win32\Debug\thttp_header.obj
+         Win32\Debug\thttp_header_Authorization.obj
+         Win32\Debug\thttp_header_Content_Length.obj
+         Win32\Debug\thttp_header_Content_Type.obj
+         Win32\Debug\thttp_header_Dummy.obj
+         Win32\Debug\thttp_header_ETag.obj
+         Win32\Debug\thttp_header_Sec_WebSocket_Accept.obj
+         Win32\Debug\thttp_header_Sec_WebSocket_Key.obj
+         Win32\Debug\thttp_header_Sec_WebSocket_Protocol.obj
+         Win32\Debug\thttp_header_Sec_WebSocket_Version.obj
+         Win32\Debug\thttp_header_Transfer_Encoding.obj
+         Win32\Debug\thttp_header_WWW_Authenticate.obj
+         Win32\Debug\thttp_parser_header.obj
+         Win32\Debug\thttp_parser_message.obj
+         Win32\Debug\thttp_parser_url.obj
+         Win32\Debug\thttp.obj
+         Win32\Debug\thttp_action.obj
+         Win32\Debug\thttp_dialog.obj
+         Win32\Debug\thttp_event.obj
+         Win32\Debug\thttp_message.obj
+         Win32\Debug\thttp_session.obj
+         Win32\Debug\thttp_url.obj
+         Win32\Debug\tipsec.obj
+         Win32\Debug\tmedia_content.obj
+         Win32\Debug\tmedia_content_cpim.obj
+         Win32\Debug\tmedia_content_multipart.obj
+         Win32\Debug\tmedia_content_sip_frag.obj
+         Win32\Debug\tmedia.obj
+         Win32\Debug\tmedia_codec.obj
+         Win32\Debug\tmedia_codec_dummy.obj
+         Win32\Debug\tmedia_common.obj
+         Win32\Debug\tmedia_consumer.obj
+         Win32\Debug\tmedia_converter_video.obj
+         Win32\Debug\tmedia_defaults.obj
+         Win32\Debug\tmedia_denoise.obj
+         Win32\Debug\tmedia_imageattr.obj
+         Win32\Debug\tmedia_jitterbuffer.obj
+         Win32\Debug\tmedia_params.obj
+         Win32\Debug\tmedia_producer.obj
+         Win32\Debug\tmedia_qos.obj
+         Win32\Debug\tmedia_resampler.obj
+         Win32\Debug\tmedia_session.obj
+         Win32\Debug\tmedia_session_dummy.obj
+         Win32\Debug\tmedia_session_ghost.obj
+         Win32\Debug\tmedia_vad.obj
+         Win32\Debug\tmsrp_header.obj
+         "Win32\Debug\tmsrp_header_Authentication-Info.obj"
+         Win32\Debug\tmsrp_header_Authorization.obj
+         "Win32\Debug\tmsrp_header_Byte-Range.obj"
+         "Win32\Debug\tmsrp_header_Content-Type.obj"
+         Win32\Debug\tmsrp_header_Dummy.obj
+         Win32\Debug\tmsrp_header_Expires.obj
+         "Win32\Debug\tmsrp_header_Failure-Report.obj"
+         "Win32\Debug\tmsrp_header_From-Path.obj"
+         "Win32\Debug\tmsrp_header_Max-Expires.obj"
+         "Win32\Debug\tmsrp_header_Message-ID.obj"
+         "Win32\Debug\tmsrp_header_Min-Expires.obj"
+         Win32\Debug\tmsrp_header_Status.obj
+         "Win32\Debug\tmsrp_header_Success-Report.obj"
+         "Win32\Debug\tmsrp_header_To-Path.obj"
+         "Win32\Debug\tmsrp_header_Use-Path.obj"
+         "Win32\Debug\tmsrp_header_WWW-Authenticate.obj"
+         Win32\Debug\tmsrp_parser_message.obj
+         Win32\Debug\tmsrp_parser_uri.obj
+         Win32\Debug\tmsrp_config.obj
+         Win32\Debug\tmsrp_data.obj
+         Win32\Debug\tmsrp_receiver.obj
+         Win32\Debug\tmsrp_sender.obj
+         Win32\Debug\tmsrp.obj
+         Win32\Debug\tmsrp_event.obj
+         Win32\Debug\tmsrp_message.obj
+         Win32\Debug\tmsrp_uri.obj
+         Win32\Debug\tnet_dhcp6.obj
+         Win32\Debug\tnet_dhcp6_duid.obj
+         Win32\Debug\tnet_dhcp6_message.obj
+         Win32\Debug\tnet_dhcp6_option.obj
+         Win32\Debug\tnet_dhcp.obj
+         Win32\Debug\tnet_dhcp_message.obj
+         Win32\Debug\tnet_dhcp_option.obj
+         Win32\Debug\tnet_dhcp_option_sip.obj
+         Win32\Debug\tnet_dns.obj
+         Win32\Debug\tnet_dns_a.obj
+         Win32\Debug\tnet_dns_aaaa.obj
+         Win32\Debug\tnet_dns_cname.obj
+         Win32\Debug\tnet_dns_message.obj
+         Win32\Debug\tnet_dns_mx.obj
+         Win32\Debug\tnet_dns_naptr.obj
+         Win32\Debug\tnet_dns_ns.obj
+         Win32\Debug\tnet_dns_opt.obj
+         Win32\Debug\tnet_dns_ptr.obj
+         Win32\Debug\tnet_dns_regexp.obj
+         Win32\Debug\tnet_dns_resolvconf.obj
+         Win32\Debug\tnet_dns_rr.obj
+         Win32\Debug\tnet_dns_soa.obj
+         Win32\Debug\tnet_dns_srv.obj
+         Win32\Debug\tnet_dns_txt.obj
+         Win32\Debug\tnet_ice.obj
+         Win32\Debug\tnet_ice_candidate.obj
+         Win32\Debug\tnet_ice_ctx.obj
+         Win32\Debug\tnet_ice_event.obj
+         Win32\Debug\tnet_ice_pair.obj
+         Win32\Debug\tnet_ice_utils.obj
+         Win32\Debug\tnet_stun.obj
+         Win32\Debug\tnet_stun_attr.obj
+         Win32\Debug\tnet_stun_attribute.obj
+         Win32\Debug\tnet_stun_binding.obj
+         Win32\Debug\tnet_stun_message.obj
+         Win32\Debug\tnet_stun_pkt.obj
+         Win32\Debug\tnet_stun_utils.obj
+         Win32\Debug\tnet_dtls.obj
+         Win32\Debug\tnet_tls.obj
+         Win32\Debug\tnet.obj
+         Win32\Debug\tnet_auth.obj
+         Win32\Debug\tnet_endianness.obj
+         Win32\Debug\tnet_nat.obj
+         Win32\Debug\tnet_poll.obj
+         Win32\Debug\tnet_socket.obj
+         Win32\Debug\tnet_transport.obj
+         Win32\Debug\tnet_transport_cfsocket.obj
+         Win32\Debug\tnet_transport_poll.obj
+         Win32\Debug\tnet_transport_win32.obj
+         Win32\Debug\tnet_utils.obj
+         Win32\Debug\tnet_turn.obj
+         Win32\Debug\tnet_turn_attr.obj
+         Win32\Debug\tnet_turn_attribute.obj
+         Win32\Debug\tnet_turn_message.obj
+         Win32\Debug\tnet_turn_session.obj
+         Win32\Debug\trtp_rtcp_header.obj
+         Win32\Debug\trtp_rtcp_packet.obj
+         Win32\Debug\trtp_rtcp_rblock.obj
+         Win32\Debug\trtp_rtcp_report.obj
+         Win32\Debug\trtp_rtcp_report_bye.obj
+         Win32\Debug\trtp_rtcp_report_fb.obj
+         Win32\Debug\trtp_rtcp_report_rr.obj
+         Win32\Debug\trtp_rtcp_report_sdes.obj
+         Win32\Debug\trtp_rtcp_report_sr.obj
+         Win32\Debug\trtp_rtcp_report_xr.obj
+         Win32\Debug\trtp_rtcp_sdes_chunck.obj
+         Win32\Debug\trtp_rtcp_sdes_item.obj
+         Win32\Debug\trtp_rtcp_session.obj
+         Win32\Debug\trtp_rtp_header.obj
+         Win32\Debug\trtp_rtp_packet.obj
+         Win32\Debug\trtp_rtp_session.obj
+         Win32\Debug\trtp.obj
+         Win32\Debug\trtp_manager.obj
+         Win32\Debug\trtp_srtp.obj
+         Win32\Debug\tsk.obj
+         Win32\Debug\tsk_base64.obj
+         Win32\Debug\tsk_binaryutils.obj
+         Win32\Debug\tsk_buffer.obj
+         Win32\Debug\tsk_condwait.obj
+         Win32\Debug\tsk_debug.obj
+         Win32\Debug\tsk_fsm.obj
+         Win32\Debug\tsk_hmac.obj
+         Win32\Debug\tsk_list.obj
+         Win32\Debug\tsk_md5.obj
+         Win32\Debug\tsk_memory.obj
+         Win32\Debug\tsk_mutex.obj
+         Win32\Debug\tsk_object.obj
+         Win32\Debug\tsk_options.obj
+         Win32\Debug\tsk_params.obj
+         Win32\Debug\tsk_plugin.obj
+         Win32\Debug\tsk_ppfcs16.obj
+         Win32\Debug\tsk_ppfcs32.obj
+         Win32\Debug\tsk_ragel_state.obj
+         Win32\Debug\tsk_runnable.obj
+         Win32\Debug\tsk_safeobj.obj
+         Win32\Debug\tsk_semaphore.obj
+         Win32\Debug\tsk_sha1.obj
+         Win32\Debug\tsk_string.obj
+         Win32\Debug\tsk_thread.obj
+         Win32\Debug\tsk_time.obj
+         Win32\Debug\tsk_timer.obj
+         Win32\Debug\tsk_url.obj
+         Win32\Debug\tsk_uuid.obj
+         Win32\Debug\tsk_xml.obj
+         Win32\Debug\ThreadEmulation.obj
+         Win32\Debug\tsdp_header.obj
+         Win32\Debug\tsdp_header_A.obj
+         Win32\Debug\tsdp_header_B.obj
+         Win32\Debug\tsdp_header_C.obj
+         Win32\Debug\tsdp_header_Dummy.obj
+         Win32\Debug\tsdp_header_E.obj
+         Win32\Debug\tsdp_header_I.obj
+         Win32\Debug\tsdp_header_K.obj
+         Win32\Debug\tsdp_header_M.obj
+         Win32\Debug\tsdp_header_O.obj
+         Win32\Debug\tsdp_header_P.obj
+         Win32\Debug\tsdp_header_R.obj
+         Win32\Debug\tsdp_header_S.obj
+         Win32\Debug\tsdp_header_T.obj
+         Win32\Debug\tsdp_header_U.obj
+         Win32\Debug\tsdp_header_V.obj
+         Win32\Debug\tsdp_header_Z.obj
+         Win32\Debug\tsdp_parser_message.obj
+         Win32\Debug\tsdp.obj
+         Win32\Debug\tsdp_message.obj
+         Win32\Debug\adler32.obj
+         Win32\Debug\compress.obj
+         Win32\Debug\deflate.obj
+         Win32\Debug\tcomp.obj
+         Win32\Debug\tcomp_buffer.obj
+         Win32\Debug\tcomp_compartment.obj
+         Win32\Debug\tcomp_compressordata.obj
+         Win32\Debug\tcomp_compressordisp.obj
+         Win32\Debug\tcomp_compressor_deflate.obj
+         Win32\Debug\tcomp_compressor_dummy.obj
+         Win32\Debug\tcomp_decompressordisp.obj
+         Win32\Debug\tcomp_deflatedata.obj
+         Win32\Debug\tcomp_deflatedata.ghost.obj
+         Win32\Debug\tcomp_deflatedata.zlib.obj
+         Win32\Debug\tcomp_dicts.obj
+         Win32\Debug\tcomp_manager.obj
+         Win32\Debug\tcomp_message.obj
+         Win32\Debug\tcomp_nackinfo.obj
+         Win32\Debug\tcomp_params.obj
+         Win32\Debug\tcomp_reqfeed.obj
+         Win32\Debug\tcomp_result.obj
+         Win32\Debug\tcomp_state.obj
+         Win32\Debug\tcomp_statehandler.obj
+         Win32\Debug\tcomp_udvm.bytecopy.obj
+         Win32\Debug\tcomp_udvm.obj
+         Win32\Debug\tcomp_udvm.instructions.obj
+         Win32\Debug\tcomp_udvm.nack.obj
+         Win32\Debug\tcomp_udvm.operands.obj
+         Win32\Debug\tcomp_udvm.statemanagment.obj
+         Win32\Debug\trees.obj
+         Win32\Debug\zutil.obj
+         Win32\Debug\tsip_api_common.obj
+         Win32\Debug\tsip_api_info.obj
+         Win32\Debug\tsip_api_invite.obj
+         Win32\Debug\tsip_api_message.obj
+         Win32\Debug\tsip_api_options.obj
+         Win32\Debug\tsip_api_publish.obj
+         Win32\Debug\tsip_api_register.obj
+         Win32\Debug\tsip_api_subscribe.obj
+         Win32\Debug\tsip_challenge.obj
+         Win32\Debug\tsip_milenage.obj
+         Win32\Debug\tsip_rijndael.obj
+         Win32\Debug\tsip_dialog.obj
+         Win32\Debug\tsip_dialog_info.obj
+         Win32\Debug\tsip_dialog_invite.obj
+         Win32\Debug\tsip_dialog_invite.cdiv.obj
+         Win32\Debug\tsip_dialog_invite.client.obj
+         Win32\Debug\tsip_dialog_invite.conf.obj
+         Win32\Debug\tsip_dialog_invite.ect.obj
+         Win32\Debug\tsip_dialog_invite.hold.obj
+         Win32\Debug\tsip_dialog_invite.ice.obj
+         Win32\Debug\tsip_dialog_invite.qos.obj
+         Win32\Debug\tsip_dialog_invite.server.obj
+         Win32\Debug\tsip_dialog_invite.timers.obj
+         Win32\Debug\tsip_dialog_layer.obj
+         Win32\Debug\tsip_dialog_message.obj
+         Win32\Debug\tsip_dialog_options.obj
+         Win32\Debug\tsip_dialog_publish.client.obj
+         Win32\Debug\tsip_dialog_register.obj
+         Win32\Debug\tsip_dialog_register.client.obj
+         Win32\Debug\tsip_dialog_register.server.obj
+         Win32\Debug\tsip_dialog_subscribe.client.obj
+         Win32\Debug\tsip_dialog_subscribe.server.obj
+         Win32\Debug\tsip_header.obj
+         Win32\Debug\tsip_header_accept.obj
+         Win32\Debug\tsip_header_Accept_Contact.obj
+         Win32\Debug\tsip_header_Accept_Encoding.obj
+         Win32\Debug\tsip_header_Accept_Language.obj
+         Win32\Debug\tsip_header_Accept_Resource_Priority.obj
+         Win32\Debug\tsip_header_Alert_Info.obj
+         Win32\Debug\tsip_header_Allow.obj
+         Win32\Debug\tsip_header_Allow_Events.obj
+         Win32\Debug\tsip_header_Authentication_Info.obj
+         Win32\Debug\tsip_header_Authorization.obj
+         Win32\Debug\tsip_header_Call_ID.obj
+         Win32\Debug\tsip_header_Call_Info.obj
+         Win32\Debug\tsip_header_Contact.obj
+         Win32\Debug\tsip_header_Content_Disposition.obj
+         Win32\Debug\tsip_header_Content_Encoding.obj
+         Win32\Debug\tsip_header_Content_Language.obj
+         Win32\Debug\tsip_header_Content_Length.obj
+         Win32\Debug\tsip_header_Content_Type.obj
+         Win32\Debug\tsip_header_CSeq.obj
+         Win32\Debug\tsip_header_Date.obj
+         Win32\Debug\tsip_header_Dummy.obj
+         Win32\Debug\tsip_header_Error_Info.obj
+         Win32\Debug\tsip_header_Event.obj
+         Win32\Debug\tsip_header_Expires.obj
+         Win32\Debug\tsip_header_From.obj
+         Win32\Debug\tsip_header_History_Info.obj
+         Win32\Debug\tsip_header_Identity.obj
+         Win32\Debug\tsip_header_Identity_Info.obj
+         Win32\Debug\tsip_header_In_Reply_To.obj
+         Win32\Debug\tsip_header_Join.obj
+         Win32\Debug\tsip_header_Max_Forwards.obj
+         Win32\Debug\tsip_header_MIME_Version.obj
+         Win32\Debug\tsip_header_Min_Expires.obj
+         Win32\Debug\tsip_header_Min_SE.obj
+         Win32\Debug\tsip_header_Organization.obj
+         Win32\Debug\tsip_header_Path.obj
+         Win32\Debug\tsip_header_Priority.obj
+         Win32\Debug\tsip_header_Privacy.obj
+         Win32\Debug\tsip_header_Proxy_Authenticate.obj
+         Win32\Debug\tsip_header_Proxy_Authorization.obj
+         Win32\Debug\tsip_header_Proxy_Require.obj
+         Win32\Debug\tsip_header_P_Access_Network_Info.obj
+         Win32\Debug\tsip_header_P_Answer_State.obj
+         Win32\Debug\tsip_header_P_Asserted_Identity.obj
+         Win32\Debug\tsip_header_P_Associated_URI.obj
+         Win32\Debug\tsip_header_P_Called_Party_ID.obj
+         Win32\Debug\tsip_header_P_Charging_Function_Addresses.obj
+         Win32\Debug\tsip_header_P_Charging_Vector.obj
+         Win32\Debug\tsip_header_P_DCS_Billing_Info.obj
+         Win32\Debug\tsip_header_P_DCS_LAES.obj
+         Win32\Debug\tsip_header_P_DCS_OSPS.obj
+         Win32\Debug\tsip_header_P_DCS_Redirect.obj
+         Win32\Debug\tsip_header_P_DCS_Trace_Party_ID.obj
+         Win32\Debug\tsip_header_P_Early_Media.obj
+         Win32\Debug\tsip_header_P_Media_Authorization.obj
+         Win32\Debug\tsip_header_P_Preferred_Identity.obj
+         Win32\Debug\tsip_header_P_Profile_Key.obj
+         Win32\Debug\tsip_header_P_User_Database.obj
+         Win32\Debug\tsip_header_P_Visited_Network_ID.obj
+         Win32\Debug\tsip_header_RAck.obj
+         Win32\Debug\tsip_header_Reason.obj
+         Win32\Debug\tsip_header_Record_Route.obj
+         Win32\Debug\tsip_header_Referred_By.obj
+         Win32\Debug\tsip_header_Refer_Sub.obj
+         Win32\Debug\tsip_header_Refer_To.obj
+         Win32\Debug\tsip_header_Reject_Contact.obj
+         Win32\Debug\tsip_header_Replaces.obj
+         Win32\Debug\tsip_header_Reply_To.obj
+         Win32\Debug\tsip_header_Request_Disposition.obj
+         Win32\Debug\tsip_header_Require.obj
+         Win32\Debug\tsip_header_Resource_Priority.obj
+         Win32\Debug\tsip_header_Retry_After.obj
+         Win32\Debug\tsip_header_Route.obj
+         Win32\Debug\tsip_header_RSeq.obj
+         Win32\Debug\tsip_header_Security_Client.obj
+         Win32\Debug\tsip_header_Security_Server.obj
+         Win32\Debug\tsip_header_Security_Verify.obj
+         Win32\Debug\tsip_header_Server.obj
+         Win32\Debug\tsip_header_Service_Route.obj
+         Win32\Debug\tsip_header_Session_Expires.obj
+         Win32\Debug\tsip_header_SIP_ETag.obj
+         Win32\Debug\tsip_header_SIP_If_Match.obj
+         Win32\Debug\tsip_header_Subject.obj
+         Win32\Debug\tsip_header_Subscription_State.obj
+         Win32\Debug\tsip_header_Supported.obj
+         Win32\Debug\tsip_header_Target_Dialog.obj
+         Win32\Debug\tsip_header_Timestamp.obj
+         Win32\Debug\tsip_header_To.obj
+         Win32\Debug\tsip_header_Unsupported.obj
+         Win32\Debug\tsip_header_User_Agent.obj
+         Win32\Debug\tsip_header_Via.obj
+         Win32\Debug\tsip_header_Warning.obj
+         Win32\Debug\tsip_header_WWW_Authenticate.obj
+         Win32\Debug\tsip_parser_header.obj
+         Win32\Debug\tsip_parser_message.obj
+         Win32\Debug\tsip_parser_uri.obj
+         Win32\Debug\tsip_sigcomp.obj
+         Win32\Debug\tsip_transac.obj
+         Win32\Debug\tsip_transac_ict.obj
+         Win32\Debug\tsip_transac_ist.obj
+         Win32\Debug\tsip_transac_layer.obj
+         Win32\Debug\tsip_transac_nict.obj
+         Win32\Debug\tsip_transac_nist.obj
+         Win32\Debug\tsip_transport.obj
+         Win32\Debug\tsip_transport_ipsec.obj
+         Win32\Debug\tsip_transport_layer.obj
+         Win32\Debug\tsip_transport_tls.obj
+         Win32\Debug\tsip.obj
+         Win32\Debug\tsip_action.obj
+         Win32\Debug\tsip_event.obj
+         Win32\Debug\tsip_message.obj
+         Win32\Debug\tsip_ssession.obj
+         Win32\Debug\tsip_timers.obj
+         Win32\Debug\tsip_uri.obj
+         Win32\Debug\tsms_rpdu.obj
+         Win32\Debug\tsms_tpdu_command.obj
+         Win32\Debug\tsms_tpdu_deliver.obj
+         Win32\Debug\tsms_tpdu_report.obj
+         Win32\Debug\tsms_tpdu_status_report.obj
+         Win32\Debug\tsms_tpdu_submit.obj
+         Win32\Debug\tsms.obj
+         Win32\Debug\tsms_address.obj
+         Win32\Debug\tsms_common.obj
+         Win32\Debug\tsms_packing.obj
+         Win32\Debug\txcap.obj
+         Win32\Debug\txcap_action.obj
+         Win32\Debug\txcap_auid.obj
+         Win32\Debug\txcap_document.obj
+         Win32\Debug\txcap_node.obj
+         Win32\Debug\txcap_selector.obj
+         Win32\Debug\ApiLock.obj
+         Win32\Debug\Globals.obj
+         Win32\Debug\Server.obj
+         Win32\Debug\SipService.obj
+            
+     1>LINK : warning LNK4098: 
+     1>libspeex.lib(bits.obj) : warning LNK4099: 
+     1>libspeex.lib(cb_search.obj) : warning LNK4099: 
+     1>libspeex.lib(exc_10_16_table.obj) : warning LNK4099: 
+     1>libspeex.lib(exc_10_32_table.obj) : warning LNK4099: 
+     1>libspeex.lib(exc_20_32_table.obj) : warning LNK4099: 
+     1>libspeex.lib(exc_5_256_table.obj) : warning LNK4099: 
+     1>libspeex.lib(exc_5_64_table.obj) : warning LNK4099: 
+     1>libspeex.lib(exc_8_128_table.obj) : warning LNK4099: 
+     1>libspeex.lib(fftwrap.obj) : warning LNK4099: 
+     1>libspeex.lib(filterbank.obj) : warning LNK4099: 
+     1>libspeex.lib(filters.obj) : warning LNK4099: 
+     1>libspeex.lib(gain_table.obj) : warning LNK4099: 
+     1>libspeex.lib(gain_table_lbr.obj) : warning LNK4099: 
+     1>libspeex.lib(hexc_10_32_table.obj) : warning LNK4099: 
+     1>libspeex.lib(hexc_table.obj) : warning LNK4099: 
+     1>libspeex.lib(high_lsp_tables.obj) : warning LNK4099: 
+     1>libspeex.lib(jitter.obj) : warning LNK4099: 
+     1>libspeex.lib(lpc.obj) : warning LNK4099: 
+     1>libspeex.lib(lsp.obj) : warning LNK4099: 
+     1>libspeex.lib(lsp_tables_nb.obj) : warning LNK4099: 
+     1>libspeex.lib(ltp.obj) : warning LNK4099: 
+     1>libspeex.lib(mdf.obj) : warning LNK4099: 
+     1>libspeex.lib(modes.obj) : warning LNK4099: 
+     1>libspeex.lib(modes_wb.obj) : warning LNK4099: 
+     1>libspeex.lib(nb_celp.obj) : warning LNK4099: 
+     1>libspeex.lib(preprocess.obj) : warning LNK4099: 
+     1>libspeex.lib(quant_lsp.obj) : warning LNK4099: 
+     1>libspeex.lib(resample.obj) : warning LNK4099: 
+     1>libspeex.lib(sb_celp.obj) : warning LNK4099: 
+     1>libspeex.lib(smallft.obj) : warning LNK4099: 
+     1>libspeex.lib(speex.obj) : warning LNK4099: 
+     1>libspeex.lib(speex_callbacks.obj) : warning LNK4099: 
+     1>libspeex.lib(vbr.obj) : warning LNK4099: 
+     1>libspeex.lib(vq.obj) : warning LNK4099: 
+     1>libspeex.lib(window.obj) : warning LNK4099: 
+     1>libspeexdsp.lib(buffer.obj) : warning LNK4099: 
+     1>libgsm.lib(add.obj) : warning LNK4099: 
+     1>libgsm.lib(code.obj) : warning LNK4099: 
+     1>libgsm.lib(decode.obj) : warning LNK4099: 
+     1>libgsm.lib(gsm_create.obj) : warning LNK4099: 
+     1>libgsm.lib(gsm_decode.obj) : warning LNK4099: 
+     1>libgsm.lib(gsm_destroy.obj) : warning LNK4099: 
+     1>libgsm.lib(gsm_encode.obj) : warning LNK4099: 
+     1>libgsm.lib(long_term.obj) : warning LNK4099: 
+     1>libgsm.lib(lpc.obj) : warning LNK4099: 
+     1>libgsm.lib(preprocess.obj) : warning LNK4099: 
+     1>libgsm.lib(rpe.obj) : warning LNK4099: 
+     1>libgsm.lib(short_term.obj) : warning LNK4099: 
+     1>libgsm.lib(table.obj) : warning LNK4099: 
+         BackEnd.vcxproj -> E:\github\x-talker\wp-client\boghe\boghe-read-only\branches\2.0\boghe\Debug\BackEnd\doubango_rt.BackEnd.dll
+     1>已完成生成项目“E:\github\x-talker\wp-client\boghe\boghe-read-only\branches\2.0\boghe\winrt\BackEnd\BackEnd.vcxproj”(Build 个目标)的操作。
 
 生成成功。
 
-已用时间 00:00:00.01
+已用时间 00:00:07.45

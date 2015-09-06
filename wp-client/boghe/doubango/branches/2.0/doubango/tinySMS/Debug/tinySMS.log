@@ -1,5 +1,23 @@
-﻿生成启动时间为 2/14/2015 1:22:19 AM。
+﻿生成启动时间为 4/1/2015 10:48:10 AM。
+     1>项目“E:\github\x-talker\wp-client\boghe\doubango\branches\2.0\doubango\tinySMS\tinySMS.vcxproj”在节点 3 上(Build 个目标)。
+     1>Link:
+         D:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"E:\github\x-talker\wp-client\boghe\boghe-read-only\branches\2.0\boghe\Debug\tinySMS.dll" /INCREMENTAL /NOLOGO "E:\github\x-talker\wp-client\boghe\boghe-read-only\branches\2.0\boghe\Debug\tinySAK.lib" kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"E:\github\x-talker\wp-client\boghe\boghe-read-only\branches\2.0\boghe\Debug\tinySMS.pdb" /SUBSYSTEM:WINDOWS /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"E:\github\x-talker\wp-client\boghe\boghe-read-only\branches\2.0\boghe\Debug\tinySMS.lib" /MACHINE:X86 /SAFESEH /DLL Debug\version.res
+         Debug\tsms_rpdu.obj
+         Debug\tsms_tpdu_command.obj
+         Debug\tsms_tpdu_deliver.obj
+         Debug\tsms_tpdu_report.obj
+         Debug\tsms_tpdu_status_report.obj
+         Debug\tsms_tpdu_submit.obj
+         Debug\tsms.obj
+         Debug\tsms_address.obj
+         Debug\tsms_common.obj
+         Debug\tsms_packing.obj
+         "E:\github\x-talker\wp-client\boghe\boghe-read-only\branches\2.0\boghe\Debug\tinySAK.lib"
+     1>tsms_rpdu.obj : warning LNK4075: 
+            
+         tinySMS.vcxproj -> E:\github\x-talker\wp-client\boghe\boghe-read-only\branches\2.0\boghe\Debug\tinySMS.dll
+     1>已完成生成项目“E:\github\x-talker\wp-client\boghe\doubango\branches\2.0\doubango\tinySMS\tinySMS.vcxproj”(Build 个目标)的操作。
 
 生成成功。
 
-已用时间 00:00:00.03
+已用时间 00:00:00.84
